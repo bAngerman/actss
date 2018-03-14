@@ -1,0 +1,105 @@
+/*!
+ *  ACTSS Theme custom styles
+ */
+
+ /*! VARIABLES */
+// colors
+$blu: #01076d;
+$redish: #d1251b;
+$orangerish: #dc6836;
+$yellowish: #ffad40;
+$d-grey: #4d4d4d;
+$l-grey: #999;
+
+// fonts
+
+$light: 300;
+$regular: 400;
+
+@mixin mont($weight) {
+	// use this like "@include mont($light);"
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+.rocksalt {
+	// use this like "extend .rocksalt"
+	font-family: 'Rock Salt', cursive;
+}
+
+
+
+// breakpoints
+$bp-tablet: 600px;
+$bp-desktop: 992px;
+
+@mixin screen($size) {
+
+	@if $size == 'tablet' {
+		@media only screen and (min-width: $bp-tablet) {
+			@content;
+		}
+	}
+
+	@else if $size == 'desktop' {
+		@media only screen and (min-width: $bp-desktop) {
+			@content;
+		}
+	}
+
+	// call this like 
+	// @include screen(tablet) {
+	// //rules go here
+	// }
+
+}
+
+// transition timings 
+$t-slow: 500ms;
+$t-medium: 300ms;
+$t-fast: 100ms;
+
+// extends
+.d-center { 
+    // center content horizontally and vertically
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+
+.d-flex-c {
+	// display flex direction column
+  @extend .d-flex;
+  flex-direction: column;
+}
+
+.bg-cover {
+	// bg cover compatibility
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// mixins ( add a mixin by writing "@include transition($t-fast);" )
+@mixin transition($timing) {
+	// transition compatibility
+  -webkit-transition: $timing all linear;
+  -moz-transition: $timing all linear;
+  -o-transition: $timing all linear;
+  transition: $timing all linear;
+}
+
+
+
+ /*! GLOBAL STYLES */
+
+
+
+
+ /*! X STYLES */
+
+
+
+
+ 
+ 

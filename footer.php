@@ -11,23 +11,33 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_sidebar( 'footerfull' ); ?>
-
-<div class="wrapper" id="wrapper-footer">
+<div class="footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-
-		<div class="row">
-
-			<div class="col-md-12">
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
+		<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
+		<ul class="social">
+			<li>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fab fa-twitter-square"></i></a>
+			</li>
+		</ul>
+		<div class="address">
+			<p>Animal Cancer Therapy Subsidization Society (ACTSS)</p>
+			<p>Box 68244 Bonnie Doon RPO Edmonton, AB T6C 4N6</p>
+		</div>
+		<div class="crn">
+			<p>Charitable Registration Number: 88330 0626 RR0001</p>
+		</div>
+		<div class="copyright">
+			<p><i class="far fa-copyright"></i> ACTSS <?php echo date("Y"); ?></p>
 	</div><!-- container end -->
 
-</div><!-- wrapper end -->
+</div><!-- footer end -->
 
 </div><!-- #page we need this extra closing tag here -->
 

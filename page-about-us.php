@@ -1,6 +1,6 @@
 <?php
 /**
- * Home Page Template for ACTSS
+ * About Us Page Template for ACTSS
  * 
  */
 get_header();

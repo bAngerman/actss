@@ -27,56 +27,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+	<!-- ******************* nav ******************* -->
 
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
-		'understrap' ); ?></a>
-
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-		<?php if ( 'container' == $container ) : ?>
+	<nav class="nav">
+		<?php if ( 'container' == $container ) : ?> <!-- This should always be a container! -->
 			<div class="container">
+		<?php endif; ?>					
+			<div class="brand">
+				<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
+				<div class="brand-tagline">Animal Cancer Therapy Subsidization Society</div>
+			</div>
+			<div class="mobile-nav-btn">
+				<a href="#" onClick="toggleNav"><i class="fas fa-bars"></i></a>
+			</div>
+			<!-- The WordPress Menu goes here -->
+			<?php wp_nav_menu(
+				array(
+					'menu_class'      => 'nav-item',
+					'fallback_cb'     => 'false',
+					'menu_id'         => 'main-menu'
+				)
+			); ?>
+		<?php if ( 'container' == $container ) : ?>
+		</div><!-- .container -->
 		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() && false ) { ?> <!-- flagged false -->
-
-						<?php if ( is_front_page() && is_home() && false ) : ?> <!-- flagged false -->
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-							
-						<?php // else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-						
-						<?php endif; ?>
-						
-					
-					<?php } else {
-						// the_custom_logo();
-					} ?><!-- end custom logo -->
-
-				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button> -->
-
-				<!-- The WordPress Menu goes here -->
-				<?php // wp_nav_menu(
-				// 	array(
-				// 		'theme_location'  => 'primary',
-				// 		'container_class' => 'collapse navbar-collapse',
-				// 		'container_id'    => 'navbarNavDropdown',
-				// 		'menu_class'      => 'navbar-nav',
-				// 		'fallback_cb'     => '',
-				// 		'menu_id'         => 'main-menu',
-				// 		'walker'          => new understrap_WP_Bootstrap_Navwalker(),
-				// 	)
-				// ); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
-
-		</nav><!-- .site-navigation -->
-
-	</div><!-- .wrapper-navbar end -->
+	</nav><!-- /nav -->

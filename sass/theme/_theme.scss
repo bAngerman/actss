@@ -16,13 +16,18 @@ $white: #fff;
 
 $light: 300;
 $regular: 400;
+$bold: 700;
+$boldest: 900;
 
 @mixin mont($weight) {
 	// use this like "@include mont($light);"
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
+	// font-weight: 300;
 }
 
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
 .rocksalt {
 	// use this like "extend .rocksalt"
 	font-family: 'Rock Salt', cursive;
@@ -134,6 +139,13 @@ $t-fast: 100ms;
 
 
  /*! GLOBAL STYLES */
+ html body{
+	font-family: "Montserrat", sans-serif;
+ }
+h1, h2{
+	text-transform:uppercase;
+	font-weight: $boldest;
+}
 li{
 	list-style: none;
 }
@@ -145,7 +157,26 @@ a:hover{
 }
 
 
+// HOME PAGE STYLES
 
+.about-home{
+	padding:36px 24px 36px 24px;
+	h2{
+		color: $orangerish;
+	}
+	.about-text-home{
+		a{
+			color:$redish;
+			border: 2px solid $redish;
+			border-radius:24px;
+			padding: 6px 36px 6px 36px;
+			float:right;
+			margin:8px 0px 24px 0px;
+			font-weight: $bold;
+		}
+	}
+
+}
 
  /*! X STYLES */
 

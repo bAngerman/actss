@@ -14,6 +14,8 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		$the_theme = wp_get_theme();
 		// font awesome
 		wp_enqueue_script( 'fa-all', 'https://use.fontawesome.com/releases/v5.0.8/js/all.js', array(), $the_theme->get( 'Version' ), false );
+		// google fonts
+		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Rock+Salt', array(), $the_theme->get( 'Version' ), false );
 		// our styles
 		wp_enqueue_style( 'understrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $the_theme->get( 'Version' ), false );
 		// jquery

@@ -10,6 +10,7 @@ $orangerish: #dc6836;
 $yellowish: #ffad40;
 $d-grey: #4d4d4d;
 $l-grey: #999;
+$white: #fff;
 
 // fonts
 
@@ -89,15 +90,59 @@ $t-fast: 100ms;
   transition: $timing all linear;
 }
 //footer style
-@include screen(mobile) {
-	.footer-logo{
-		width: 200px;
+	.footer{
+		background-color: $d-grey;
+		.footer-container{
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 0 24px 60px 24px;
+			@include mont($light);
+
+			a{
+				color:$white;
+			}
+			a:hover{
+				color: $orangerish;
+			}
+			.logo{
+				width: 168px;
+				padding-top:120px;
+				margin: 0 auto;	
+			}
+			ul.social{
+				padding-left:0px;
+			}
+			.social li{
+				display:inline-block;
+				font-size: 3em;
+				padding:21px;
+			}
+			.footer-text{
+				color:$white;
+				text-align: center;
+
+			}
+
+		}
+
 	}
-	}
+
+	
 
 
 
  /*! GLOBAL STYLES */
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
 
 
 

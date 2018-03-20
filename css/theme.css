@@ -9485,7 +9485,44 @@ a.skip-link {
   -o-background-size: cover;
   background-size: cover; }
 
+.footer {
+  background-color: #4d4d4d; }
+  .footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px 60px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; }
+    .footer .footer-container a {
+      color: #fff; }
+    .footer .footer-container a:hover {
+      color: #dc6836; }
+    .footer .footer-container .logo {
+      width: 168px;
+      padding-top: 120px;
+      margin: 0 auto; }
+    .footer .footer-container ul.social {
+      padding-left: 0px; }
+    .footer .footer-container .social li {
+      display: inline-block;
+      font-size: 3em;
+      padding: 21px; }
+    .footer .footer-container .footer-text {
+      color: #fff;
+      text-align: center; }
+
 /*! GLOBAL STYLES */
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
 /*! X STYLES */
 /*
 * Use existing Bootstrap 4 classes and

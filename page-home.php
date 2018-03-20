@@ -44,9 +44,13 @@ $container = get_theme_mod( 'understrap_container_type' );
         </p>
         <a href="page-about-us.php">Read More</a>
       </div>
-        <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
-        <a href="#">Donate Now!</a>
+      <div class="about-donation-home">
+        <div class="about-donation-overlay">
+          <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
+          <a href="#">Donate Now!</a>
+        </div>
         <img src="">
+      </div>  
     </div>
     <div class="events-home">
         <h2>Events</h2>

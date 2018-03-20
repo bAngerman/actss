@@ -9532,10 +9532,11 @@ a {
 a:hover {
   text-decoration: none; }
 
-.about-home {
+.about-home h2 {
+  color: #dc6836; }
+
+.about-home .about-text-home {
   padding: 36px 24px 36px 24px; }
-  .about-home h2 {
-    color: #dc6836; }
   .about-home .about-text-home a {
     color: #d1251b;
     border: 2px solid #d1251b;
@@ -9544,6 +9545,34 @@ a:hover {
     float: right;
     margin: 8px 0px 24px 0px;
     font-weight: 700; }
+
+.about-donation-home {
+  background-image: url(../img/cat-dog-red-600px.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 420px;
+  padding: 24px; }
+  .about-donation-home .about-donation-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    color: #fff; }
+    .about-donation-home .about-donation-overlay p {
+      font-size: 1.5em;
+      padding: 12px; }
+    .about-donation-home .about-donation-overlay a {
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 24px;
+      padding: 6px 48px 6px 48px;
+      font-weight: 700; }
 
 /*! X STYLES */
 /*

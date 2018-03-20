@@ -88,6 +88,12 @@ $t-fast: 100ms;
   -o-transition: $timing all linear;
   transition: $timing all linear;
 }
+//footer style
+@include screen(mobile) {
+	.footer-logo{
+		width: 200px;
+	}
+	}
 
 
 

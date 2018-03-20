@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-		<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
+		<div class="footer-logo"><img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/></div>
 		<ul class="social">
 			<li>
 				<a href="#"><i class="fab fa-instagram"></i></a>

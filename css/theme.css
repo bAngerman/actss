@@ -9482,7 +9482,7 @@ a.skip-link {
 .d-flex-c {
   flex-direction: column; }
 
-.bg-cover, .aboutus-container .history, .aboutus-container .chet {
+.bg-cover, .events-home, .aboutus-container .history, .aboutus-container .chet {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9573,6 +9573,13 @@ a:hover {
       border-radius: 24px;
       padding: 6px 48px 6px 48px;
       font-weight: 700; }
+
+.events-home {
+  background-image: url(../img/woman-dog-mobile.jpg);
+  background-position: center center;
+  width: 100%; }
+  .events-home h2 {
+    color: #dc6836; }
 
 .aboutus-container .miss-vis-goals {
   margin: 24px; }

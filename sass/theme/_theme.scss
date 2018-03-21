@@ -215,6 +215,15 @@ a:hover{
 		}
 	}
 }
+.events-home{
+	background-image:url(../img/woman-dog-mobile.jpg);
+	@extend .bg-cover;
+	background-position: center center;
+	width: 100%;
+	h2{
+		color: $orangerish;
+	}
+}
 // ABOUT US STYLES
 
 .aboutus-container{

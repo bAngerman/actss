@@ -262,16 +262,13 @@ a:hover{
 		width: 100%;
 	
 		
-		.history-overlay{
-			background-color:$transparentblu;
-			padding:24px; 
-			height: 100%;
+
 			p{
 				color: $almost-white;
 				margin-bottom:0px;
 			}
 
-		}
+
 		h2{
 			color: $yellowish;
 			border-bottom: 4px solid $yellowish;
@@ -295,10 +292,7 @@ a:hover{
 		width: 100%;
 		height:600px;
 		
-		.chet-overlay{
-			background-color:$transparentblack;
-			padding:24px; 
-			height: 100%;
+
 			p{
 				color: $almost-white;
 				margin-bottom:0px;
@@ -307,7 +301,7 @@ a:hover{
 				max-height: 350px;
 				overflow: hidden;
 			}
-		}
+		
 		h2{
 			color: $orangerish;
 			border-bottom: 4px solid $orangerish;

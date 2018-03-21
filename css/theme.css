@@ -9482,7 +9482,7 @@ a.skip-link {
 .d-flex-c {
   flex-direction: column; }
 
-.bg-cover {
+.bg-cover, .aboutus-container .history, .aboutus-container .chet {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9604,22 +9604,12 @@ a:hover {
     font-weight: 700; }
 
 .aboutus-container .history {
-  background-image: url(../img/bw-ca-1600w.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 600px; }
-  .aboutus-container .history .history-overlay {
-    background-color: rgba(1, 7, 109, 0.5);
-    padding: 24px;
-    height: 100%; }
-    .aboutus-container .history .history-overlay p {
-      color: #e8e8e8;
-      margin-bottom: 0px; }
-    .aboutus-container .history .history-overlay .text-overflow {
-      max-height: 400px;
-      overflow: hidden; }
+  background-image: linear-gradient(rgba(1, 7, 109, 0.5), rgba(1, 7, 109, 0.5)), url(../img/bw-ca-1600w.jpg);
+  background-position: center bottom;
+  width: 100%; }
+  .aboutus-container .history p {
+    color: #e8e8e8;
+    margin-bottom: 0px; }
   .aboutus-container .history h2 {
     color: #ffad40;
     border-bottom: 4px solid #ffad40;
@@ -9635,22 +9625,16 @@ a:hover {
     font-weight: 700; }
 
 .aboutus-container .chet {
-  background-image: url(../img/run900w.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/run900w.jpg);
+  background-position: center bottom;
   width: 100%;
   height: 600px; }
-  .aboutus-container .chet .chet-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 24px;
-    height: 100%; }
-    .aboutus-container .chet .chet-overlay p {
-      color: #e8e8e8;
-      margin-bottom: 0px; }
-    .aboutus-container .chet .chet-overlay .text-overflow {
-      max-height: 350px;
-      overflow: hidden; }
+  .aboutus-container .chet p {
+    color: #e8e8e8;
+    margin-bottom: 0px; }
+  .aboutus-container .chet .text-overflow {
+    max-height: 350px;
+    overflow: hidden; }
   .aboutus-container .chet h2 {
     color: #dc6836;
     border-bottom: 4px solid #dc6836;

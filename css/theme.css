@@ -9574,6 +9574,90 @@ a:hover {
       padding: 6px 48px 6px 48px;
       font-weight: 700; }
 
+.aboutus-container h2 {
+  font-size: 2.25em; }
+
+.aboutus-container .miss-vis-goals {
+  margin: 24px; }
+  .aboutus-container .miss-vis-goals h2 {
+    color: #01076d; }
+  .aboutus-container .miss-vis-goals .box {
+    background-color: rgba(239, 239, 239, 0.8);
+    border: 4px solid #01076d;
+    padding: 24px 24px 8px 24px;
+    margin-bottom: 36px; }
+
+.aboutus-container .about-us {
+  background-color: #e8e8e8;
+  padding: 24px; }
+  .aboutus-container .about-us h2 {
+    color: #01076d;
+    border-bottom: 4px solid #01076d;
+    padding-bottom: 24px;
+    margin-bottom: 30px; }
+  .aboutus-container .about-us a {
+    color: #01076d;
+    border: 2px solid #01076d;
+    border-radius: 24px;
+    padding: 6px 36px 6px 36px;
+    float: right;
+    margin: 8px 0px 24px 0px;
+    font-weight: 700; }
+
+.aboutus-container .history {
+  background-image: url(../img/bw-ca-900w.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 600px; }
+  .aboutus-container .history .history-overlay {
+    background-color: rgba(1, 7, 109, 0.5);
+    padding: 24px;
+    height: 100%; }
+    .aboutus-container .history .history-overlay p {
+      color: #e8e8e8; }
+  .aboutus-container .history h2 {
+    color: #ffad40;
+    border-bottom: 4px solid #ffad40;
+    padding-bottom: 24px;
+    margin-bottom: 30px; }
+  .aboutus-container .history a {
+    color: #ffad40;
+    border: 2px solid #ffad40;
+    border-radius: 24px;
+    padding: 6px 36px 6px 36px;
+    float: right;
+    margin: 8px 0px 24px 0px;
+    font-weight: 700; }
+
+.aboutus-container .chet {
+  background-image: url(../img/run900w.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 600px; }
+  .aboutus-container .chet .chet-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 24px;
+    height: 100%; }
+    .aboutus-container .chet .chet-overlay p {
+      color: #e8e8e8; }
+  .aboutus-container .chet h2 {
+    color: #dc6836;
+    border-bottom: 4px solid #dc6836;
+    padding-bottom: 24px;
+    margin-bottom: 30px; }
+  .aboutus-container .chet a {
+    color: #dc6836;
+    border: 2px solid #dc6836;
+    border-radius: 24px;
+    padding: 6px 36px 6px 36px;
+    float: right;
+    margin: 8px 0px 24px 0px;
+    font-weight: 700; }
+
 /*! X STYLES */
 /*
 * Use existing Bootstrap 4 classes and

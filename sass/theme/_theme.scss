@@ -10,8 +10,11 @@ $orangerish: #dc6836;
 $yellowish: #ffad40;
 $d-grey: #4d4d4d;
 $l-grey: #999;
+$almost-white:#e8e8e8;
 $white: #fff;
 $transparentblack:rgba(0, 0, 0, 0.6);
+$transparentlightgrey:rgba(239,239,239,0.8);
+$transparentblu:rgba(1,7,109, 0.5);
 
 // fonts
 
@@ -212,6 +215,112 @@ a:hover{
 		}
 	}
 }
+// ABOUT US STYLES
+.aboutus-container{
+	h2{
+		font-size: 2.25em;
+	}
+	
+	.miss-vis-goals{
+		margin:24px;
+		h2{
+			color: $blu;
+		}
+		.box{
+			background-color: $transparentlightgrey;
+			border: 4px solid $blu;
+			padding: 24px 24px 8px 24px;
+			margin-bottom: 36px;
+		}
+
+	}
+	.about-us{
+		background-color:$almost-white;
+		padding:24px; 
+		h2{
+			color: $blu;
+			border-bottom: 4px solid $blu;
+			padding-bottom: 24px;
+			margin-bottom:30px;
+		}
+		a{
+			color:$blu;
+			border: 2px solid $blu;
+			border-radius:24px;
+			padding: 6px 36px 6px 36px;
+			float:right;
+			margin:8px 0px 24px 0px;
+			font-weight: $bold;
+		}
+	}
+	.history{
+		background-image: url(../img/bw-ca-900w.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center center;
+		width: 100%;
+		height:600px;
+		
+		.history-overlay{
+			background-color:$transparentblu;
+			padding:24px; 
+			height: 100%;
+			p{
+				color: $almost-white;
+			}
+		}
+		h2{
+			color: $yellowish;
+			border-bottom: 4px solid $yellowish;
+			padding-bottom: 24px;
+			margin-bottom:30px;
+		}
+		a{
+			color:$yellowish;
+			border: 2px solid $yellowish;
+			border-radius:24px;
+			padding: 6px 36px 6px 36px;
+			float:right;
+			margin:8px 0px 24px 0px;
+			font-weight: $bold;
+		}
+	}
+	.chet{
+		background-image: url(../img/run900w.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center center;
+		width: 100%;
+		height:600px;
+		
+		.chet-overlay{
+			background-color:$transparentblack;
+			padding:24px; 
+			height: 100%;
+			p{
+				color: $almost-white;
+			}
+		}
+		h2{
+			color: $orangerish;
+			border-bottom: 4px solid $orangerish;
+			padding-bottom: 24px;
+			margin-bottom:30px;
+		}
+		a{
+			color:$orangerish;
+			border: 2px solid $orangerish;
+			border-radius:24px;
+			padding: 6px 36px 6px 36px;
+			float:right;
+			margin:8px 0px 24px 0px;
+			font-weight: $bold;
+		}
+	}
+
+}
+
+
  /*! X STYLES */
 
 

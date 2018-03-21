@@ -43,17 +43,21 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="history clearfix">
     <div class="history-overlay">
       <h2>History</h2>
-      <p>In March of 1997, local Edmonton media released information about a little dog named Atrayo who was receiving radiation therapy for his cancer after hours at a human cancer centre. The provincial government reacted by permanently closing the doors of all human treatment facilities to pets. Without the completion of his radiation therapy, Atrayo died a few months later. Veterinarians and politicians heard an outcry from pet owners around the country. As a result, serious analysis of the access of pets to cancer treatment programs was made.</p>
-      <p>Veterinarians in general practice can treat a large percentage of cancers, but many aggressive cancers need to be managed at specialized oncology centres. In 1997, no such facilities for pets existed in Western Canada. The cost of these procedures even when managed locally cost hundreds, sometimes thousands of dollars that many pet owners cannot afford. The expense and</p>
+      <div class="text-overflow">
+        <p>In March of 1997, local Edmonton media released information about a little dog named Atrayo who was receiving radiation therapy for his cancer after hours at a human cancer centre. The provincial government reacted by permanently closing the doors of all human treatment facilities to pets. Without the completion of his radiation therapy, Atrayo died a few months later. Veterinarians and politicians heard an outcry from pet owners around the country. As a result, serious analysis of the access of pets to cancer treatment programs was made.</p>
+        <p>Veterinarians in general practice can treat a large percentage of cancers, but many aggressive cancers need to be managed at specialized oncology centres. In 1997, no such facilities for pets existed in Western Canada. The cost of these procedures even when managed locally cost hundreds, sometimes thousands of dollars that many pet owners cannot afford. The expense and</p>
+      </div><!-- text overflow close -->
       <a href="#">Read More</a>
     </div><!-- history overlay -->
   </div> <!-- about-us history -->
   <div class="chet clearfix">
     <div class="chet-overlay">
       <h2>The Chet Dobson Story</h2>
-      <p>In July 2007 Joe and Stephanie Dobson were devastated to learn that their beloved 12 year old Lab-Husky cross Chet had a malignant tumour in his lungs. Chet had begun to cough up blood and the situation was critical. Two Calgary, Alberta specialist centres worked together to save Chet’s life. The Western Veterinary Specialist Centre performed the difficult surgery that removed the dangerous tumour from Chet’s lungs and the Calgary Animal Referral and Emergency Centre later gave Chet chemotherapy. The financial cost was high but the Dobson’s knew that Chet was worth it.</p>
-      <p>The time spent working with the specialists made Joe wonder about the people who could not afford the costs of having expensive medical treatments done to save their pets lives, and the devastation they must feel losing the pet they love. Could something be done to help these people and their pets? Joe decided to do something to highlight this important issue.</p>
-      <a href="#">Read More</a>
+      <div class="text-overflow">
+        <p>In July 2007 Joe and Stephanie Dobson were devastated to learn that their beloved 12 year old Lab-Husky cross Chet had a malignant tumour in his lungs. Chet had begun to cough up blood and the situation was critical. Two Calgary, Alberta specialist centres worked together to save Chet’s life. The Western Veterinary Specialist Centre performed the difficult surgery that removed the dangerous tumour from Chet’s lungs and the Calgary Animal Referral and Emergency Centre later gave Chet chemotherapy. The financial cost was high but the Dobson’s knew that Chet was worth it.</p>
+        <p>The time spent working with the specialists made Joe wonder about the people who could not afford the costs of having expensive medical treatments done to save their pets lives, and the devastation they must feel losing the pet they love. Could something be done to help these people and their pets? Joe decided to do something to highlight this important issue.</p>
+        </div><!-- text overflow close -->
+        <a href="#">Read More</a>
     </div><!-- history overlay -->
   </div> <!-- about-us history -->
 

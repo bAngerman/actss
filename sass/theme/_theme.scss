@@ -216,15 +216,15 @@ a:hover{
 	}
 }
 // ABOUT US STYLES
+
 .aboutus-container{
-	h2{
-		font-size: 2.25em;
-	}
+
 	
 	.miss-vis-goals{
 		margin:24px;
 		h2{
 			color: $blu;
+			font-size: 2.25em;
 		}
 		.box{
 			background-color: $transparentlightgrey;
@@ -239,6 +239,7 @@ a:hover{
 		padding:24px; 
 		h2{
 			color: $blu;
+			font-size: 2.25em;
 			border-bottom: 4px solid $blu;
 			padding-bottom: 24px;
 			margin-bottom:30px;
@@ -254,12 +255,12 @@ a:hover{
 		}
 	}
 	.history{
-		background-image: url(../img/bw-ca-900w.jpg);
-		background-repeat: no-repeat;
-		background-size:cover;
-		background-position: center center;
+		// background: linear-gradient(0,0,0,0.5)
+		background-image: linear-gradient(rgba(1,7,109, 0.5), rgba(1,7,109, 0.5)), url(../img/bw-ca-1600w.jpg);
+		@extend .bg-cover;
+		background-position: center bottom;
 		width: 100%;
-		height:600px;
+	
 		
 		.history-overlay{
 			background-color:$transparentblu;
@@ -267,7 +268,9 @@ a:hover{
 			height: 100%;
 			p{
 				color: $almost-white;
+				margin-bottom:0px;
 			}
+
 		}
 		h2{
 			color: $yellowish;
@@ -281,15 +284,14 @@ a:hover{
 			border-radius:24px;
 			padding: 6px 36px 6px 36px;
 			float:right;
-			margin:8px 0px 24px 0px;
+			margin:24px 0px 24px 0px;
 			font-weight: $bold;
 		}
 	}
 	.chet{
-		background-image: url(../img/run900w.jpg);
-		background-repeat: no-repeat;
-		background-size:cover;
-		background-position: center center;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/run900w.jpg);
+		@extend .bg-cover;
+		background-position: center bottom;
 		width: 100%;
 		height:600px;
 		
@@ -299,6 +301,11 @@ a:hover{
 			height: 100%;
 			p{
 				color: $almost-white;
+				margin-bottom:0px;
+			}
+			.text-overflow{
+				max-height: 350px;
+				overflow: hidden;
 			}
 		}
 		h2{
@@ -306,6 +313,7 @@ a:hover{
 			border-bottom: 4px solid $orangerish;
 			padding-bottom: 24px;
 			margin-bottom:30px;
+			font-size: 2.25em;
 		}
 		a{
 			color:$orangerish;
@@ -313,7 +321,7 @@ a:hover{
 			border-radius:24px;
 			padding: 6px 36px 6px 36px;
 			float:right;
-			margin:8px 0px 24px 0px;
+			margin:24px 0px 24px 0px;
 			font-weight: $bold;
 		}
 	}

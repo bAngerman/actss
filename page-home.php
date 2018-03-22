@@ -54,7 +54,76 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     <div class="events-home">
         <h2>Events</h2>
-        <!-- Insert a loop to a category of events -->
+        <?php 
+		$the_query = new WP_Query(array('p'=> 108));
+		if($the_query->have_posts()){
+			echo '<ul class="blog-post">';
+			while ($the_query->have_posts()){
+			$the_query->the_post();
+			echo '<li>';
+			echo '<a href="';
+				the_permalink();
+		 	echo '">';
+			echo '<h3>' . get_the_title() . '</h3>';
+			if (has_post_thumbnail()) {
+				the_post_thumbnail('thumbnail', array('class' => "alignRight"));
+		 		}
+			echo '<div><p>' . get_the_excerpt() . '</p>';
+			echo '<p class="getdate">' . get_the_date() . '</p>';
+			echo '<i class= "material-icons">check_circle</i></div>';
+			echo '</li>';
+		}
+		echo '</ul>';
+
+		wp_reset_postdata();
+	}else {
+
+	}
+	 ?>
+	 <?php  
+		 		$args = array(
+      'category_name' => 'event',
+      'posts_per_page' => 1,
+      'orderby'			=> 'date',
+      'order' => 'DESC',
+			'posts_type'		=> 'post',
+			'post_status'		=> 'publish',
+			
+		);
+
+		$myposts = get_posts($args);
+
+		echo '<ul class="blog-post">';
+		foreach ($myposts as $post) : setup_postdata($post);
+
+		?>
+			<li>
+				<a href="<?php the_permalink(); ?>">
+				<h3>
+					<?php the_title(); ?>
+				</h3>
+				
+				<?php 
+
+				if (has_post_thumbnail()) {
+				the_post_thumbnail('thumbnail', array('class' => "alignRight"));
+		 		}
+
+				 ?>
+				<p><?php the_excerpt(); ?></p>
+				</a>
+				<?php 
+					echo '<p class="getdate">' . get_the_date() . '</p>';
+				 ?>
+			</li>
+
+		<?php 
+	endforeach;
+		echo '</ul>';
+		
+
+	 ?>
+
     </div>
     <div class="pets-home">
         <h2>Our Pets</h2>

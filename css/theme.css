@@ -9607,6 +9607,9 @@ a:hover {
     margin: 8px 24px 24px 0px;
     font-weight: 700; }
 
+.pets-home .pet-pic {
+  float: left; }
+
 .aboutus-container .miss-vis-goals {
   margin: 24px; }
   .aboutus-container .miss-vis-goals h2 {

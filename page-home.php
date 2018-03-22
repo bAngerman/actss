@@ -77,6 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h3>
 					<?php the_title(); ?>
 				</h3>
+				<p><?php echo get_post_meta($post->ID, 'event_date', true); ?></p>
 				
 				<?php 
 

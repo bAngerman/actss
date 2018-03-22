@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				 ?>
 				 		</a>
-				<p><?php the_excerpt(); ?></p>
+				<p><?php echo get_post_meta($post->ID, 'details', true); ?></p>
 		
 
 			</li>

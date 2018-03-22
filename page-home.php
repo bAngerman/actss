@@ -85,8 +85,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		 		}
 
 				 ?>
+				 		</a>
 				<p><?php the_excerpt(); ?></p>
-				</a>
+		
 
 			</li>
 
@@ -100,46 +101,46 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     <div class="pets-home clearfix">
 		<h2>Our Pets</h2>
-	 <?php  
-		$args = array(
-			'category_name' => 'pets',
-			'posts_per_page' => 1,
-			'orderby'			=> 'rand',
-			'posts_type'		=> 'post',
-			'post_status'		=> 'publish',
-			
-		);
+		<div class="pets-home-overlay clearfix">
+			<?php  
+				$args = array(
+					'category_name' => 'pets',
+					'posts_per_page' => 1,
+					'orderby'			=> 'rand',
+					'posts_type'		=> 'post',
+					'post_status'		=> 'publish',
+					
+				);
 
-		$myposts = get_posts($args);
+				$myposts = get_posts($args);
 
-		echo '<ul class="blog-post">';
-		foreach ($myposts as $post) : setup_postdata($post);
+				echo '<ul class="blog-post">';
+				foreach ($myposts as $post) : setup_postdata($post);
 
-		?>
-			<li>
-				<a href="<?php the_permalink(); ?>" class="pets-title-home">
+				?>
+					<li class="clearfix">
+						<a href="<?php the_permalink(); ?>" class="pets-title-home">
+						<?php 
+
+							if (has_post_thumbnail()) {
+								the_post_thumbnail('thumbnail', array('class' => "pet-pic"));
+							}
+						?>
+						<h3><?php the_title(); ?></h3>
+						</a>
+						<p><?php the_excerpt(); ?></p>
+						
+
+					</li>
+
 				<?php 
-
-					if (has_post_thumbnail()) {
-						the_post_thumbnail('thumbnail', array('class' => "pet-pic"));
- 					}
- 				?>
-				<h3><?php the_title(); ?></h3>
-				</a>
-				<p><?php the_excerpt(); ?></p>
+					endforeach;
+					echo '</ul>';
 				
-
-			</li>
-
-		<?php 
-	endforeach;
-		echo '</ul>';
-		
-
-	 ?>
-		<a href="#" class="more-events-btn">More Events</a>
+				?>
+				<a href="#" class="more-pet-btn">Read More</a>
 	
-        
+		</div>  <!-- close pets overlay -->
 	</div> <!-- close pets-home -->
 </main>
 

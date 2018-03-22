@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <img src="">
       </div>  
     </div>
-    <div class="events-home">
+    <div class="events-home clearfix">
         <h2>Events</h2>
         <?php 
 		$the_query = new WP_Query(array('p'=> 108));
@@ -81,11 +81,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	}
 	 ?>
 	 <?php  
-		 		$args = array(
-      'category_name' => 'event',
-      'posts_per_page' => 1,
-      'orderby'			=> 'date',
-      'order' => 'DESC',
+		$args = array(
+			'category_name' => 'event',
+			'posts_per_page' => 1,
+			'orderby'			=> 'date',
+			'order' => 'DESC',
 			'posts_type'		=> 'post',
 			'post_status'		=> 'publish',
 			
@@ -112,9 +112,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 ?>
 				<p><?php the_excerpt(); ?></p>
 				</a>
-				<?php 
-					echo '<p class="getdate">' . get_the_date() . '</p>';
-				 ?>
+
 			</li>
 
 		<?php 
@@ -123,7 +121,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
 
 	 ?>
-
+		<a href="#" class="more-events-btn">More Events</a>
     </div>
     <div class="pets-home">
         <h2>Our Pets</h2>

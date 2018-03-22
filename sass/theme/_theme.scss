@@ -146,9 +146,16 @@ $t-fast: 100ms;
  html body{
 	font-family: "Montserrat", sans-serif;
  }
-h1, h2{
+h1, h2, h3{
 	text-transform:uppercase;
 	font-weight: $boldest;
+}
+
+h2{
+	font-size: 1.875em;
+}
+h3{
+	font-size: 1.5em;
 }
 li{
 	list-style: none;
@@ -158,6 +165,11 @@ a{
 }
 a:hover{
 	text-decoration: none;
+}
+.btn-secondary{
+	border:none;
+	background-color: transparent;
+
 }
 
 
@@ -197,7 +209,7 @@ a:hover{
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
-		padding: 2%;
+		padding: 24px;
 		color:$white;
 
 		p{
@@ -220,8 +232,32 @@ a:hover{
 	@extend .bg-cover;
 	background-position: center center;
 	width: 100%;
+	
 	h2{
-		color: $orangerish;
+		color: $redish;
+		margin-left: 24px;
+		padding-top:24px;
+	}
+
+	.alignRight{
+		display: none;
+	}
+	ul{
+		padding:24px 24px 0 24px;
+		
+		a{
+			color: $blu;
+		}
+		
+	}
+	.more-events-btn{
+		color:$redish;
+		border: 2px solid $redish;
+		border-radius:24px;
+		padding: 6px 36px 6px 36px;
+		float:right;
+		margin:8px 24px 24px 0px;
+		font-weight: $bold; 		
 	}
 }
 // ABOUT US STYLES

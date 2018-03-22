@@ -9519,9 +9519,15 @@ a.skip-link {
 html body {
   font-family: "Montserrat", sans-serif; }
 
-h1, h2 {
+h1, h2, h3 {
   text-transform: uppercase;
   font-weight: 900; }
+
+h2 {
+  font-size: 1.875em; }
+
+h3 {
+  font-size: 1.5em; }
 
 li {
   list-style: none; }
@@ -9531,6 +9537,10 @@ a {
 
 a:hover {
   text-decoration: none; }
+
+.btn-secondary {
+  border: none;
+  background-color: transparent; }
 
 .about-home h2 {
   color: #dc6836; }
@@ -9562,7 +9572,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 24px;
     color: #fff; }
     .about-donation-home .about-donation-overlay p {
       font-size: 1.5em;
@@ -9579,7 +9589,23 @@ a:hover {
   background-position: center center;
   width: 100%; }
   .events-home h2 {
-    color: #dc6836; }
+    color: #d1251b;
+    margin-left: 24px;
+    padding-top: 24px; }
+  .events-home .alignRight {
+    display: none; }
+  .events-home ul {
+    padding: 24px 24px 0 24px; }
+    .events-home ul a {
+      color: #01076d; }
+  .events-home .more-events-btn {
+    color: #d1251b;
+    border: 2px solid #d1251b;
+    border-radius: 24px;
+    padding: 6px 36px 6px 36px;
+    float: right;
+    margin: 8px 24px 24px 0px;
+    font-weight: 700; }
 
 .aboutus-container .miss-vis-goals {
   margin: 24px; }

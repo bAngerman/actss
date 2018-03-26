@@ -77,7 +77,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h3>
 					<?php the_title(); ?>
 				</h3>
-				<p><?php echo get_post_meta($post->ID, 'event_date', true); ?></p>
+				<p><?php the_field('event_date'); ?> </p>
+				
+				
+				
 				
 				<?php 
 
@@ -86,8 +89,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		 		}
 
 				 ?>
-				 		</a>
-				<p><?php echo get_post_meta($post->ID, 'details', true); ?></p>
+				</a>
+				<p><?php echo custom_field_excerpt_events(); ?> 
+				<a href="#">Read more about this event</a></p>
 		
 
 			</li>
@@ -119,6 +123,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				foreach ($myposts as $post) : setup_postdata($post);
 
 				?>
+
 					<li class="clearfix">
 						<a href="<?php the_permalink(); ?>" class="pets-title-home">
 						<?php 
@@ -128,10 +133,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 							}
 						?>
 						<h3><?php the_title(); ?></h3>
+						<h5><?php the_field('breed'); ?> </h5>
+						<h5><?php the_field('cancer_type'); ?> </h5>
 						</a>
-						<p><?php the_excerpt(); ?></p>
+						<p><?php echo custom_field_excerpt_pets(); ?> 
+						<a href="#">Read more about this pet</a></p>
 						
-
 					</li>
 
 				<?php 

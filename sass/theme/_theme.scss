@@ -374,6 +374,7 @@ a:hover{
 		@extend .bg-cover;
 		background-position: center bottom;
 		width: 100%;
+		padding: 24px;
 	
 		
 
@@ -405,16 +406,14 @@ a:hover{
 		background-position: center bottom;
 		width: 100%;
 		height:600px;
+		padding:24px;
 		
 
 			p{
 				color: $almost-white;
 				margin-bottom:0px;
 			}
-			.text-overflow{
-				max-height: 350px;
-				overflow: hidden;
-			}
+
 		
 		h2{
 			color: $orangerish;
@@ -435,6 +434,15 @@ a:hover{
 	}
 
 }
+	 @include screen(tablet) {
+	//rules go here
+	.aboutus-container{
+		
+	}
+
+
+
+	 }
 
 
  /*! X STYLES */

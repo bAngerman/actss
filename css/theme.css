@@ -9687,7 +9687,8 @@ a:hover {
 .aboutus-container .history {
   background-image: linear-gradient(rgba(1, 7, 109, 0.5), rgba(1, 7, 109, 0.5)), url(../img/bw-ca-1600w.jpg);
   background-position: center bottom;
-  width: 100%; }
+  width: 100%;
+  padding: 24px; }
   .aboutus-container .history p {
     color: #e8e8e8;
     margin-bottom: 0px; }
@@ -9709,13 +9710,11 @@ a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/run900w.jpg);
   background-position: center bottom;
   width: 100%;
-  height: 600px; }
+  height: 600px;
+  padding: 24px; }
   .aboutus-container .chet p {
     color: #e8e8e8;
     margin-bottom: 0px; }
-  .aboutus-container .chet .text-overflow {
-    max-height: 350px;
-    overflow: hidden; }
   .aboutus-container .chet h2 {
     color: #dc6836;
     border-bottom: 4px solid #dc6836;

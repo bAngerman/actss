@@ -17,21 +17,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- /Banner -->
 <div class="aboutus-container">
   <div class="miss-vis-goals">
-    <h2>Our Mission</h2>
-    <div class="mission box">
-      <p>ACTSS is devoted to making cancer treatment for pets a reality.</p>
-    </div>
-    <h2>Our Vision</h2>
-    <div class="vision box">
-      <p>Our vision speaks to all our guiding principles helping pet families live with cancer.</p>
-    </div>
-    <h2>Our Goals</h2>
-    <div class="goals box">
-      <p>To subsidize the cost of cancer therapies for pets.</p>
-      <p>To support the well being of pet families.</p>
-      <p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p>
-      <p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p>
-    </div>
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <div class="box">
+        <p>ACTSS is devoted to making cancer treatment for pets a reality.</p>
+      </div><!-- box close -->
+    </div> <!-- mission close -->
+
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <div class="box">
+        <p>Our vision speaks to all our guiding principles helping pet families live with cancer.</p>
+      </div><!-- box close -->
+    </div><!-- vission close -->
+
+    <div class="goals">
+      <h2>Our Goals</h2>
+      <div class="box">
+        <p>To subsidize the cost of cancer therapies for pets.</p>
+        <p>To support the well being of pet families.</p>
+        <p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p>
+        <p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p>
+      </div><!-- close box -->
+    </div><!-- close goals -->
+    
   </div><!--  close miss-vis-goals -->
   <div class="about-us clearfix">
     <h2>About Us</h2>

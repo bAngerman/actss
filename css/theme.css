@@ -9730,6 +9730,17 @@ a:hover {
     margin: 24px 0px 24px 0px;
     font-weight: 700; }
 
+@media only screen and (min-width: 600px) {
+  .aboutus-container .mission {
+    width: 50%;
+    float: left;
+    padding-right: 24px; }
+  .aboutus-container .vision {
+    width: 50%;
+    float: left; }
+  .aboutus-container .goals {
+    width: 100%; } }
+
 /*! X STYLES */
 /*
 * Use existing Bootstrap 4 classes and

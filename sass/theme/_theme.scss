@@ -437,6 +437,19 @@ a:hover{
 	 @include screen(tablet) {
 	//rules go here
 	.aboutus-container{
+
+		.mission{
+			width: 50%;
+			float: left;
+			padding-right: 24px;
+		}
+		.vision{
+			width: 50%;
+			float: left;
+		}
+		.goals{
+			width: 100%;
+		}
 		
 	}
 

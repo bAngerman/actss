@@ -176,18 +176,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 
 					<li class="clearfix">
+					<?php 
+								$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(552,230) );
+							
+							?>
 						<a href="<?php the_permalink(); ?>" class="blog-title-home">
-						<?php 
+						<div class="blog-content-header-home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat; background-size:cover; background-position:center center;">
 
-							if (has_post_thumbnail()) {
-								the_post_thumbnail('thumbnail', array('class' => "blog-pic"));
-							}
-						?>
-						<h3><?php the_title(); ?></h3>
+							
 
+							<h3><?php the_title(); ?></h3>
+							<p class="date date-blog-home"><?php the_date(); ?></p>
+
+							
+							
+						</div>
+						<div class="blog-content-home">
+							<?php the_content(); ?> 
+						</div>
 						</a>
-						<p><?php the_content(); ?> 
-						<a href="#">Read more</a></p>
+						<div class="more-container">
+							<a href="#">Read more</a>
+						</div>
 						
 					</li>
 

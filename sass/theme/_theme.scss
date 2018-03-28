@@ -12,6 +12,7 @@ $d-grey: #4d4d4d;
 $l-grey: #999;
 $almost-white:#e8e8e8;
 $white: #fff;
+$black:#000;
 $transparentblack:rgba(0, 0, 0, 0.6);
 $transparentlightgrey:rgba(239,239,239,0.8);
 $transparentblu:rgba(1,7,109, 0.5);
@@ -172,6 +173,9 @@ a:hover{
 	background-color: transparent;
 
 }
+.date{
+	font-weight: $bold;
+}
 
 
 // HOME PAGE STYLES
@@ -265,9 +269,7 @@ a:hover{
 			h3{
 				margin-bottom:0;
 			}
-			.date{
-				font-weight: $bold;
-			}
+
 		}
 	}
 	.more-events-btn{
@@ -351,13 +353,66 @@ a:hover{
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: 200px;
+	padding-bottom: 24px;
+	h2{
+		color: $blu;
+		padding: 24px 0 0 24px;
+		margin-bottom: 0;
+	}
 
 	.blog-excerpt-home{
 		margin:24px 24px 0px 24px;
 		background-color:$almost-white;
+			p{
+				color:$black;
+			}
+
+		.blog-content-home{
+			padding:24px;
+		}
+		.blog-content-header-home{
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			padding:0 24px;
+			height: 182px;
+			color: $white;
+			
+
+			.date-blog-home{
+				padding:0;
+				color: $orangerish;
+				margin: 0;
+			
+			}
+		}
 
 		ul{
 			margin-bottom:0;
+			padding: 0;
+			li{
+				p{
+					padding:24px 0 24px 0;
+				}
+			}
+			.more-container{
+				background-color: $blu;
+				height:100px;
+				a{
+					color:$yellowish;
+					border: 2px solid $yellowish;
+					border-radius:24px;
+					padding: 6px 36px 6px 36px;
+					float:right;
+					margin:30px 24px 24px 0px;
+					font-weight: $bold; 		
+				}
+				a:hover{
+					color:$orangerish;
+					border-color:$orangerish;
+					background-color: $white;
+				}
+			}
 		}
 	}
 
@@ -435,7 +490,7 @@ a:hover{
 		}
 	}
 	.chet{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/run900w.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/run900w.jpg);
 		@extend .bg-cover;
 		background-position: center bottom;
 		width: 100%;

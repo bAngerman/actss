@@ -9543,6 +9543,9 @@ a:hover {
   border: none;
   background-color: transparent; }
 
+.date {
+  font-weight: 700; }
+
 .about-home h2 {
   color: #dc6836; }
 
@@ -9610,8 +9613,6 @@ a:hover {
       color: #d1251b; }
     .events-home ul li h3 {
       margin-bottom: 0; }
-    .events-home ul li .date {
-      font-weight: 700; }
   .events-home .more-events-btn {
     color: #01076d;
     border: 2px solid #01076d;
@@ -9670,12 +9671,50 @@ a:hover {
   background-image: url(../img/yellow-triangle-1.svg);
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 200px; }
+  background-size: 200px;
+  padding-bottom: 24px; }
+  .blog-home h2 {
+    color: #01076d;
+    padding: 24px 0 0 24px;
+    margin-bottom: 0; }
   .blog-home .blog-excerpt-home {
     margin: 24px 24px 0px 24px;
     background-color: #e8e8e8; }
+    .blog-home .blog-excerpt-home p {
+      color: #000; }
+    .blog-home .blog-excerpt-home .blog-content-home {
+      padding: 24px; }
+    .blog-home .blog-excerpt-home .blog-content-header-home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 24px;
+      height: 182px;
+      color: #fff; }
+      .blog-home .blog-excerpt-home .blog-content-header-home .date-blog-home {
+        padding: 0;
+        color: #dc6836;
+        margin: 0; }
     .blog-home .blog-excerpt-home ul {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding: 0; }
+      .blog-home .blog-excerpt-home ul li p {
+        padding: 24px 0 24px 0; }
+      .blog-home .blog-excerpt-home ul .more-container {
+        background-color: #01076d;
+        height: 100px; }
+        .blog-home .blog-excerpt-home ul .more-container a {
+          color: #ffad40;
+          border: 2px solid #ffad40;
+          border-radius: 24px;
+          padding: 6px 36px 6px 36px;
+          float: right;
+          margin: 30px 24px 24px 0px;
+          font-weight: 700; }
+        .blog-home .blog-excerpt-home ul .more-container a:hover {
+          color: #dc6836;
+          border-color: #dc6836;
+          background-color: #fff; }
 
 .aboutus-container .miss-vis-goals {
   margin: 24px; }
@@ -9729,7 +9768,7 @@ a:hover {
     font-weight: 700; }
 
 .aboutus-container .chet {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/run900w.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/run900w.jpg);
   background-position: center bottom;
   width: 100%;
   height: 600px;

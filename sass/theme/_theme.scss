@@ -241,9 +241,10 @@ a:hover{
 	@extend .bg-cover;
 	background-position: center center;
 	width: 100%;
+	color: $blu;
 	
 	h2{
-		color: $white;
+		color: $orangerish;
 		margin-left: 24px;
 		padding-top:24px;
 	}
@@ -252,19 +253,26 @@ a:hover{
 		display: none;
 	}
 	ul{
-		padding:24px 24px 0 24px;
+		padding:0px 24px 0 24px;
 		
 		a{
-			color: $blu;
+			color: $orangerish;
 		}
 		a:hover{
-			color: $white;
+			color: $redish;
 		}
-		
+		li{
+			h3{
+				margin-bottom:0;
+			}
+			.date{
+				font-weight: $bold;
+			}
+		}
 	}
 	.more-events-btn{
-		color:$white;
-		border: 2px solid $white;
+		color:$blu;
+		border: 2px solid $blu;
 		border-radius:24px;
 		padding: 6px 36px 6px 36px;
 		float:right;
@@ -278,6 +286,11 @@ a:hover{
 }
 //HOME PETS STYLES
 .pets-home{
+	background-image:url(../img/red-triangle-1.svg), url(../img/shape-red-1.svg);
+	background-repeat: no-repeat;
+	background-position: right center, left bottom;
+	background-size: 200px, 200px;
+	padding-bottom:24px;
 	h2{
 		color: $blu;
 		padding: 24px 0 0 24px;
@@ -286,7 +299,7 @@ a:hover{
 	.pets-home-overlay{
 		background-color: $transparentlightgrey;
 		border:4px solid $blu;
-		margin: 24px;
+		margin: 24px 24px 0px 24px;
 		
 		ul{
 			margin:24px;
@@ -303,9 +316,10 @@ a:hover{
 				display: inline-block;
 				
 				img{
-					margin-right:24px;
+					margin-right:12px;
 				}
 			}
+			
 		}
 		.more-pet-btn{
 			color:$blu;
@@ -324,9 +338,29 @@ a:hover{
 	}
 
 	.pet-pic{
-		float: left;
+		width:100%;
+		margin-bottom: 12px;
 	}
 	
+
+}
+
+.blog-home{
+	background-color: $l-grey;
+	background-image:url(../img/yellow-triangle-1.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 200px;
+
+	.blog-excerpt-home{
+		margin:24px 24px 0px 24px;
+		background-color:$almost-white;
+
+		ul{
+			margin-bottom:0;
+		}
+	}
+
 
 }
 // ABOUT US STYLES

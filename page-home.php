@@ -73,14 +73,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		?>
 			<li>
-				<a href="<?php the_permalink(); ?>">
+				
 				<h3>
 					<?php the_title(); ?>
 				</h3>
-				<p><?php the_field('event_date'); ?> </p>
-				
-				
-				
+				<?php 
+
+				// get raw date
+				$date = get_field('event_date', false, false);
+
+				// make date object
+				$date = new DateTime($date);
+
+				?>
+				<p class="date"><?php echo $date->format('F d, Y'); ?></p>
 				
 				<?php 
 
@@ -89,9 +95,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		 		}
 
 				 ?>
-				</a>
-				<p><?php echo custom_field_excerpt_events(); ?> 
-				<a href="#">Read more about this event</a></p>
+				<?php echo custom_field_excerpt_events(); ?> 
+				<a href="<?php the_permalink(); ?>">Read more about this event</a>
 		
 
 			</li>
@@ -150,8 +155,51 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 		</div>  <!-- close pets overlay -->
 	</div> <!-- close pets-home -->
+	<div class="blog-home clearfix">
+		<h2>Blog</h2>
+		<div class="blog-excerpt-home clearfix">
+			<?php  
+				$args = array(
+					'category_name' => 'blog-post',
+					'posts_per_page' => 1,
+					'orderby'			=> 'DESC',
+					'posts_type'		=> 'post',
+					'post_status'		=> 'publish',
+					
+				);
+
+				$myposts = get_posts($args);
+
+				echo '<ul class="blog-post">';
+				foreach ($myposts as $post) : setup_postdata($post);
+
+				?>
+
+					<li class="clearfix">
+						<a href="<?php the_permalink(); ?>" class="blog-title-home">
+						<?php 
+
+							if (has_post_thumbnail()) {
+								the_post_thumbnail('thumbnail', array('class' => "blog-pic"));
+							}
+						?>
+						<h3><?php the_title(); ?></h3>
+
+						</a>
+						<p><?php the_content(); ?> 
+						<a href="#">Read more</a></p>
+						
+					</li>
+
+				<?php 
+					endforeach;
+					echo '</ul>';
+				
+				?>
+	
+		</div>  <!-- close pets overlay -->
+	</div> <!-- close pets-home -->
 </main>
 
 <?php get_footer(); ?>
 
-<?php get_footer(); ?>

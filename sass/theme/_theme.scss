@@ -181,6 +181,7 @@ a:hover{
 // HOME PAGE STYLES
 
 .about-home{
+
 	h2{
 		color: $orangerish;
 	}
@@ -523,8 +524,23 @@ a:hover{
 	}
 
 }
+
 	 @include screen(tablet) {
-	//rules go here
+
+		.about-home{
+			.about-img-home img{
+				display: block;
+			}
+		}
+
+
+
+
+
+
+
+
+	//ABOUT US PAGE STYLES TABLET
 	.aboutus-container{
 
 		.mission{

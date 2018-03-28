@@ -9792,6 +9792,8 @@ a:hover {
     font-weight: 700; }
 
 @media only screen and (min-width: 600px) {
+  .about-home .about-img-home img {
+    display: block; }
   .aboutus-container .mission {
     width: 50%;
     float: left;

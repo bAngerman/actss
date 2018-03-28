@@ -33,8 +33,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- /Banner -->
 <main>
-    <div>
-        <img src="">
+    <div class="about-img-home">
+        <img src="img/cat-dog-red-500w.jpg" alt="Cat looking at dog">
     </div>
     <div class="about-home">
       <div class="about-text-home clearfix">

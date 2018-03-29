@@ -182,7 +182,7 @@ a:hover{
 
 .about-home{
 	background-color: $almost-white;
-	.about-img-home img{
+	.about-img-home{
 		display: none;
 	}
 	h2{
@@ -206,13 +206,16 @@ a:hover{
 	}
 }
 .about-donation-home{
-	background-image: url(../img/cat-dog-red-600px.jpg);
+	background-image: url(../img/smiley-dog-navy-632w.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: center center;
 	width: 100%;
 	height:420px;
 	padding:24px;
+	.donation-home-img{
+		display:none;
+	}
 
 	.about-donation-overlay{
 		background-color: $transparentblack;
@@ -224,10 +227,12 @@ a:hover{
 		align-items:center;
 		padding: 24px;
 		color:$white;
+		float: left;
 
 		p{
 			font-size: 1.5em;
 			padding:12px;
+			
 		}
 		a{
 			color:$white;
@@ -531,10 +536,42 @@ a:hover{
 	 @include screen(tablet) {
 
 		.about-home{
-			.about-img-home img{
+			.about-img-home {
+				background-image: url(../img/cat-dog-red-500w.jpg);
+				background-size: cover;
+				height:379px;
+				width:300px;
 				display: block;
 				float:left;
 				margin: -72px 24px 24px 24px;
+			}
+			.about-donation-home{
+				background-image: none;
+
+				.about-donation-overlay{
+					background-color: transparent;
+					text-align: left;
+						p{
+							font-size: 1rem;
+							color: $blu;
+						}
+						a{
+							color:$blu;
+							border-color: $blu;
+						}
+						a:hover{
+							color:$yellowish;
+							border-color: $yellowish;
+						}
+						
+				}
+				.donation-home-img{
+					background-image: url(../img/smiley-dog-navy-632w.jpg);
+					background-size: cover;
+					height:337px;
+					width:632px;
+					display: block;
+					
 			}
 		}
 
@@ -565,7 +602,8 @@ a:hover{
 
 
 
-	 }
+ }
+}
 
 
  /*! X STYLES */

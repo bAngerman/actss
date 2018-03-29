@@ -34,9 +34,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- /Banner -->
 <main>
 
-    <div class="about-home">
+    <div class="about-home clearfix">
 	<div class="about-img-home">
-        <img src="wp-content/themes/actss/img/cat-dog-red-300w.jpg" alt="Cat looking at dog">
+        
     </div>
       <div class="about-text-home clearfix">
         <h2>About Us</h2>
@@ -45,12 +45,12 @@ $container = get_theme_mod( 'understrap_container_type' );
         </p>
         <a href="page-about-us.php">Read More</a>
       </div>
-      <div class="about-donation-home">
+      <div class="about-donation-home clearfix">
         <div class="about-donation-overlay">
           <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
           <a href="#">Donate Now!</a>
         </div>
-        <img src="">
+        <div class="donation-home-img"></div>
       </div>  
     </div>
     <div class="events-home clearfix">

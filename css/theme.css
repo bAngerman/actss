@@ -9548,7 +9548,7 @@ a:hover {
 
 .about-home {
   background-color: #e8e8e8; }
-  .about-home .about-img-home img {
+  .about-home .about-img-home {
     display: none; }
   .about-home h2 {
     color: #dc6836; }
@@ -9567,13 +9567,15 @@ a:hover {
       border-color: #d1251b; }
 
 .about-donation-home {
-  background-image: url(../img/cat-dog-red-600px.jpg);
+  background-image: url(../img/smiley-dog-navy-632w.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 420px;
   padding: 24px; }
+  .about-donation-home .donation-home-img {
+    display: none; }
   .about-donation-home .about-donation-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -9583,7 +9585,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    color: #fff; }
+    color: #fff;
+    float: left; }
     .about-donation-home .about-donation-overlay p {
       font-size: 1.5em;
       padding: 12px; }
@@ -9795,18 +9798,42 @@ a:hover {
     font-weight: 700; }
 
 @media only screen and (min-width: 600px) {
-  .about-home .about-img-home img {
+  .about-home .about-img-home {
+    background-image: url(../img/cat-dog-red-500w.jpg);
+    background-size: cover;
+    height: 379px;
+    width: 300px;
     display: block;
     float: left;
     margin: -72px 24px 24px 24px; }
-  .aboutus-container .mission {
+  .about-home .about-donation-home {
+    background-image: none; }
+    .about-home .about-donation-home .about-donation-overlay {
+      background-color: transparent;
+      text-align: left; }
+      .about-home .about-donation-home .about-donation-overlay p {
+        font-size: 1rem;
+        color: #01076d; }
+      .about-home .about-donation-home .about-donation-overlay a {
+        color: #01076d;
+        border-color: #01076d; }
+      .about-home .about-donation-home .about-donation-overlay a:hover {
+        color: #ffad40;
+        border-color: #ffad40; }
+    .about-home .about-donation-home .donation-home-img {
+      background-image: url(../img/smiley-dog-navy-632w.jpg);
+      background-size: cover;
+      height: 337px;
+      width: 632px;
+      display: block; }
+  .about-home .aboutus-container .mission {
     width: 50%;
     float: left;
     padding-right: 24px; }
-  .aboutus-container .vision {
+  .about-home .aboutus-container .vision {
     width: 50%;
     float: left; }
-  .aboutus-container .goals {
+  .about-home .aboutus-container .goals {
     width: 100%; } }
 
 /*! X STYLES */

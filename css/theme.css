@@ -9609,7 +9609,7 @@ a:hover {
     color: #dc6836;
     margin-left: 24px;
     padding-top: 24px; }
-  .events-home .alignRight {
+  .events-home .event-pic {
     display: none; }
   .events-home ul {
     padding: 0px 24px 0 24px; }
@@ -9805,12 +9805,16 @@ a:hover {
     width: 300px;
     display: block;
     float: left;
-    margin: -72px 24px 24px 24px; }
+    margin: 24px; }
   .about-home .about-donation-home {
-    background-image: none; }
+    background-image: none;
+    display: flex;
+    flex-direction: row; }
     .about-home .about-donation-home .about-donation-overlay {
       background-color: transparent;
-      text-align: left; }
+      text-align: left;
+      display: block;
+      max-width: 600px; }
       .about-home .about-donation-home .about-donation-overlay p {
         font-size: 1rem;
         color: #01076d; }
@@ -9823,6 +9827,7 @@ a:hover {
     .about-home .about-donation-home .donation-home-img {
       background-image: url(../img/smiley-dog-navy-632w.jpg);
       background-size: cover;
+      background-position: center center;
       height: 337px;
       width: 632px;
       display: block; }

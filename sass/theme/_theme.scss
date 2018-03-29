@@ -262,7 +262,7 @@ a:hover{
 		padding-top:24px;
 	}
 
-	.alignRight{
+	.event-pic{
 		display: none;
 	}
 	ul{
@@ -543,14 +543,18 @@ a:hover{
 				width:300px;
 				display: block;
 				float:left;
-				margin: -72px 24px 24px 24px;
+				margin: 24px;
 			}
 			.about-donation-home{
 				background-image: none;
+				display:flex;
+				flex-direction: row;
 
 				.about-donation-overlay{
 					background-color: transparent;
 					text-align: left;
+					display:block;
+					max-width: 600px;
 						p{
 							font-size: 1rem;
 							color: $blu;
@@ -568,9 +572,11 @@ a:hover{
 				.donation-home-img{
 					background-image: url(../img/smiley-dog-navy-632w.jpg);
 					background-size: cover;
+					background-position: center center;
 					height:337px;
 					width:632px;
 					display: block;
+				
 					
 			}
 		}

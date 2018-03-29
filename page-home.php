@@ -74,6 +74,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		?>
 			<li>
+			<?php 
+
+				if (has_post_thumbnail()) {
+				the_post_thumbnail('thumbnail', array('class' => "event-pic"));
+				}
+
+ 			?>
 				
 				<h3>
 					<?php the_title(); ?>
@@ -89,13 +96,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 				<p class="date"><?php echo $date->format('F d, Y'); ?></p>
 				
-				<?php 
 
-				if (has_post_thumbnail()) {
-				the_post_thumbnail('thumbnail', array('class' => "alignRight"));
-		 		}
-
-				 ?>
 				<?php echo custom_field_excerpt_events(); ?> 
 				<a href="<?php the_permalink(); ?>">Read more about this event</a>
 		

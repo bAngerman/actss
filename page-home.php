@@ -73,14 +73,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 		foreach ($myposts as $post) : setup_postdata($post);
 
 		?>
-			<li>
+			<li class="clearfix">
 			<?php 
-
-				if (has_post_thumbnail()) {
-				the_post_thumbnail('thumbnail', array('class' => "event-pic"));
-				}
-
- 			?>
+								$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(552,230) );
+							
+							?>
+							<img class="event-pic" src="<?php echo $backgroundImg[0]; ?>" alt="">
 				
 				<h3>
 					<?php the_title(); ?>

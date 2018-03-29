@@ -9831,14 +9831,20 @@ a:hover {
       height: 337px;
       width: 632px;
       display: block; }
-  .about-home .aboutus-container .mission {
+  .events-home .event-pic {
+    width: 50%;
+    max-width: 800px;
+    display: block;
+    float: left;
+    margin-right: 24px; }
+  .aboutus-container .mission {
     width: 50%;
     float: left;
     padding-right: 24px; }
-  .about-home .aboutus-container .vision {
+  .aboutus-container .vision {
     width: 50%;
     float: left; }
-  .about-home .aboutus-container .goals {
+  .aboutus-container .goals {
     width: 100%; } }
 
 /*! X STYLES */

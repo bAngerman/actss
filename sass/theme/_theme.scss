@@ -181,7 +181,10 @@ a:hover{
 // HOME PAGE STYLES
 
 .about-home{
-
+	background-color: $almost-white;
+	.about-img-home img{
+		display: none;
+	}
 	h2{
 		color: $orangerish;
 	}
@@ -530,6 +533,8 @@ a:hover{
 		.about-home{
 			.about-img-home img{
 				display: block;
+				float:left;
+				margin: -72px 24px 24px 24px;
 			}
 		}
 

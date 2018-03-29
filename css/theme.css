@@ -9546,22 +9546,25 @@ a:hover {
 .date {
   font-weight: 700; }
 
-.about-home h2 {
-  color: #dc6836; }
-
-.about-home .about-text-home {
-  padding: 36px 24px 36px 24px; }
-  .about-home .about-text-home a {
-    color: #dc6836;
-    border: 2px solid #dc6836;
-    border-radius: 24px;
-    padding: 6px 36px 6px 36px;
-    float: right;
-    margin: 8px 0px 24px 0px;
-    font-weight: 700; }
-  .about-home .about-text-home a:hover {
-    color: #d1251b;
-    border-color: #d1251b; }
+.about-home {
+  background-color: #e8e8e8; }
+  .about-home .about-img-home img {
+    display: none; }
+  .about-home h2 {
+    color: #dc6836; }
+  .about-home .about-text-home {
+    padding: 36px 24px 36px 24px; }
+    .about-home .about-text-home a {
+      color: #dc6836;
+      border: 2px solid #dc6836;
+      border-radius: 24px;
+      padding: 6px 36px 6px 36px;
+      float: right;
+      margin: 8px 0px 24px 0px;
+      font-weight: 700; }
+    .about-home .about-text-home a:hover {
+      color: #d1251b;
+      border-color: #d1251b; }
 
 .about-donation-home {
   background-image: url(../img/cat-dog-red-600px.jpg);
@@ -9793,7 +9796,9 @@ a:hover {
 
 @media only screen and (min-width: 600px) {
   .about-home .about-img-home img {
-    display: block; }
+    display: block;
+    float: left;
+    margin: -72px 24px 24px 24px; }
   .aboutus-container .mission {
     width: 50%;
     float: left;

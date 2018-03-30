@@ -7,14 +7,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- Banner -->
-<div class="banner">
-  <div class="<?php echo $container; ?>">
-
-  </div>
-</div>
-
-<!-- /Banner -->
 <?php
 /**
  * Home Page Template for ACTSS
@@ -26,18 +18,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- Banner -->
 <div class="banner">
-  <div class="<?php echo $container; ?>">
-
+	<div class="<?php echo $container; ?>">
+		<div class="banner-text">
+			<h4>Animal Cancer Therapy Subsidization Society</h4>
+		</div>
   </div>
 </div>
-
 <!-- /Banner -->
-<main>
 
-    <div class="about-home clearfix">
-	<div class="about-img-home">
-        
-    </div>
+<main>
+	<div class="about-home clearfix">
       <div class="about-text-home clearfix">
         <h2>About Us</h2>
         <p>

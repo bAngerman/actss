@@ -30,26 +30,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* nav ******************* -->
 
 	<nav class="nav">
-		<?php if ( 'container' == $container ) : ?> <!-- This should always be a container! -->
-			<div class="container">
-		<?php endif; ?>					
-			<div class="brand">
+		<div class="brand">
+			<a href="#">
 				<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
-				<div class="brand-tagline">Animal Cancer Therapy Subsidization Society</div>
-			</div>
-			<div class="mobile-nav-btn">
-				<a href="#" onClick="toggleNav"><i class="fas fa-bars"></i></a>
-			</div>
-			<!-- The WordPress Menu goes here -->
-			<?php wp_nav_menu(
-				array(
-					'menu_class'      => 'nav-item',
-					'fallback_cb'     => 'false',
-					'menu_id'         => 'main-menu'
-				)
-			); ?>
-		<?php if ( 'container' == $container ) : ?>
-		</div><!-- .container -->
-		<?php endif; ?>
+			</a>
+			<div class="brand-tagline">Animal Cancer Therapy Subsidization Society</div>
+		</div>
+		<div class="mobile-nav-btn">
+			<a href="#" id="toggleNav"><i class="fas fa-bars fa-2x"></i><i class="hidden fas fa-times fa-2x"></i></a>
+		</div>
+		<!-- The WordPress Menu goes here -->
+		<?php wp_nav_menu(
+			array(
+				'menu_class'      => 'nav-item',
+				'fallback_cb'     => 'false',
+				'menu_id'         => 'main-menu'
+			)
+		); ?>
 
 	</nav><!-- /nav -->

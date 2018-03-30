@@ -3931,6 +3931,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 (function($) {
 
-  console.log('custom stuff ready :)');
+  $('#toggleNav').on('click', function(e) {
+    e.preventDefault();
+    $('.menu-main-menu-container').toggleClass('show');
+    $('.fa-bars').toggleClass('hidden');
+    $('.fa-times').toggleClass('hidden');
+  });
 
 })(jQuery); 

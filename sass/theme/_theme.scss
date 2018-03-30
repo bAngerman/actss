@@ -71,10 +71,16 @@ $t-medium: 300ms;
 $t-fast: 100ms;
 
 // extends
+.d-flex {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .d-center { 
     // center content horizontally and vertically
-    @extend .justify-content-center;
-    @extend .align-items-center;
+    justify-content: center;
+    align-items: center;
 }
 
 .d-flex-c {
@@ -91,6 +97,10 @@ $t-fast: 100ms;
   background-size: cover;
 }
 
+.hidden {
+	display: none;
+}
+
 // mixins ( add a mixin by writing "@include transition($t-fast);" )
 @mixin transition($timing) {
 	// transition compatibility
@@ -99,11 +109,103 @@ $t-fast: 100ms;
   -o-transition: $timing all linear;
   transition: $timing all linear;
 }
+
+// global nav
+.nav {
+	position: relative;
+	@extend .d-flex;
+	justify-content: flex-end;
+	.brand {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		display: inline-block;
+		.logo {
+			width: 50px;
+		}
+		.brand-tagline {
+			display: none;
+			
+		}
+	}
+	.mobile-nav-btn {
+		line-height: 65px;
+		margin-right: 10px;
+		a {
+			color: $white;
+		}
+		z-index: 200;
+	}
+	.menu-main-menu-container {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		z-index: 100;
+		width: 100%;
+		transition: left 0.5s;
+		background-color: $orangerish;
+		a {
+			color: $white;
+			@include transition($t-fast);
+			&:hover {
+				color: darken($white, 10);
+				@include transition($t-fast);
+			}
+			display: block;
+			padding: 12px 0px 12px 0px;
+		}
+		#main-menu {
+			margin: 0;
+			padding: 0;
+			padding-top: 65px;
+			padding-bottom: 12px;
+			text-align: center;
+		}
+		&.show {
+			left: 0%;
+			transition: left 0.5s;
+		}
+	}
+	@include screen('tablet') {
+
+	}
+}
+
+.banner {
+	height: 400px;
+	width: 100%;
+	margin-top: -65px;
+	padding-top: 65px;
+	background: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-600px.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	@extend .d-flex;
+	@extend .d-center;
+	.banner-text {
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		color: $white;
+	}
+	@include screen('tablet') {
+		& {
+			background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-992px.png);
+			height: 450px;
+		}
+	}
+	@include screen('desktop') {
+		& {
+			background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-image-1600px.png);
+			height: 100vh;
+		}
+	}
+}
+
 //footer style
 	.footer{
 		background-color: $d-grey;
 		font-weight: $light;
-		.footer-container{
+		.footer-container{	
 			display:flex;
 			flex-direction: column;
 			justify-content: center;
@@ -133,16 +235,14 @@ $t-fast: 100ms;
 			.footer-text{
 				color:$white;
 				text-align: center;
-
 			}
-
 		}
-
 	}
 
 	
-
-
+#page {
+	overflow: hidden;
+}
 
  /*! GLOBAL STYLES */
  html body{

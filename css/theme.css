@@ -9886,6 +9886,8 @@ a:hover {
     font-weight: 700; }
 
 @media only screen and (min-width: 600px) {
+  .about-home .about-text-home {
+    padding-bottom: 0; }
   .about-home .about-img-home {
     background-image: url(../img/cat-dog-red-500w.jpg);
     background-size: cover;
@@ -9893,19 +9895,24 @@ a:hover {
     width: 300px;
     display: block;
     float: left;
-    margin: 24px; }
+    margin: 0 24px 24px 0; }
   .about-home .about-donation-home {
     background-image: none;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-top: 0;
+    max-height: 200px; }
     .about-home .about-donation-home .about-donation-overlay {
       background-color: transparent;
       text-align: left;
       display: block;
-      max-width: 600px; }
+      max-width: 50%;
+      padding: 0 24px 0 0;
+      height: auto; }
       .about-home .about-donation-home .about-donation-overlay p {
         font-size: 1rem;
-        color: #01076d; }
+        color: #01076d;
+        padding: 0; }
       .about-home .about-donation-home .about-donation-overlay a {
         color: #01076d;
         border-color: #01076d; }
@@ -9916,15 +9923,21 @@ a:hover {
       background-image: url(../img/smiley-dog-navy-632w.jpg);
       background-size: cover;
       background-position: center center;
-      height: 337px;
+      height: 200px;
       width: 632px;
-      display: block; }
+      display: block;
+      margin-top: -20px;
+      width: 50%;
+      padding-top: 24px; }
   .events-home .event-pic {
     width: 50%;
     max-width: 800px;
     display: block;
     float: left;
     margin-right: 24px; }
+  .pets-home-overlay {
+    width: 50%;
+    float: left; }
   .aboutus-container .mission {
     width: 50%;
     float: left;

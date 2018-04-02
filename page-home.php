@@ -29,6 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <main>
 	<div class="about-home clearfix">
       <div class="about-text-home clearfix">
+	  	<div class="about-img-home"></div>
         <h2>About Us</h2>
         <p>
             ACTSS is a not-for-profit society dedicated to bringing affordable modern veterinary cancer treatment to pets. Through our programs we provide subsidies to dedicated pet owners. We aim to educate animal owners and veterinarians on the availability, uses and benefits of advanced cancer therapies in the treatment of veterinary cancers.

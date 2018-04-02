@@ -636,6 +636,10 @@ a:hover{
 	 @include screen(tablet) {
 
 		.about-home{
+			.about-text-home{
+				padding-bottom:0;
+				
+			}
 			.about-img-home {
 				background-image: url(../img/cat-dog-red-500w.jpg);
 				background-size: cover;
@@ -643,21 +647,27 @@ a:hover{
 				width:300px;
 				display: block;
 				float:left;
-				margin: 24px;
+				margin: 0 24px 24px 0;
 			}
 			.about-donation-home{
 				background-image: none;
 				display:flex;
 				flex-direction: row;
+				padding-top:0;
+				max-height:200px;
 
 				.about-donation-overlay{
 					background-color: transparent;
 					text-align: left;
 					display:block;
-					max-width: 600px;
+					max-width: 50%;
+					padding:0 24px 0 0;
+					height:auto;
+					// widows: 50%;
 						p{
 							font-size: 1rem;
 							color: $blu;
+							padding:0;
 						}
 						a{
 							color:$blu;
@@ -673,9 +683,12 @@ a:hover{
 					background-image: url(../img/smiley-dog-navy-632w.jpg);
 					background-size: cover;
 					background-position: center center;
-					height:337px;
+					height:200px;
 					width:632px;
 					display: block;
+					margin-top:-20px;
+					width:50%;
+					padding-top:24px;
 				
 					
 			}
@@ -693,7 +706,10 @@ a:hover{
 		}
 	}
 
-
+	.pets-home-overlay{
+		width:50%;
+		float:left;
+	}
 
 
 

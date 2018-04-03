@@ -9635,24 +9635,25 @@ a:hover {
   font-weight: 700; }
 
 .about-home {
-  background-color: #e8e8e8; }
+  background-color: #ffad40; }
   .about-home .about-img-home {
     display: none; }
   .about-home h2 {
-    color: #dc6836; }
+    color: #4d4d4d; }
   .about-home .about-text-home {
-    padding: 36px 24px 36px 24px; }
+    padding: 36px 24px 36px 24px;
+    color: #e8e8e8; }
     .about-home .about-text-home a {
-      color: #dc6836;
-      border: 2px solid #dc6836;
+      color: #4d4d4d;
+      border: 2px solid #4d4d4d;
       border-radius: 24px;
       padding: 6px 36px 6px 36px;
       float: right;
       margin: 8px 0px 24px 0px;
       font-weight: 700; }
     .about-home .about-text-home a:hover {
-      color: #d1251b;
-      border-color: #d1251b; }
+      color: #e8e8e8;
+      border-color: #e8e8e8; }
 
 .about-donation-home {
   background-image: url(../img/smiley-dog-navy-632w.jpg);
@@ -9673,7 +9674,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    color: #fff;
+    color: #e8e8e8;
     float: left; }
     .about-donation-home .about-donation-overlay p {
       font-size: 1.5em;
@@ -9689,10 +9690,10 @@ a:hover {
       border-color: #ffad40; }
 
 .events-home {
-  background-image: url(../img/woman-dog-mobile.jpg);
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
   background-position: center center;
   width: 100%;
-  color: #01076d; }
+  color: #e8e8e8; }
   .events-home h2 {
     color: #dc6836;
     margin-left: 24px;
@@ -9702,25 +9703,26 @@ a:hover {
   .events-home ul {
     padding: 0px 24px 0 24px; }
     .events-home ul a {
-      color: #dc6836; }
+      color: #ffad40; }
     .events-home ul a:hover {
-      color: #d1251b; }
+      color: #dc6836; }
     .events-home ul li h3 {
       margin-bottom: 0; }
   .events-home .more-events-btn {
-    color: #01076d;
-    border: 2px solid #01076d;
+    color: #dc6836;
+    border: 2px solid #dc6836;
     border-radius: 24px;
     padding: 6px 36px 6px 36px;
     float: right;
     margin: 8px 24px 24px 0px;
     font-weight: 700; }
   .events-home .more-events-btn:hover {
-    color: #d1251b;
-    border-color: #d1251b; }
+    color: #fff;
+    border-color: #fff; }
 
 .pets-home {
-  background-image: url(../img/red-triangle-1.svg), url(../img/shape-red-1.svg);
+  background-color: #e8e8e8;
+  background-image: url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
   background-repeat: no-repeat;
   background-position: right center, left bottom;
   background-size: 200px, 200px;
@@ -9730,12 +9732,29 @@ a:hover {
     padding: 24px 0 0 24px;
     margin-bottom: 0; }
   .pets-home .pets-home-overlay {
-    background-color: rgba(239, 239, 239, 0.8);
-    border: 4px solid #01076d;
-    margin: 24px 24px 0px 24px; }
+    width: 100%; }
     .pets-home .pets-home-overlay ul {
-      margin: 24px;
-      padding: 0; }
+      padding: 24px;
+      width: 100%; }
+      .pets-home .pets-home-overlay ul li {
+        background-color: rgba(239, 239, 239, 0.8);
+        border: 4px solid #01076d;
+        padding: 24px; }
+        .pets-home .pets-home-overlay ul li .more-container {
+          height: 100px; }
+          .pets-home .pets-home-overlay ul li .more-container a {
+            color: #ffad40;
+            border: 2px solid #ffad40;
+            border-radius: 24px;
+            padding: 6px 36px 6px 36px;
+            float: left;
+            margin: 30px 24px 24px 0px;
+            font-weight: 700; }
+          .pets-home .pets-home-overlay ul li .more-container a:hover {
+            color: #dc6836;
+            border-color: #dc6836; }
+      .pets-home .pets-home-overlay ul li:nth-child(2), .pets-home .pets-home-overlay ul li:nth-child(3) {
+        display: none; }
       .pets-home .pets-home-overlay ul a {
         color: #01076d; }
       .pets-home .pets-home-overlay ul a:hover {
@@ -9772,8 +9791,11 @@ a:hover {
     padding: 24px 0 0 24px;
     margin-bottom: 0; }
   .blog-home .blog-excerpt-home {
-    margin: 24px 24px 0px 24px;
-    background-color: #e8e8e8; }
+    margin: 24px 24px 0px 24px; }
+    .blog-home .blog-excerpt-home li {
+      background-color: #e8e8e8; }
+    .blog-home .blog-excerpt-home li:nth-child(2) {
+      display: none; }
     .blog-home .blog-excerpt-home p {
       color: #000; }
     .blog-home .blog-excerpt-home .blog-content-home {
@@ -9887,57 +9909,30 @@ a:hover {
 
 @media only screen and (min-width: 600px) {
   .about-home .about-text-home {
-    padding-bottom: 0; }
-  .about-home .about-img-home {
-    background-image: url(../img/cat-dog-red-500w.jpg);
-    background-size: cover;
-    height: 379px;
-    width: 300px;
-    display: block;
-    float: left;
-    margin: 0 24px 24px 0; }
+    padding-bottom: 0;
+    text-align: center; }
   .about-home .about-donation-home {
-    background-image: none;
-    display: flex;
-    flex-direction: row;
-    padding-top: 0;
-    max-height: 200px; }
-    .about-home .about-donation-home .about-donation-overlay {
-      background-color: transparent;
-      text-align: left;
-      display: block;
-      max-width: 50%;
-      padding: 0 24px 0 0;
-      height: auto; }
-      .about-home .about-donation-home .about-donation-overlay p {
-        font-size: 1rem;
-        color: #01076d;
-        padding: 0; }
-      .about-home .about-donation-home .about-donation-overlay a {
-        color: #01076d;
-        border-color: #01076d; }
-      .about-home .about-donation-home .about-donation-overlay a:hover {
-        color: #ffad40;
-        border-color: #ffad40; }
-    .about-home .about-donation-home .donation-home-img {
-      background-image: url(../img/smiley-dog-navy-632w.jpg);
-      background-size: cover;
-      background-position: center center;
-      height: 200px;
-      width: 632px;
-      display: block;
-      margin-top: -20px;
-      width: 50%;
-      padding-top: 24px; }
+    display: none; }
   .events-home .event-pic {
     width: 50%;
-    max-width: 800px;
+    max-width: 450px;
     display: block;
     float: left;
     margin-right: 24px; }
-  .pets-home-overlay {
-    width: 50%;
+  .pets-home .pets-home-overlay .more-pet-btn {
+    margin: 24px 24px 0 0; }
+  .pets-home .pets-home-overlay ul li {
+    width: 47.5%;
     float: left; }
+  .pets-home .pets-home-overlay ul li:nth-child(2) {
+    display: block;
+    margin-left: 5%; }
+  .blog-home .blog-excerpt-home li {
+    width: 47.5%;
+    float: left; }
+  .blog-home .blog-excerpt-home li:nth-child(2) {
+    display: block;
+    margin-left: 5%; }
   .aboutus-container .mission {
     width: 50%;
     float: left;
@@ -9947,6 +9942,14 @@ a:hover {
     float: left; }
   .aboutus-container .goals {
     width: 100%; } }
+
+@media only screen and (min-width: 992px) {
+  .pets-home .pets-home-overlay ul li {
+    width: 31.66%;
+    float: left; }
+  .pets-home .pets-home-overlay ul li:nth-child(2), .pets-home .pets-home-overlay ul li:nth-child(3) {
+    display: block;
+    margin-left: 2.5%; } }
 
 /*! X STYLES */
 /*

@@ -29,13 +29,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 <main>
 	<div class="about-home clearfix">
       <div class="about-text-home clearfix">
-	  	<div class="about-img-home"></div>
+	  	
         <h2>About Us</h2>
         <p>
             ACTSS is a not-for-profit society dedicated to bringing affordable modern veterinary cancer treatment to pets. Through our programs we provide subsidies to dedicated pet owners. We aim to educate animal owners and veterinarians on the availability, uses and benefits of advanced cancer therapies in the treatment of veterinary cancers.
         </p>
         <a href="page-about-us.php">Read More</a>
-      </div>
+		
+	  </div>
       <div class="about-donation-home clearfix">
         <div class="about-donation-overlay">
           <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
@@ -72,7 +73,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<img class="event-pic" src="<?php echo $backgroundImg[0]; ?>" alt="">
 				
 				<h3>
+					<a href="<?php the_permalink(); ?>">
 					<?php the_title(); ?>
+					</a>
 				</h3>
 				<?php 
 
@@ -87,9 +90,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				
 
 				<?php echo custom_field_excerpt_events(); ?> 
-				<a href="<?php the_permalink(); ?>">Read more about this event</a>
-		
-
 			</li>
 
 		<?php 
@@ -106,7 +106,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php  
 				$args = array(
 					'category_name' => 'pets',
-					'posts_per_page' => 1,
+					'posts_per_page' => 3,
 					'orderby'			=> 'rand',
 					'posts_type'		=> 'post',
 					'post_status'		=> 'publish',
@@ -133,7 +133,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h5><?php the_field('cancer_type'); ?> </h5>
 						</a>
 						<p><?php echo custom_field_excerpt_pets(); ?> 
-						<a href="#">Read more about this pet</a></p>
+						</p>
+						<div class="more-container">
+							<a href="<?php the_permalink(); ?>">Read more</a>
+						</div>
 						
 					</li>
 
@@ -142,7 +145,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					echo '</ul>';
 				
 				?>
-				<a href="#" class="more-pet-btn">Read More</a>
+				<a href="#" class="more-pet-btn">More Pets</a>
 	
 		</div>  <!-- close pets overlay -->
 	</div> <!-- close pets-home -->
@@ -152,7 +155,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php  
 				$args = array(
 					'category_name' => 'blog-post',
-					'posts_per_page' => 1,
+					'posts_per_page' => 2,
 					'orderby'			=> 'DESC',
 					'posts_type'		=> 'post',
 					'post_status'		=> 'publish',

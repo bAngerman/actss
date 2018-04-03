@@ -9851,19 +9851,25 @@ a:hover {
 .aboutus-container .miss-vis-goals {
   color: #fff; }
   .aboutus-container .miss-vis-goals .box {
-    padding: 24px; }
+    padding: 24px;
+    min-height: 164px; }
+    .aboutus-container .miss-vis-goals .box ul {
+      padding-left: 0; }
+      .aboutus-container .miss-vis-goals .box ul li {
+        list-style: none; }
   .aboutus-container .miss-vis-goals p {
     margin-bottom: 0px; }
 
 .aboutus-container .about-us {
   background-color: #e8e8e8;
+  background-image: url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 200px, 200px;
   padding: 24px; }
   .aboutus-container .about-us h2 {
     color: #01076d;
-    font-size: 2.25em;
-    border-bottom: 4px solid #01076d;
-    padding-bottom: 24px;
-    margin-bottom: 30px; }
+    margin-bottom: 24px; }
   .aboutus-container .about-us a {
     color: #01076d;
     border: 2px solid #01076d;
@@ -9874,18 +9880,15 @@ a:hover {
     font-weight: 700; }
 
 .aboutus-container .history {
-  background-image: linear-gradient(rgba(1, 7, 109, 0.5), rgba(1, 7, 109, 0.5)), url(../img/bw-ca-1600w.jpg);
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
   background-position: center bottom;
   width: 100%;
   padding: 24px; }
   .aboutus-container .history p {
-    color: #e8e8e8;
-    margin-bottom: 0px; }
+    color: #e8e8e8; }
   .aboutus-container .history h2 {
     color: #ffad40;
-    border-bottom: 4px solid #ffad40;
-    padding-bottom: 24px;
-    margin-bottom: 30px; }
+    margin-bottom: 24px; }
   .aboutus-container .history a {
     color: #ffad40;
     border: 2px solid #ffad40;
@@ -9896,20 +9899,15 @@ a:hover {
     font-weight: 700; }
 
 .aboutus-container .chet {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/run900w.jpg);
+  background-image: linear-gradient(rgba(220, 104, 54, 0.85), rgba(220, 104, 54, 0.85)), url(../img/run900w.jpg);
   background-position: center bottom;
   width: 100%;
-  height: 600px;
   padding: 24px; }
   .aboutus-container .chet p {
-    color: #e8e8e8;
-    margin-bottom: 0px; }
+    color: #e8e8e8; }
   .aboutus-container .chet h2 {
-    color: #dc6836;
-    border-bottom: 4px solid #dc6836;
-    padding-bottom: 24px;
-    margin-bottom: 30px;
-    font-size: 2.25em; }
+    color: #fff;
+    margin-bottom: 24px; }
   .aboutus-container .chet a {
     color: #dc6836;
     border: 2px solid #dc6836;
@@ -9920,6 +9918,12 @@ a:hover {
     font-weight: 700; }
 
 @media only screen and (min-width: 600px) {
+  .colored-box-orange, .colored-box-yellow {
+    width: 50%;
+    float: left; }
+  .col {
+    column-count: 2;
+    column-gap: 24px; }
   .about-home .about-text-home {
     padding-bottom: 0;
     text-align: center; }
@@ -9944,9 +9948,15 @@ a:hover {
     float: left; }
   .blog-home .blog-excerpt-home li:nth-child(2) {
     display: block;
-    margin-left: 5%; } }
+    margin-left: 5%; }
+  .aboutus-container .miss-vis-goals .colored-box-blue {
+    display: inline-block;
+    width: 100%; } }
 
 @media only screen and (min-width: 992px) {
+  .col {
+    column-count: 3;
+    column-gap: 24px; }
   .about-home {
     display: flex;
     justify-content: center; }

@@ -17,29 +17,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- /Banner -->
 <div class="aboutus-container">
   <div class="miss-vis-goals">
-    <div class="mission">
+  
+      <div class="box colored-box-orange">
       <h2>Our Mission</h2>
-      <div class="box">
         <p>ACTSS is devoted to making cancer treatment for pets a reality.</p>
       </div><!-- box close -->
-    </div> <!-- mission close -->
 
-    <div class="vision">
       <h2>Our Vision</h2>
-      <div class="box">
+      <div class="box colored-box-yellow">
         <p>Our vision speaks to all our guiding principles helping pet families live with cancer.</p>
       </div><!-- box close -->
-    </div><!-- vission close -->
-
-    <div class="goals">
+ 
       <h2>Our Goals</h2>
-      <div class="box">
+      <div class="box colored-box-blue">
         <p>To subsidize the cost of cancer therapies for pets.</p>
         <p>To support the well being of pet families.</p>
         <p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p>
         <p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p>
       </div><!-- close box -->
-    </div><!-- close goals -->
     
   </div><!--  close miss-vis-goals -->
   <div class="about-us clearfix">

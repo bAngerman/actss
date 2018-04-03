@@ -120,7 +120,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				?>
 
-					<li class="clearfix">
+					<li class="clearfix blue-box">
 						<a href="<?php the_permalink(); ?>" class="pets-title-home">
 						<?php 
 

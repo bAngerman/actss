@@ -14,9 +14,12 @@ $almost-white:#e8e8e8;
 $white: #fff;
 $black:#000;
 $transparentblack:rgba(0, 0, 0, 0.6);
-$transparentlightgrey:rgba(239,239,239,0.8);
-$transparentblu:rgba(1,7,109, 0.5);
+$transparentlightgrey:rgba(239,239,239,0.85);
+$transparentblu:rgba(1,7,109, 0.85);
 $transparentdgrey:rgba(77, 77, 77, 0.8);
+$transparentorange:rgba(220,104,54, 0.85);
+$transparentyellow:rgba(255,173,64, 0.85);
+
 
 // fonts
 
@@ -282,6 +285,21 @@ a:hover{
 	border: 4px solid $blu;
 	padding: 24px;
 	
+}
+.colored-box-orange{
+	background-image: linear-gradient($transparentorange,$transparentorange), url(../img/cat-bnw-600w-300h.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.colored-box-yellow{
+	background-image: linear-gradient($transparentyellow,$transparentyellow), url(../img/two-dogs-bnw-600w-300h.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.colored-box-blue{
+	background-image: linear-gradient($transparentblu,$transparentblu), url(../img/cat-sitting-600x300.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -572,17 +590,15 @@ a:hover{
 // ABOUT US STYLES
 
 .aboutus-container{
-	padding-top:24px;
+	
 	
 	.miss-vis-goals{
-		margin: 0 24px;
-		h2{
-			color: $blu;
-			
-		}
+		color:$white;
 		.box{
-
-			margin-bottom: 36px;
+			padding:24px;
+		}
+		p{
+			margin-bottom:0px;
 		}
 
 	}

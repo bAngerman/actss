@@ -23,13 +23,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         <p>ACTSS is devoted to making cancer treatment for pets a reality.</p>
       </div><!-- box close -->
 
-      <h2>Our Vision</h2>
+     
       <div class="box colored-box-yellow">
+      <h2>Our Vision</h2>
         <p>Our vision speaks to all our guiding principles helping pet families live with cancer.</p>
       </div><!-- box close -->
  
-      <h2>Our Goals</h2>
+      
       <div class="box colored-box-blue">
+      <h2>Our Goals</h2>
         <p>To subsidize the cost of cancer therapies for pets.</p>
         <p>To support the well being of pet families.</p>
         <p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p>

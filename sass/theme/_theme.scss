@@ -597,6 +597,20 @@ a:hover{
 	
 	.miss-vis-goals{
 		color:$white;
+		.colored-box-blue{
+
+			.goals{
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				
+				img{
+					width: 50px;
+					margin:24px;
+				}
+			}
+		}
 		.box{
 			padding:24px;
 			min-height: 164px;
@@ -774,6 +788,16 @@ a:hover{
 		.colored-box-blue{
 			display: inline-block;
 			width: 100%;
+			.goal-container{
+				display: flex;
+				flex-wrap: wrap;
+				.goals{
+					width: 47.5%;
+				}
+				.goals:nth-child(even){
+					margin-left:2.5%;
+				}
+			}
 		}
 	}
 
@@ -796,6 +820,7 @@ a:hover{
 	}
 
 	//home page styles
+
 	.about-home{
 		display: flex;
 		justify-content: center;
@@ -822,6 +847,24 @@ a:hover{
 			}
 		}
 	}
+
+	.aboutus-container{
+		.miss-vis-goals{
+			.colored-box-blue{
+				.goal-container{
+					.goals{
+						width: 23.125%;
+					}
+					.goals:nth-child(even), .goals:nth-child(3){
+						margin-left:2.5%;
+					}
+				}
+			}
+		}
+	
+	}
+
+
 	
 
 

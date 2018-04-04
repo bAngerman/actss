@@ -32,12 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
       
       <div class="box colored-box-blue">
       <h2>Our Goals</h2>
-      <ul>
-        <li>To subsidize the cost of cancer therapies for pets.</li>
-        <li>To support the well being of pet families.</li>
-        <li>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</li>
-        <li>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</li>
-    </ul>
+        <div class="goal-container">
+          <div class="goals"><img src="/wp-content/themes/actss/img/goal-1.svg" alt="goal 1"><p>To subsidize the cost of cancer therapies for pets.</p></div>
+          <div class="goals"><img src="/wp-content/themes/actss/img/goal-2.svg" alt="goal 2"><p>To support the well being of pet families.</p></div>
+          <div class="goals"><img src="/wp-content/themes/actss/img/goal-3.svg" alt="goal 3"><p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p></div>
+          <div class="goals"><img src="/wp-content/themes/actss/img/goal-4.svg" alt="goal 4"><p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p></div>
+      </div>
+  
       </div><!-- close box -->
     
   </div><!--  close miss-vis-goals -->

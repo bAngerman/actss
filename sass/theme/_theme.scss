@@ -253,6 +253,7 @@ $t-fast: 100ms;
  /*! GLOBAL STYLES */
  html body{
 	font-family: "Montserrat", sans-serif;
+
  }
 h1, h2, h3{
 	text-transform:uppercase;
@@ -307,9 +308,12 @@ a:hover{
 
 
 // HOME PAGE STYLES
-
-.about-home{
+.contain-about-home{
 	background-color: $yellowish;
+}
+.about-home{
+	max-width: 1400px;
+	margin: 0 auto;
 	.about-img-home{
 		display: none;
 	}
@@ -379,11 +383,16 @@ a:hover{
 		}
 	}
 }
-.events-home{
+.contain-events-home{
 	background-image:linear-gradient($transparentdgrey,$transparentdgrey),url(../img/concrete-1200w.jpg);
 	@extend .bg-cover;
 	background-position: center center;
 	width: 100%;
+
+}
+.events-home{
+	max-width: 1400px;
+	margin:0 auto;
 	color: $almost-white;
 	
 	h2{
@@ -426,12 +435,16 @@ a:hover{
 	}
 }
 //HOME PETS STYLES
-.pets-home{
+.contain-pets-home{
 	background-color: $almost-white;
 	background-image:url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
 	background-repeat: no-repeat;
 	background-position: right center, left bottom;
 	background-size: 200px, 200px;
+}
+.pets-home{
+	max-width:1400px;
+	margin:0 auto;
 	padding-bottom:24px;
 	h2{
 		color: $blu;
@@ -512,13 +525,17 @@ a:hover{
 	
 
 }
-
-.blog-home{
+.contain-blog-home{
 	background-color: $l-grey;
 	background-image:url(../img/yellow-triangle-1.svg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: 200px;
+}
+
+.blog-home{
+	max-width: 1400px;
+	margin:0 auto;
 	padding-bottom: 24px;
 	h2{
 		color: $blu;
@@ -593,11 +610,27 @@ a:hover{
 // ABOUT US STYLES
 
 .aboutus-container{
-	
+
 	
 	.miss-vis-goals{
+		.contain-miss{
+			max-width:700px;
+			width: 100%;
+			float:right;
+			text-align: left;
+		}
+		.contain-vis{
+			max-width:700px;
+			width: 100%;
+			float:left;
+			
+		}
 		color:$white;
 		.colored-box-blue{
+			.contain-goals{
+				max-width: 1400px;
+				margin:0 auto;
+			}
 
 			.goals{
 				display:flex;
@@ -628,12 +661,16 @@ a:hover{
 
 
 	}
-	.about-us{
+	.contain-aboutus{
 		background-color: $almost-white;
 		background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
 		background-repeat: no-repeat;
 		background-position: left top, right bottom;
 		background-size: 200px, 200px;
+	}
+	.about-us{
+		max-width:1400px;
+		margin:0 auto;
 		padding:24px; 
 		h2{
 			color: $blu;
@@ -650,12 +687,16 @@ a:hover{
 			font-weight: $bold;
 		}
 	}
-	.history{
-		// background: linear-gradient(0,0,0,0.5)
+	.contain-history{
 		background-image:linear-gradient($transparentdgrey,$transparentdgrey),url(../img/concrete-1200w.jpg);
 		@extend .bg-cover;
 		background-position: center bottom;
 		width: 100%;
+	}
+	.history{
+		// background: linear-gradient(0,0,0,0.5)
+		max-width:1400px;
+		margin:0 auto;
 		padding: 24px;
 	
 		
@@ -681,12 +722,15 @@ a:hover{
 			font-weight: $bold;
 		}
 	}
-	.chet{
+	.contain-chet{
 		background-image: linear-gradient($transparentorange, $transparentorange), url(../img/run900w.jpg);
 		@extend .bg-cover;
 		background-position: center bottom;
 		width: 100%;
-		
+	}
+	.chet{
+		max-width:1400px;
+		margin: 0 auto;
 		padding:24px;
 		
 
@@ -750,6 +794,7 @@ a:hover{
 			margin-right: 24px;
 		}
 	}
+
 	.pets-home{
 
 	.pets-home-overlay{
@@ -820,7 +865,11 @@ a:hover{
 	}
 
 	//home page styles
-
+	.aboutus-container{
+		.contain-aboutus{
+			background-size: 350px, 350px;
+		}
+	}
 	.about-home{
 		display: flex;
 		justify-content: center;
@@ -828,6 +877,9 @@ a:hover{
 			max-width: 800px;
 			
 		}
+	}
+	.contain-pets-home{
+		background-size: 350px, 350px;
 	}
 
 	.pets-home{

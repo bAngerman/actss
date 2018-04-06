@@ -35,14 +35,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<p>
 				ACTSS is a not-for-profit society dedicated to bringing affordable modern veterinary cancer treatment to pets. Through our programs we provide subsidies to dedicated pet owners. We aim to educate animal owners and veterinarians on the availability, uses and benefits of advanced cancer therapies in the treatment of veterinary cancers.
 			</p>
-			<a href="page-about-us.php">Read More</a>
+			<a href="page-about-us.php" class="btn-transition btn-styles">Read More</a>
 			</div> <!-- about text home close -->
 		
 
       <div class="about-donation-home clearfix">
         <div class="about-donation-overlay">
           <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
-          <a href="#">Donate Now!</a>
+          <a href="#" class="btn-transition btn-styles">Donate Now!</a>
 		</div> <!-- donation overlay close -->
         <div class="donation-home-img"></div>
 	  </div>  <!-- about donation home close -->
@@ -75,23 +75,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 								
 								?>
 								<img class="event-pic" src="<?php echo $backgroundImg[0]; ?>" alt="">
-					
-					<h3>
-						<a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
-						</a>
-					</h3>
-					<?php 
 
+					<a href="<?php the_permalink();?>" class="btn-transition">
+					<h3><?php the_title(); ?></h3>
+
+					<?php 
 					// get raw date
 					$date = get_field('event_date', false, false);
-
+					
 					// make date object
 					$date = new DateTime($date);
 
 					?>
 					<p class="date"><?php echo $date->format('F d, Y'); ?></p>
-					
+					</a>
 
 					<?php echo custom_field_excerpt_events(); ?> 
 				</li>
@@ -102,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 
 		?>
-			<a href="#" class="more-events-btn">More Events</a>
+			<a href="#" class="more-events-btn btn-transition btn-styles">More Events</a>
 		</div><!-- events-home close -->
 	</div><!-- contain events home close -->
 	<div class="contain-pets-home">
@@ -127,7 +124,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 
 						<li class="clearfix blue-box">
-							<a href="<?php the_permalink(); ?>" class="pets-title-home">
+							<a href="<?php the_permalink(); ?>" class="pets-title-home btn-transition">
 							<?php 
 
 								if (has_post_thumbnail()) {
@@ -141,7 +138,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p><?php echo custom_field_excerpt_pets(); ?> 
 							</p>
 							<div class="more-container">
-								<a href="<?php the_permalink(); ?>">Read more</a>
+								<a href="<?php the_permalink(); ?>" class="btn-transition btn-styles">Read more</a>
 							</div>
 							
 						</li>
@@ -151,7 +148,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
-					<a href="#" class="more-pet-btn">More Pets</a>
+					<a href="#" class="more-pet-btn btn-transition btn-styles">More Pets</a>
 		
 			</div>  <!-- close pets overlay -->
 		</div> <!-- close pets-home -->
@@ -198,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							</a>
 							<div class="more-container">
-								<a href="#">Read more</a>
+								<a href="#" class="btn-transition btn-styles">Read more</a>
 							</div>
 							
 						</li>

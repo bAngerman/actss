@@ -306,36 +306,49 @@ a:hover{
 	background-size: cover;
 }
 
+.btn-transition{
+	transition:all 0.3s ease-in-out;
+}
+
+.btn-styles{
+	padding: 8px 36px 8px 36px;
+	border-radius:24px;
+	text-transform:uppercase;
+	font-weight:$bold;
+}
 
 // HOME PAGE STYLES
 .contain-about-home{
 	background-color: $yellowish;
 }
 .about-home{
-	max-width: 1400px;
+	max-width: 1100px;
 	margin: 0 auto;
+	letter-spacing: 0.25px;
+
 	.about-img-home{
 		display: none;
 	}
 	h2{
 		color: $d-grey;
+		margin-bottom:10px;
 	}
 
 	.about-text-home{
 		padding:36px 24px 36px 24px;
 		color:$almost-white;
+		
 		a{
 			color:$d-grey;
 			border: 2px solid $d-grey;
-			border-radius:24px;
-			padding: 6px 36px 6px 36px;
-			float:right;
-			margin:8px 0px 24px 0px;
+			margin:24px 0px 6px 0px;
 			font-weight: $bold;
+			float:right;
+			// display:inline-block;
 		}
 		a:hover{
-			color: $almost-white;
-			border-color: $almost-white;
+			color: $white;
+			background-color:$d-grey;
 		}
 	}
 }
@@ -371,15 +384,12 @@ a:hover{
 		a{
 			color:$white;
 			border: 2px solid $white;
-			border-radius:24px;
 			padding: 6px 48px 6px 48px;
-			// float:right;
-			// margin:8px 0px 24px 0px;
-			font-weight: $bold;
+			float:right;
 		}
 		a:hover{
-			color: $yellowish;
-			border-color:$yellowish;
+			color: $blu;
+			background-color:$white;
 		}
 	}
 }
@@ -391,12 +401,12 @@ a:hover{
 
 }
 .events-home{
-	max-width: 1400px;
+	max-width: 1100px;
 	margin:0 auto;
-	color: $almost-white;
+	color: $d-grey;
 	
 	h2{
-		color: $orangerish;
+		color: $white;
 		margin-left: 24px;
 		padding-top:24px;
 	}
@@ -406,12 +416,15 @@ a:hover{
 	}
 	ul{
 		padding:0px 24px 0 24px;
+		background-color:rgba(239,239,239,0.75);
+		padding:24px;
+		margin:24px;
 		
 		a{
-			color: $yellowish;
+			color: $orangerish;
 		}
 		a:hover{
-			color: $orangerish;
+			color: $d-grey;
 		}
 		li{
 			h3{
@@ -421,17 +434,15 @@ a:hover{
 		}
 	}
 	.more-events-btn{
-		color:$orangerish;
-		border: 2px solid $orangerish;
-		border-radius:24px;
-		padding: 6px 36px 6px 36px;
+		color:$white;
+		border: 2px solid $white;
 		float:right;
-		margin:8px 24px 24px 0px;
-		font-weight: $bold; 		
+		margin:24px 24px 24px 0px;	
 	}
 	.more-events-btn:hover{
-		color: $white;
+		color: $d-grey;
 		border-color: $white;
+		background-color:$white;
 	}
 }
 //HOME PETS STYLES
@@ -442,8 +453,9 @@ a:hover{
 	background-position: right center, left bottom;
 	background-size: 200px, 200px;
 }
+
 .pets-home{
-	max-width:1400px;
+	max-width:1100px;
 	margin:0 auto;
 	padding-bottom:24px;
 	h2{
@@ -452,32 +464,26 @@ a:hover{
 		margin-bottom: 0;
 	}
 	.pets-home-overlay{
-
-		
 		width: 100%;
-		
 		ul{
-			
 			padding: 24px;
 			width: 100%;
 			li{
-			
+				background-color:$transparentyellow;
+				border:none;
 				.more-container{
 				
 					height:100px;
 					a{
-						color:$yellowish;
-						border: 2px solid $yellowish;
-						border-radius:24px;
-						padding: 6px 36px 6px 36px;
+						color:$blu;
+						border: 2px solid $blu;
 						float:left;
 						margin:30px 24px 24px 0px;
-						font-weight: $bold; 		
 					}
 					a:hover{
-						color:$orangerish;
-						border-color:$orangerish;
-						
+						color:$white;
+						border-color:$blu;
+						background-color: $blu;
 					}
 				}
 			
@@ -489,7 +495,7 @@ a:hover{
 				color: $blu;
 			}
 			a:hover{
-				color: $orangerish;
+				color: $almost-white;
 				
 			}
 			.pets-title-home{
@@ -505,36 +511,29 @@ a:hover{
 		.more-pet-btn{
 			color:$blu;
 			border: 2px solid $blu;
-			border-radius:24px;
-			padding: 6px 36px 6px 36px;
 			float:right;
-			margin:0px 24px 24px 0px;
-			font-weight: $bold; 		
+			margin:0px 24px 24px 0px;	
 		}
 		.more-pet-btn:hover{
-			color:$orangerish;
+			color:$white;
 			border-color:$orangerish;
+			background-color:$orangerish;
 		}
-
 	}
-
 	.pet-pic{
 		width:100%;
 		margin-bottom: 12px;
 	}
-	
-
 }
 .contain-blog-home{
-	background-color: $l-grey;
+	background-color: $white;
 	background-image:url(../img/yellow-triangle-1.svg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: 200px;
 }
-
 .blog-home{
-	max-width: 1400px;
+	max-width: 1100px;
 	margin:0 auto;
 	padding-bottom: 24px;
 	h2{
@@ -566,8 +565,6 @@ a:hover{
 			padding:0 24px;
 			height: 182px;
 			color: $white;
-			
-
 			.date-blog-home{
 				padding:0;
 				color: $orangerish;
@@ -590,11 +587,9 @@ a:hover{
 				a{
 					color:$yellowish;
 					border: 2px solid $yellowish;
-					border-radius:24px;
 					padding: 6px 36px 6px 36px;
 					float:right;
-					margin:30px 24px 24px 0px;
-					font-weight: $bold; 		
+					margin:30px 24px 24px 0px;		
 				}
 				a:hover{
 					color:$orangerish;
@@ -604,14 +599,10 @@ a:hover{
 			}
 		}
 	}
-
-
 }
+
 // ABOUT US STYLES
-
 .aboutus-container{
-
-	
 	.miss-vis-goals{
 		.contain-miss{
 			max-width:700px;
@@ -628,7 +619,7 @@ a:hover{
 		color:$white;
 		.colored-box-blue{
 			.contain-goals{
-				max-width: 1400px;
+				max-width: 1100px;
 				margin:0 auto;
 			}
 
@@ -658,8 +649,6 @@ a:hover{
 		p{
 			margin-bottom:0px;
 		}
-
-
 	}
 	.contain-aboutus{
 		background-color: $almost-white;
@@ -669,22 +658,19 @@ a:hover{
 		background-size: 200px, 200px;
 	}
 	.about-us{
-		max-width:1400px;
+		max-width:1100px;
 		margin:0 auto;
 		padding:24px; 
 		h2{
 			color: $blu;
-			
 			margin-bottom:24px;
 		}
 		a{
 			color:$blu;
 			border: 2px solid $blu;
-			border-radius:24px;
 			padding: 6px 36px 6px 36px;
 			float:right;
 			margin:8px 0px 24px 0px;
-			font-weight: $bold;
 		}
 	}
 	.contain-history{
@@ -695,31 +681,23 @@ a:hover{
 	}
 	.history{
 		// background: linear-gradient(0,0,0,0.5)
-		max-width:1400px;
+		max-width:1100px;
 		margin:0 auto;
 		padding: 24px;
-	
-		
-
 			p{
 				color: $almost-white;
-				
 			}
-
-
 		h2{
 			color: $yellowish;
-			
 			margin-bottom:24px;
 		}
+
 		a{
 			color:$yellowish;
 			border: 2px solid $yellowish;
-			border-radius:24px;
 			padding: 6px 36px 6px 36px;
 			float:right;
 			margin:24px 0px 24px 0px;
-			font-weight: $bold;
 		}
 	}
 	.contain-chet{
@@ -729,37 +707,27 @@ a:hover{
 		width: 100%;
 	}
 	.chet{
-		max-width:1400px;
+		max-width:1100px;
 		margin: 0 auto;
 		padding:24px;
-		
-
 			p{
 				color: $almost-white;
-				
 			}
-
-		
 		h2{
 			color: $white;
-			
-			margin-bottom:24px;
-			
+			margin-bottom:24px;	
 		}
 		a{
 			color:$orangerish;
 			border: 2px solid $orangerish;
-			border-radius:24px;
 			padding: 6px 36px 6px 36px;
 			float:right;
 			margin:24px 0px 24px 0px;
-			font-weight: $bold;
 		}
 	}
-
 }
 
-	 @include screen(tablet) {
+@include screen(tablet) {
 		//global styles for tablet
 		.colored-box-orange, .colored-box-yellow{
 			width: 50%;
@@ -770,43 +738,88 @@ a:hover{
 			column-gap: 24px;
 		}
 
-
+		p{
+			font-size:18px;
+		}
+		h2{
+			margin-bottom:30px;
+		}
 		//home page styles
 		.about-home{
 			.about-text-home{
 				padding-bottom:0;
 				text-align: center;
 				
+				a{
+					float:none;
+					display:inline-block;
+					margin-bottom:36px;
+				}
+				h2{
+					padding-bottom:18px;
+				}
 			}
-
 			.about-donation-home{
 					display:none;
 		}
 
 	}
 	.events-home{
-		
+		padding:36px 24px 36px 24px;
+		ul{
+			margin:0px;
+		}
+		h2{
+			padding-top:0;
+			margin-left:0;
+		}
 		.event-pic{
 			width:50%;
 			max-width:450px;
 			display: block;
 			float:left;
-			margin-right: 24px;
+			margin: 0px 24px 12px 0px;
+		}
+		p{
+			padding-right:12px;
+		}
+		.more-events-btn{
+			margin:24px 0px 24px 0px;
+
 		}
 	}
-
 	.pets-home{
-
-	.pets-home-overlay{
-		
-		.more-pet-btn{
-			margin: 24px 24px 0 0;
+		padding:36px 0 48px 0;
+		h2{
+			padding:0px 0px 0px 24px;
 		}
-		ul{
+		.pets-home-overlay{
+			.more-pet-btn{
+				margin: 24px 24px 0 0;
+			}
+			ul{
+				li{
+					width: 47.5%;
+					float: left;
+					min-height: 742px;
+					
+				}
+				li:nth-child(2){
+					display: block;
+					margin-left:5%;
+				}
+			}
+			.more-pet-btn{
+				margin-top:48px;
+			}
+		}
+	}
+	.blog-home{
+		padding:36px 0 56px 0;
+		.blog-excerpt-home{
 			li{
 				width: 47.5%;
 				float: left;
-				
 			}
 			li:nth-child(2){
 				display: block;
@@ -814,51 +827,35 @@ a:hover{
 			}
 		}
 	}
-}
-.blog-home{
-	.blog-excerpt-home{
-		li{
-			width: 47.5%;
-			float: left;
-		}
-		li:nth-child(2){
-			display: block;
-			margin-left:5%;
-		}
-	}
-}
-//About Us tablet styles
-.aboutus-container{
-	.miss-vis-goals{
-		.colored-box-blue{
-			display: inline-block;
-			width: 100%;
-			.goal-container{
-				display: flex;
-				flex-wrap: wrap;
-				.goals{
-					width: 47.5%;
-				}
-				.goals:nth-child(even){
-					margin-left:2.5%;
+	//About Us tablet styles
+	.aboutus-container{
+		.miss-vis-goals{
+			.colored-box-blue{
+				display: inline-block;
+				width: 100%;
+				.goal-container{
+					display: flex;
+					flex-wrap: wrap;
+					.goals{
+						width: 47.5%;
+					}
+					.goals:nth-child(even){
+						margin-left:2.5%;
+					}
 				}
 			}
 		}
 	}
-
 }
-
-
-
-}
-
 
 
 //DESKTOP STYLES
 
 @include screen(desktop){
 	//global desktop styles
-
+	h2{
+		font-size:40px;
+	}
 	.col{
 		column-count: 3;
 		column-gap: 24px;
@@ -867,39 +864,68 @@ a:hover{
 	//home page styles
 	.aboutus-container{
 		.contain-aboutus{
-			background-size: 350px, 350px;
+			background-size: 300px, 300px;
 		}
 	}
 	.about-home{
 		display: flex;
 		justify-content: center;
+		padding-top:56px;
+		padding-bottom:56px;
 		.about-text-home p{
 			max-width: 800px;
 			
 		}
+	}	
+	.events-home{
+		padding:56px 24px 48px 24px;
+		.event-pic{
+			margin: 0px 30px 12px 0px;
+			padding-top:20px;
+
+		}
 	}
 	.contain-pets-home{
-		background-size: 350px, 350px;
+		background-size: 300px, 300px;
 	}
-
 	.pets-home{
-
 		.pets-home-overlay{
 			
 			ul{
 				li{
 					width: 31.66%;
 					float: left;
-					
+					p:nth-child(3){
+						min-height:162px;
+					}
 				}
 				li:nth-child(2),li:nth-child(3){
 					display: block;
 					margin-left:2.5%;
 				}
 			}
+			
+		}
+		
+	}
+	.contain-blog-home{
+		background-size: 300px, 300px;
+	}
+	.blog-home{
+		.blog-excerpt-home{
+			li{
+				width: 48%;
+				float: left;
+			}
+			li:nth-child(2){
+				display: block;
+				margin-left:2.75%;
+			}
 		}
 	}
 
+
+	//ABOUT US PAGE DESKTOP SIZE
 	.aboutus-container{
 		.miss-vis-goals{
 			.colored-box-blue{

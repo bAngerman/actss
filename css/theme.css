@@ -9654,30 +9654,39 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.btn-transition {
+  transition: all 0.3s ease-in-out; }
+
+.btn-styles {
+  padding: 8px 36px 8px 36px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
 .contain-about-home {
   background-color: #ffad40; }
 
 .about-home {
-  max-width: 1400px;
-  margin: 0 auto; }
+  max-width: 1100px;
+  margin: 0 auto;
+  letter-spacing: 0.25px; }
   .about-home .about-img-home {
     display: none; }
   .about-home h2 {
-    color: #4d4d4d; }
+    color: #4d4d4d;
+    margin-bottom: 10px; }
   .about-home .about-text-home {
     padding: 36px 24px 36px 24px;
     color: #e8e8e8; }
     .about-home .about-text-home a {
       color: #4d4d4d;
       border: 2px solid #4d4d4d;
-      border-radius: 24px;
-      padding: 6px 36px 6px 36px;
-      float: right;
-      margin: 8px 0px 24px 0px;
-      font-weight: 700; }
+      margin: 24px 0px 6px 0px;
+      font-weight: 700;
+      float: right; }
     .about-home .about-text-home a:hover {
-      color: #e8e8e8;
-      border-color: #e8e8e8; }
+      color: #fff;
+      background-color: #4d4d4d; }
 
 .about-donation-home {
   background-image: url(../img/smiley-dog-navy-632w.jpg);
@@ -9706,12 +9715,11 @@ a:hover {
     .about-donation-home .about-donation-overlay a {
       color: #fff;
       border: 2px solid #fff;
-      border-radius: 24px;
       padding: 6px 48px 6px 48px;
-      font-weight: 700; }
+      float: right; }
     .about-donation-home .about-donation-overlay a:hover {
-      color: #ffad40;
-      border-color: #ffad40; }
+      color: #01076d;
+      background-color: #fff; }
 
 .contain-events-home {
   background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
@@ -9719,34 +9727,35 @@ a:hover {
   width: 100%; }
 
 .events-home {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
-  color: #e8e8e8; }
+  color: #4d4d4d; }
   .events-home h2 {
-    color: #dc6836;
+    color: #fff;
     margin-left: 24px;
     padding-top: 24px; }
   .events-home .event-pic {
     display: none; }
   .events-home ul {
-    padding: 0px 24px 0 24px; }
+    padding: 0px 24px 0 24px;
+    background-color: rgba(239, 239, 239, 0.75);
+    padding: 24px;
+    margin: 24px; }
     .events-home ul a {
-      color: #ffad40; }
-    .events-home ul a:hover {
       color: #dc6836; }
+    .events-home ul a:hover {
+      color: #4d4d4d; }
     .events-home ul li h3 {
       margin-bottom: 0; }
   .events-home .more-events-btn {
-    color: #dc6836;
-    border: 2px solid #dc6836;
-    border-radius: 24px;
-    padding: 6px 36px 6px 36px;
-    float: right;
-    margin: 8px 24px 24px 0px;
-    font-weight: 700; }
-  .events-home .more-events-btn:hover {
     color: #fff;
-    border-color: #fff; }
+    border: 2px solid #fff;
+    float: right;
+    margin: 24px 24px 24px 0px; }
+  .events-home .more-events-btn:hover {
+    color: #4d4d4d;
+    border-color: #fff;
+    background-color: #fff; }
 
 .contain-pets-home {
   background-color: #e8e8e8;
@@ -9756,7 +9765,7 @@ a:hover {
   background-size: 200px, 200px; }
 
 .pets-home {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 24px; }
   .pets-home h2 {
@@ -9768,25 +9777,26 @@ a:hover {
     .pets-home .pets-home-overlay ul {
       padding: 24px;
       width: 100%; }
-      .pets-home .pets-home-overlay ul li .more-container {
-        height: 100px; }
-        .pets-home .pets-home-overlay ul li .more-container a {
-          color: #ffad40;
-          border: 2px solid #ffad40;
-          border-radius: 24px;
-          padding: 6px 36px 6px 36px;
-          float: left;
-          margin: 30px 24px 24px 0px;
-          font-weight: 700; }
-        .pets-home .pets-home-overlay ul li .more-container a:hover {
-          color: #dc6836;
-          border-color: #dc6836; }
+      .pets-home .pets-home-overlay ul li {
+        background-color: rgba(255, 173, 64, 0.85);
+        border: none; }
+        .pets-home .pets-home-overlay ul li .more-container {
+          height: 100px; }
+          .pets-home .pets-home-overlay ul li .more-container a {
+            color: #01076d;
+            border: 2px solid #01076d;
+            float: left;
+            margin: 30px 24px 24px 0px; }
+          .pets-home .pets-home-overlay ul li .more-container a:hover {
+            color: #fff;
+            border-color: #01076d;
+            background-color: #01076d; }
       .pets-home .pets-home-overlay ul li:nth-child(2), .pets-home .pets-home-overlay ul li:nth-child(3) {
         display: none; }
       .pets-home .pets-home-overlay ul a {
         color: #01076d; }
       .pets-home .pets-home-overlay ul a:hover {
-        color: #dc6836; }
+        color: #e8e8e8; }
       .pets-home .pets-home-overlay ul .pets-title-home {
         width: 100%;
         display: inline-block; }
@@ -9795,27 +9805,25 @@ a:hover {
     .pets-home .pets-home-overlay .more-pet-btn {
       color: #01076d;
       border: 2px solid #01076d;
-      border-radius: 24px;
-      padding: 6px 36px 6px 36px;
       float: right;
-      margin: 0px 24px 24px 0px;
-      font-weight: 700; }
+      margin: 0px 24px 24px 0px; }
     .pets-home .pets-home-overlay .more-pet-btn:hover {
-      color: #dc6836;
-      border-color: #dc6836; }
+      color: #fff;
+      border-color: #dc6836;
+      background-color: #dc6836; }
   .pets-home .pet-pic {
     width: 100%;
     margin-bottom: 12px; }
 
 .contain-blog-home {
-  background-color: #999;
+  background-color: #fff;
   background-image: url(../img/yellow-triangle-1.svg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 200px; }
 
 .blog-home {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 24px; }
   .blog-home h2 {
@@ -9854,11 +9862,9 @@ a:hover {
         .blog-home .blog-excerpt-home ul .more-container a {
           color: #ffad40;
           border: 2px solid #ffad40;
-          border-radius: 24px;
           padding: 6px 36px 6px 36px;
           float: right;
-          margin: 30px 24px 24px 0px;
-          font-weight: 700; }
+          margin: 30px 24px 24px 0px; }
         .blog-home .blog-excerpt-home ul .more-container a:hover {
           color: #dc6836;
           border-color: #dc6836;
@@ -9876,7 +9882,7 @@ a:hover {
     width: 100%;
     float: left; }
   .aboutus-container .miss-vis-goals .colored-box-blue .contain-goals {
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto; }
   .aboutus-container .miss-vis-goals .colored-box-blue .goals {
     display: flex;
@@ -9904,7 +9910,7 @@ a:hover {
   background-size: 200px, 200px; }
 
 .aboutus-container .about-us {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px; }
   .aboutus-container .about-us h2 {
@@ -9913,11 +9919,9 @@ a:hover {
   .aboutus-container .about-us a {
     color: #01076d;
     border: 2px solid #01076d;
-    border-radius: 24px;
     padding: 6px 36px 6px 36px;
     float: right;
-    margin: 8px 0px 24px 0px;
-    font-weight: 700; }
+    margin: 8px 0px 24px 0px; }
 
 .aboutus-container .contain-history {
   background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
@@ -9925,7 +9929,7 @@ a:hover {
   width: 100%; }
 
 .aboutus-container .history {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px; }
   .aboutus-container .history p {
@@ -9936,11 +9940,9 @@ a:hover {
   .aboutus-container .history a {
     color: #ffad40;
     border: 2px solid #ffad40;
-    border-radius: 24px;
     padding: 6px 36px 6px 36px;
     float: right;
-    margin: 24px 0px 24px 0px;
-    font-weight: 700; }
+    margin: 24px 0px 24px 0px; }
 
 .aboutus-container .contain-chet {
   background-image: linear-gradient(rgba(220, 104, 54, 0.85), rgba(220, 104, 54, 0.85)), url(../img/run900w.jpg);
@@ -9948,7 +9950,7 @@ a:hover {
   width: 100%; }
 
 .aboutus-container .chet {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px; }
   .aboutus-container .chet p {
@@ -9959,11 +9961,9 @@ a:hover {
   .aboutus-container .chet a {
     color: #dc6836;
     border: 2px solid #dc6836;
-    border-radius: 24px;
     padding: 6px 36px 6px 36px;
     float: right;
-    margin: 24px 0px 24px 0px;
-    font-weight: 700; }
+    margin: 24px 0px 24px 0px; }
 
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
@@ -9972,31 +9972,61 @@ a:hover {
   .col {
     column-count: 2;
     column-gap: 24px; }
+  p {
+    font-size: 18px; }
+  h2 {
+    margin-bottom: 30px; }
   .about-home .about-text-home {
     padding-bottom: 0;
     text-align: center; }
+    .about-home .about-text-home a {
+      float: none;
+      display: inline-block;
+      margin-bottom: 36px; }
+    .about-home .about-text-home h2 {
+      padding-bottom: 18px; }
   .about-home .about-donation-home {
     display: none; }
-  .events-home .event-pic {
-    width: 50%;
-    max-width: 450px;
-    display: block;
-    float: left;
-    margin-right: 24px; }
-  .pets-home .pets-home-overlay .more-pet-btn {
-    margin: 24px 24px 0 0; }
-  .pets-home .pets-home-overlay ul li {
-    width: 47.5%;
-    float: left; }
-  .pets-home .pets-home-overlay ul li:nth-child(2) {
-    display: block;
-    margin-left: 5%; }
-  .blog-home .blog-excerpt-home li {
-    width: 47.5%;
-    float: left; }
-  .blog-home .blog-excerpt-home li:nth-child(2) {
-    display: block;
-    margin-left: 5%; }
+  .events-home {
+    padding: 36px 24px 36px 24px; }
+    .events-home ul {
+      margin: 0px; }
+    .events-home h2 {
+      padding-top: 0;
+      margin-left: 0; }
+    .events-home .event-pic {
+      width: 50%;
+      max-width: 450px;
+      display: block;
+      float: left;
+      margin: 0px 24px 12px 0px; }
+    .events-home p {
+      padding-right: 12px; }
+    .events-home .more-events-btn {
+      margin: 24px 0px 24px 0px; }
+  .pets-home {
+    padding: 36px 0 48px 0; }
+    .pets-home h2 {
+      padding: 0px 0px 0px 24px; }
+    .pets-home .pets-home-overlay .more-pet-btn {
+      margin: 24px 24px 0 0; }
+    .pets-home .pets-home-overlay ul li {
+      width: 47.5%;
+      float: left;
+      min-height: 742px; }
+    .pets-home .pets-home-overlay ul li:nth-child(2) {
+      display: block;
+      margin-left: 5%; }
+    .pets-home .pets-home-overlay .more-pet-btn {
+      margin-top: 48px; }
+  .blog-home {
+    padding: 36px 0 56px 0; }
+    .blog-home .blog-excerpt-home li {
+      width: 47.5%;
+      float: left; }
+    .blog-home .blog-excerpt-home li:nth-child(2) {
+      display: block;
+      margin-left: 5%; }
   .aboutus-container .miss-vis-goals .colored-box-blue {
     display: inline-block;
     width: 100%; }
@@ -10009,24 +10039,43 @@ a:hover {
         margin-left: 2.5%; } }
 
 @media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 40px; }
   .col {
     column-count: 3;
     column-gap: 24px; }
   .aboutus-container .contain-aboutus {
-    background-size: 350px, 350px; }
+    background-size: 300px, 300px; }
   .about-home {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 56px; }
     .about-home .about-text-home p {
       max-width: 800px; }
+  .events-home {
+    padding: 56px 24px 48px 24px; }
+    .events-home .event-pic {
+      margin: 0px 30px 12px 0px;
+      padding-top: 20px; }
   .contain-pets-home {
-    background-size: 350px, 350px; }
+    background-size: 300px, 300px; }
   .pets-home .pets-home-overlay ul li {
     width: 31.66%;
     float: left; }
+    .pets-home .pets-home-overlay ul li p:nth-child(3) {
+      min-height: 162px; }
   .pets-home .pets-home-overlay ul li:nth-child(2), .pets-home .pets-home-overlay ul li:nth-child(3) {
     display: block;
     margin-left: 2.5%; }
+  .contain-blog-home {
+    background-size: 300px, 300px; }
+  .blog-home .blog-excerpt-home li {
+    width: 48%;
+    float: left; }
+  .blog-home .blog-excerpt-home li:nth-child(2) {
+    display: block;
+    margin-left: 2.75%; }
   .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
     width: 23.125%; }
   .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even), .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(3) {

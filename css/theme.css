@@ -9492,7 +9492,7 @@ a.skip-link {
 .d-flex-c {
   flex-direction: column; }
 
-.bg-cover, .contain-events-home, .aboutus-container .contain-history, .aboutus-container .contain-chet {
+.bg-cover, .contain-events-home, .aboutus-container .contain-history, .aboutus-container .contain-chet, .resources .contain-support {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9993,6 +9993,51 @@ a:hover {
       border: 2px solid #e8e8e8;
       margin: 24px 0 6px 0;
       float: right; }
+
+.resources .contain-oncology {
+  background-color: #e8e8e8;
+  background-image: url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
+  background-repeat: no-repeat;
+  background-position: right center, left bottom;
+  background-size: 200px, 200px; }
+  .resources .contain-oncology .oncology {
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    .resources .contain-oncology .oncology h2 {
+      color: #01076d; }
+    .resources .contain-oncology .oncology .oncology-boxes .yellow-box {
+      background-color: rgba(255, 173, 64, 0.85);
+      margin-bottom: 24px;
+      padding: 24px; }
+      .resources .contain-oncology .oncology .oncology-boxes .yellow-box h3, .resources .contain-oncology .oncology .oncology-boxes .yellow-box h4 {
+        color: #01076d; }
+      .resources .contain-oncology .oncology .oncology-boxes .yellow-box .doctor-info {
+        color: #01076d; }
+        .resources .contain-oncology .oncology .oncology-boxes .yellow-box .doctor-info a {
+          color: #dc6836;
+          font-weight: 700; }
+
+.resources .contain-support {
+  background-image: linear-gradient(rgba(255, 173, 64, 0.85), rgba(255, 173, 64, 0.85)), url(../img/hairlesscat-1200w.jpg);
+  background-position: center bottom;
+  width: 100%; }
+
+.resources .support {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px; }
+  .resources .support p {
+    color: #000; }
+  .resources .support h2 {
+    color: #01076d;
+    margin-bottom: 24px; }
+  .resources .support a {
+    color: #01076d;
+    border: 2px solid #01076d;
+    padding: 6px 36px 6px 36px;
+    float: right;
+    margin: 24px 0px 24px 0px; }
 
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {

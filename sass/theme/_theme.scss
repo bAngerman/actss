@@ -769,6 +769,66 @@ a:hover{
 }
 //RESOURCES STYLES	
 .resources{
+	.contain-oncology{
+		background-color: $almost-white;
+		background-image:url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
+		background-repeat: no-repeat;
+		background-position: right center, left bottom;
+		background-size: 200px, 200px;
+			.oncology{
+				padding:24px;
+				max-width:1100px;
+				margin: 0 auto;
+				h2{
+					color: $blu;
+				}
+				.oncology-boxes{
+					.yellow-box{
+						background-color:$transparentyellow;
+						margin-bottom:24px;
+						padding:24px;
+						h3,h4{
+							color: $blu;
+						}
+						.doctor-info{
+							color:$blu;
+							a{
+								color: $orangerish;
+								font-weight: $bold;
+							}
+						}
+
+					}
+				}
+			}
+	}
+	.contain-support{
+		background-image:linear-gradient($transparentyellow,$transparentyellow),url(../img/hairlesscat-1200w.jpg);
+		@extend .bg-cover;
+		background-position: center bottom;
+		width: 100%;
+	}
+	.support{
+		// background: linear-gradient(0,0,0,0.5)
+		max-width:1100px;
+		margin:0 auto;
+		padding: 24px;
+			p{
+				color: $black;
+			}
+		h2{
+			color: $blu;
+			margin-bottom:24px;
+		}
+
+		a{
+			color:$blu;
+			border: 2px solid $blu;
+			padding: 6px 36px 6px 36px;
+			float:right;
+			margin:24px 0px 24px 0px;
+		}
+	}
 	
 }
 

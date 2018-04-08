@@ -294,7 +294,7 @@ a:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $almost-white;
-	
+	width: 100%;
 }
 .colored-box-yellow{
 	background-image: linear-gradient($transparentyellow,$transparentyellow), url(../img/two-dogs-bnw-600w-300h.jpg);
@@ -607,6 +607,8 @@ a:hover{
 // ABOUT US STYLES
 .aboutus-container{
 	.miss-vis-goals{
+		display: flex;
+		flex-wrap: wrap;
 		.contain-miss{
 			max-width:700px;
 			width: 100%;
@@ -888,9 +890,14 @@ a:hover{
 	// GET INVOLVED TABLET STYLES
 	.contain-involved{
 		.join-us{
+			display:flex;
 			h1{
 				display: block;
 				color: $blu;
+				width:30%;
+			}
+			p{
+				width: 70%;
 			}
 		}
 		.boxes{

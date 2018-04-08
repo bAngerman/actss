@@ -9643,7 +9643,8 @@ a:hover {
   background-image: linear-gradient(rgba(220, 104, 54, 0.85), rgba(220, 104, 54, 0.85)), url(../img/cat-bnw-600w-300h.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #e8e8e8; }
+  color: #e8e8e8;
+  width: 100%; }
 
 .colored-box-yellow {
   background-image: linear-gradient(rgba(255, 173, 64, 0.85), rgba(255, 173, 64, 0.85)), url(../img/two-dogs-bnw-600w-300h.jpg);
@@ -9874,6 +9875,8 @@ a:hover {
           background-color: #fff; }
 
 .aboutus-container .miss-vis-goals {
+  display: flex;
+  flex-wrap: wrap;
   color: #fff; }
   .aboutus-container .miss-vis-goals .contain-miss {
     max-width: 700px;
@@ -10063,9 +10066,14 @@ a:hover {
         width: 47.5%; }
       .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even) {
         margin-left: 2.5%; }
-  .contain-involved .join-us h1 {
-    display: block;
-    color: #01076d; }
+  .contain-involved .join-us {
+    display: flex; }
+    .contain-involved .join-us h1 {
+      display: block;
+      color: #01076d;
+      width: 30%; }
+    .contain-involved .join-us p {
+      width: 70%; }
   .contain-involved .boxes .colored-box-blue {
     width: 50%; } }
 

@@ -9642,17 +9642,20 @@ a:hover {
 .colored-box-orange {
   background-image: linear-gradient(rgba(220, 104, 54, 0.85), rgba(220, 104, 54, 0.85)), url(../img/cat-bnw-600w-300h.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #e8e8e8; }
 
 .colored-box-yellow {
   background-image: linear-gradient(rgba(255, 173, 64, 0.85), rgba(255, 173, 64, 0.85)), url(../img/two-dogs-bnw-600w-300h.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #e8e8e8; }
 
 .colored-box-blue {
   background-image: linear-gradient(rgba(1, 7, 109, 0.85), rgba(1, 7, 109, 0.85)), url(../img/cat-sitting-600x300.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #e8e8e8; }
 
 .btn-transition {
   transition: all 0.3s ease-in-out; }
@@ -9965,6 +9968,29 @@ a:hover {
     float: right;
     margin: 24px 0px 24px 0px; }
 
+.contain-involved .join-us {
+  background-color: #e8e8e8;
+  padding: 24px; }
+  .contain-involved .join-us h1 {
+    display: none; }
+
+.contain-involved .boxes {
+  display: flex;
+  flex-wrap: wrap; }
+  .contain-involved .boxes .box {
+    padding: 24px; }
+    .contain-involved .boxes .box .contain-box-left {
+      max-width: 700px;
+      float: right;
+      text-align: left; }
+    .contain-involved .boxes .box .contain-box-right {
+      max-width: 700px; }
+    .contain-involved .boxes .box .contain-box-left a, .contain-involved .boxes .box .contain-box-right a {
+      color: #e8e8e8;
+      border: 2px solid #e8e8e8;
+      margin: 24px 0 6px 0;
+      float: right; }
+
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
     width: 50%;
@@ -10036,7 +10062,12 @@ a:hover {
       .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
         width: 47.5%; }
       .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even) {
-        margin-left: 2.5%; } }
+        margin-left: 2.5%; }
+  .contain-involved .join-us h1 {
+    display: block;
+    color: #01076d; }
+  .contain-involved .boxes .colored-box-blue {
+    width: 50%; } }
 
 @media only screen and (min-width: 992px) {
   h2 {

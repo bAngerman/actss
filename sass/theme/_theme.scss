@@ -293,17 +293,20 @@ a:hover{
 	background-image: linear-gradient($transparentorange,$transparentorange), url(../img/cat-bnw-600w-300h.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: $almost-white;
 	
 }
 .colored-box-yellow{
 	background-image: linear-gradient($transparentyellow,$transparentyellow), url(../img/two-dogs-bnw-600w-300h.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color:$almost-white;
 }
 .colored-box-blue{
 	background-image: linear-gradient($transparentblu,$transparentblu), url(../img/cat-sitting-600x300.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: $almost-white;
 }
 
 .btn-transition{
@@ -727,6 +730,42 @@ a:hover{
 	}
 }
 
+
+//GET INVOLVED STYLES
+.contain-involved{
+	.join-us{
+		background-color: $almost-white;
+		padding: 24px;
+		h1{
+			display: none;
+		}	
+	}
+	.boxes{
+		display:flex;
+		flex-wrap: wrap;
+
+		.box{
+			padding:24px;
+			.contain-box-left{
+				max-width: 700px;
+				float:right;
+				text-align: left;
+			}
+			.contain-box-right{
+				max-width: 700px;
+			}
+			.contain-box-left,.contain-box-right{
+				a{
+					color: $almost-white;
+   					border: 2px solid $almost-white;
+					margin: 24px 0 6px 0;
+					float: right;
+				}
+			}
+		}
+	}
+}
+
 @include screen(tablet) {
 		//global styles for tablet
 		.colored-box-orange, .colored-box-yellow{
@@ -846,6 +885,21 @@ a:hover{
 			}
 		}
 	}
+	// GET INVOLVED TABLET STYLES
+	.contain-involved{
+		.join-us{
+			h1{
+				display: block;
+				color: $blu;
+			}
+		}
+		.boxes{
+			.colored-box-blue{
+				width: 50%;
+			}
+		}
+	}
+
 }
 
 

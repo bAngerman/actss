@@ -805,7 +805,7 @@ a:hover{
 	.contain-support{
 		background-image:linear-gradient($transparentblu,$transparentblu),url(../img/hairlesscat-1200w.jpg);
 		@extend .bg-cover;
-		background-position: center bottom;
+		background-position: center center;
 		width: 100%;
 	}
 	.support{

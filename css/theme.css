@@ -10020,7 +10020,7 @@ a:hover {
 
 .resources .contain-support {
   background-image: linear-gradient(rgba(1, 7, 109, 0.85), rgba(1, 7, 109, 0.85)), url(../img/hairlesscat-1200w.jpg);
-  background-position: center bottom;
+  background-position: center center;
   width: 100%; }
 
 .resources .support {

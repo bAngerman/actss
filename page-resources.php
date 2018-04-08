@@ -76,6 +76,30 @@ $container = get_theme_mod( 'understrap_container_type' );
             <p>Losing a pet, or dealing with a recent diagnosis can be tough, but there are resources out there to help. Remember a Pet is a non-profit society that has resources and ways to memorialize your pet. </p>
         </div> <!-- close support -->
     </div><!-- close contain support -->
+    <div class="contain-cancer-types">
+        <div class="cancer-types clearfix">
+
+        <h2>Cancer Types</h2>
+        <form action="<? bloginfo('url'); ?>" method="get">
+            <select name="page_id" id="page_id">
+            <?php
+            global $post;
+            $args = array(  'numberposts' => -1,
+                            'category_name' => 'cancer',
+                            'orderby'			=> 'title',
+                            'order' => 'ASC');
+            $posts = get_posts($args);
+            foreach( $posts as $post ) : setup_postdata($post); ?>
+                        <option value="<? echo $post->ID; ?>"><?php the_title(); ?></option>
+            <?php endforeach; ?>
+            </select>
+        </form>
+        <h4>Description</h4>
+        <h4>Diagnosis</h4>
+        <h4>Treatment</h4>
+
+        </div> <!-- close cancer-types -->
+    </div><!-- close contain cancer-types -->
 </div> <!-- close resources -->
 </main>
 

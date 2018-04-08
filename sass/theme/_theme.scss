@@ -803,7 +803,7 @@ a:hover{
 			}
 	}
 	.contain-support{
-		background-image:linear-gradient($transparentyellow,$transparentyellow),url(../img/hairlesscat-1200w.jpg);
+		background-image:linear-gradient($transparentblu,$transparentblu),url(../img/hairlesscat-1200w.jpg);
 		@extend .bg-cover;
 		background-position: center bottom;
 		width: 100%;
@@ -814,19 +814,42 @@ a:hover{
 		margin:0 auto;
 		padding: 24px;
 			p{
-				color: $black;
+				color: $almost-white;
 			}
 		h2{
-			color: $blu;
+			color: $almost-white;
 			margin-bottom:24px;
 		}
 
 		a{
-			color:$blu;
-			border: 2px solid $blu;
+			color:$almost-white;
+			border: 2px solid $almost-white;
 			padding: 6px 36px 6px 36px;
 			float:right;
 			margin:24px 0px 24px 0px;
+		}
+	}
+	.contain-cancer-types{
+		background-color: $almost-white;
+		background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+		background-repeat: no-repeat;
+		background-position: left top, right bottom;
+		background-size: 200px, 200px;
+	}
+	.cancer-types{
+		// background: linear-gradient(0,0,0,0.5)
+		max-width:1100px;
+		margin:0 auto;
+		padding: 24px;
+
+		h2{
+			color: $blu;
+			margin-bottom:24px;
+		}
+		h4{
+			color: $orangerish;
+			font-weight: $boldest;
+			text-transform: uppercase;
 		}
 	}
 	

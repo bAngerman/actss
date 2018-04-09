@@ -9681,7 +9681,7 @@ a:hover {
     margin-bottom: 10px; }
   .about-home .about-text-home {
     padding: 36px 24px 36px 24px;
-    color: #e8e8e8; }
+    color: #fff; }
     .about-home .about-text-home a {
       color: #4d4d4d;
       border: 2px solid #4d4d4d;
@@ -9771,10 +9771,10 @@ a:hover {
 .pets-home {
   max-width: 1100px;
   margin: 0 auto;
-  padding-bottom: 24px; }
+  padding-bottom: 56px 0 48px 0px; }
   .pets-home h2 {
     color: #01076d;
-    padding: 24px 0 0 24px;
+    padding: 0 0 0 24px;
     margin-bottom: 0; }
   .pets-home .pets-home-overlay {
     width: 100%; }
@@ -9870,21 +9870,20 @@ a:hover {
           float: right;
           margin: 30px 24px 24px 0px; }
         .blog-home .blog-excerpt-home ul .more-container a:hover {
-          color: #dc6836;
-          border-color: #dc6836;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #ffad40; }
 
 .aboutus-container .miss-vis-goals {
   display: flex;
   flex-wrap: wrap;
   color: #fff; }
   .aboutus-container .miss-vis-goals .contain-miss {
-    max-width: 700px;
+    max-width: 550px;
     width: 100%;
     float: right;
     text-align: left; }
   .aboutus-container .miss-vis-goals .contain-vis {
-    max-width: 700px;
+    max-width: 550px;
     width: 100%;
     float: left; }
   .aboutus-container .miss-vis-goals .colored-box-blue .contain-goals {
@@ -10120,16 +10119,31 @@ a:hover {
     .blog-home .blog-excerpt-home li:nth-child(2) {
       display: block;
       margin-left: 5%; }
+  .aboutus-container .miss-vis-goals .contain-vis, .aboutus-container .miss-vis-goals .contain-miss {
+    padding: 56px 0; }
+  .aboutus-container .miss-vis-goals .contain-vis {
+    padding-left: 56px; }
+  .aboutus-container .miss-vis-goals .contain-miss {
+    padding-right: 56px; }
   .aboutus-container .miss-vis-goals .colored-box-blue {
     display: inline-block;
     width: 100%; }
+    .aboutus-container .miss-vis-goals .colored-box-blue .contain-goals {
+      padding: 56px 0; }
     .aboutus-container .miss-vis-goals .colored-box-blue .goal-container {
       display: flex;
       flex-wrap: wrap; }
       .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
-        width: 47.5%; }
+        width: 47.5%;
+        text-align: left; }
       .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even) {
         margin-left: 2.5%; }
+  .aboutus-container .about-us, .aboutus-container .history, .aboutus-container .chet {
+    padding: 56px 0; }
+    .aboutus-container .about-us p, .aboutus-container .history p, .aboutus-container .chet p {
+      letter-spacing: 0.25px; }
+    .aboutus-container .about-us h2, .aboutus-container .history h2, .aboutus-container .chet h2 {
+      padding-left: 18px; }
   .contain-involved .join-us {
     display: flex; }
     .contain-involved .join-us h1 {
@@ -10145,8 +10159,7 @@ a:hover {
   h2 {
     font-size: 40px; }
   .col {
-    column-count: 3;
-    column-gap: 24px; }
+    column-gap: 48px; }
   .aboutus-container .contain-aboutus {
     background-size: 300px, 300px; }
   .about-home {
@@ -10180,9 +10193,7 @@ a:hover {
     display: block;
     margin-left: 2.75%; }
   .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
-    width: 23.125%; }
-  .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even), .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(3) {
-    margin-left: 2.5%; } }
+    padding-bottom: 48px; } }
 
 /*! X STYLES */
 /*

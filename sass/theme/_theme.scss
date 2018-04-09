@@ -339,7 +339,7 @@ a:hover{
 
 	.about-text-home{
 		padding:36px 24px 36px 24px;
-		color:$almost-white;
+		color:$white;
 		
 		a{
 			color:$d-grey;
@@ -460,10 +460,10 @@ a:hover{
 .pets-home{
 	max-width:1100px;
 	margin:0 auto;
-	padding-bottom:24px;
+	padding-bottom:56px 0 48px 0px;
 	h2{
 		color: $blu;
-		padding: 24px 0 0 24px;
+		padding: 0 0 0 24px;
 		margin-bottom: 0;
 	}
 	.pets-home-overlay{
@@ -595,9 +595,8 @@ a:hover{
 					margin:30px 24px 24px 0px;		
 				}
 				a:hover{
-					color:$orangerish;
-					border-color:$orangerish;
-					background-color: $white;
+					color:$white;
+					background-color: $yellowish;
 				}
 			}
 		}
@@ -610,13 +609,13 @@ a:hover{
 		display: flex;
 		flex-wrap: wrap;
 		.contain-miss{
-			max-width:700px;
+			max-width:550px;
 			width: 100%;
 			float:right;
 			text-align: left;
 		}
 		.contain-vis{
-			max-width:700px;
+			max-width:550px;
 			width: 100%;
 			float:left;
 			
@@ -958,19 +957,44 @@ a:hover{
 	//About Us tablet styles
 	.aboutus-container{
 		.miss-vis-goals{
+			.contain-vis, .contain-miss{
+				padding:56px 0;
+			}
+			.contain-vis{
+				padding-left:56px;
+			}
+			.contain-miss{
+				padding-right:56px;
+			}
 			.colored-box-blue{
 				display: inline-block;
 				width: 100%;
+				.contain-goals{
+					padding:56px 0;
+				}
 				.goal-container{
 					display: flex;
 					flex-wrap: wrap;
 					.goals{
 						width: 47.5%;
+						text-align: left;
+						
 					}
 					.goals:nth-child(even){
 						margin-left:2.5%;
 					}
 				}
+			}
+		}
+		.about-us, .history, .chet{
+			padding:56px 0;
+			p{
+				letter-spacing: 0.25px;
+			}
+				
+			h2{
+				padding-left:18px;
+
 			}
 		}
 	}
@@ -1005,8 +1029,8 @@ a:hover{
 		font-size:40px;
 	}
 	.col{
-		column-count: 3;
-		column-gap: 24px;
+		
+		column-gap: 48px;
 	}
 
 	//home page styles
@@ -1079,11 +1103,9 @@ a:hover{
 			.colored-box-blue{
 				.goal-container{
 					.goals{
-						width: 23.125%;
+						padding-bottom:48px;
 					}
-					.goals:nth-child(even), .goals:nth-child(3){
-						margin-left:2.5%;
-					}
+
 				}
 			}
 		}

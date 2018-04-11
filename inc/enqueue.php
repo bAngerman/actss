@@ -26,8 +26,29 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_script( 'modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), $the_theme->get( 'Version' ), false);
 		// theme's js
 		wp_enqueue_script( 'understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $the_theme->get( 'Version' ), true );
-	
+		wp_localize_script( 'understrap-scripts', 'ajaxObject',
+		array( 'ajaxUrl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 } // endif function_exists( 'understrap_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+
+
+function get_cancer_type() {
+	if (isset($_REQUEST)) {
+
+		$id = $_REQUEST['id'];
+
+		$data = array(
+			"description" => get_field('description', $id),
+			"diagnosis" => get_field('diagnosis', $id),
+			"treatment" => get_field('treatment', $id)
+		);
+		echo json_encode($data);
+	}
+	wp_reset_query();
+	die();
+}
+
+add_action( 'wp_ajax_get_cancer_type', 'get_cancer_type' );
+add_action( 'wp_ajax_nopriv_get_cancer_type', 'get_cancer_type' );

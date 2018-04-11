@@ -80,23 +80,23 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="cancer-types clearfix">
 
         <h2>Cancer Types</h2>
-        <form action="<? bloginfo('url'); ?>" method="get">
-            <select name="page_id" id="page_id">
+        <select name="cancer_types" id="cancer_types">
             <?php
-            global $post;
             $args = array(  'numberposts' => -1,
                             'category_name' => 'cancer',
                             'orderby'			=> 'title',
                             'order' => 'ASC');
             $posts = get_posts($args);
             foreach( $posts as $post ) : setup_postdata($post); ?>
-                        <option value="<? echo $post->ID; ?>"><?php the_title(); ?></option>
+                        <option value="<?php echo $post->ID; ?>"><?php the_title(); ?></option>
             <?php endforeach; ?>
-            </select>
-        </form>
+        </select>
         <h4>Description</h4>
+            <div id="desc"></div>
         <h4>Diagnosis</h4>
+            <div id="diagnosis"></div>
         <h4>Treatment</h4>
+            <div id="treatment"></div>
 
         </div> <!-- close cancer-types -->
     </div><!-- close contain cancer-types -->

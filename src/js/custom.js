@@ -4,9 +4,6 @@
 
 (function($) {
 
-  var id = $('#cancer_types').find('option:selected')[0].value;
-
-
   $('#toggleNav').on('click', function(e) {
     e.preventDefault();
     $('.menu-main-menu-container').toggleClass('show');
@@ -14,13 +11,15 @@
     $('.fa-times').toggleClass('hidden');
   });
 
-  $('#cancer_types').on('change', function(e) {
-    // console.log($('#cancer_types').find('option:selected').val());
-    id = $('#cancer_types').find('option:selected')[0].value;
-    getCancer(id);
-  });
-
   if ($('body').hasClass('page-id-241')) {
+
+    $('#cancer_types').on('change', function(e) {
+      // console.log($('#cancer_types').find('option:selected').val());
+      id = $('#cancer_types').find('option:selected')[0].value;
+      getCancer(id);
+    });
+
+    var id = $('#cancer_types').find('option:selected')[0].value;
     var getCancer = function(id) {
         $.ajax({
         url: ajaxObject.ajaxUrl,
@@ -50,8 +49,9 @@
         }
       })
     }
+    getCancer(id);
   }
 
-  getCancer(id);
+  
 
 })(jQuery); 

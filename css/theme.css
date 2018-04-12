@@ -10057,6 +10057,25 @@ a:hover {
     font-weight: 900;
     text-transform: uppercase; }
 
+.contain-privacy {
+  background-color: #e8e8e8;
+  background-image: url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 200px, 200px; }
+  .contain-privacy .privacy {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 24px; }
+    .contain-privacy .privacy .col {
+      column-count: 1; }
+      .contain-privacy .privacy .col h4 {
+        color: #01076d;
+        text-transform: uppercase;
+        font-weight: 900; }
+      .contain-privacy .privacy .col p {
+        font-size: 1em; }
+
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
     width: 50%;
@@ -10153,7 +10172,11 @@ a:hover {
     .contain-involved .join-us p {
       width: 70%; }
   .contain-involved .boxes .colored-box-blue {
-    width: 50%; } }
+    width: 50%; }
+  .contain-privacy .privacy {
+    padding: 48px 24px 48px 24px; }
+    .contain-privacy .privacy .col {
+      column-count: 2; } }
 
 @media only screen and (min-width: 992px) {
   h2 {
@@ -10193,7 +10216,11 @@ a:hover {
     display: block;
     margin-left: 2.75%; }
   .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
-    padding-bottom: 48px; } }
+    padding-bottom: 48px; }
+  .contain-privacy .privacy {
+    padding: 56px 24px 48px 24px; }
+    .contain-privacy .privacy .col {
+      column-count: 3; } }
 
 /*! X STYLES */
 /*

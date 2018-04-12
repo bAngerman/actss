@@ -853,6 +853,36 @@ a:hover{
 	}
 	
 }
+// PRIVACY POLICY START
+.contain-privacy{
+	background-color:$almost-white;
+	background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+	background-repeat: no-repeat;
+	background-position: left top, right bottom;
+	background-size: 200px, 200px;
+
+	.privacy{
+		max-width: 1140px;
+		margin:0 auto;
+		padding:24px;
+		.col{
+			column-count: 1;
+			h4{
+				color: $blu;
+				text-transform: uppercase;
+				font-weight: $boldest;
+			}
+			p{
+				font-size:1em;
+			}
+		}
+	}
+}
+
+
+
+
+
 
 @include screen(tablet) {
 		//global styles for tablet
@@ -1017,6 +1047,17 @@ a:hover{
 			}
 		}
 	}
+	//PRIVACY TABLET STYLES
+	.contain-privacy{
+	
+		.privacy{
+			padding:48px 24px 48px 24px;
+			.col{
+				column-count: 2;
+			}
+		}
+	}
+	
 
 }
 
@@ -1112,7 +1153,16 @@ a:hover{
 	
 	}
 
-
+	//PRIVACY TABLET STYLES
+	.contain-privacy{
+	
+		.privacy{
+			padding:56px 24px 48px 24px;
+			.col{
+				column-count: 3;
+			}
+		}
+	}
 	
 
 

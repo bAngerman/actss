@@ -29,6 +29,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <main>
     <div class="resources">
         <div class="contain-cancer-questions">
+            <div class="cancer-questions">
+            <h2>Pet Cancer FAQ</h2>
+            <p>For many people the word cancer conjures up images of pain, decline and death. Veterinarians have learned through the years that when the word cancer is used to describe a pet’s disease, often the pet owner immediately develops the impression that little can be done to save their beloved friend. Fortunately, this is frequently not the case, as veterinary medicine has made tremendous progress during the past decades in the diagnosis and treatment of cancer in animals. Successful treatments are becoming more readily available with each passing year.</p>
+           
+            <?php echo do_shortcode("[accordions_pickplguins id='530']"); ?>
+            </div>
+            
         </div>
         <div class="contain-oncology">
             <div class="oncology clearfix">
@@ -43,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p>Dr. Neal Mauldin<br>
                             (403) 770-1340<br>
                             oncology@westernvet.ca</p>
-                            <a href="#">Visit their site!</a>
+                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                     <div class="yellow-box">
@@ -54,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p> Dr. Larson<br>
                             (403) 520-8387<br>
                             info@carecentre.ca</p>
-                            <a href="#">Visit their site!</a>
+                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                     <div class="yellow-box">
@@ -64,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="doctor-info">
                             <p>The Western College of Veterinary Medicine<br>
                             (306) 966-7103</p>
-                            <a href="#">Visit their site!</a>
+                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                 </div>  <!-- close oncology boxes -->

@@ -792,10 +792,16 @@ a:hover{
 						.doctor-info{
 							color:$blu;
 							a{
-								color: $orangerish;
+								color: $blu;
 								font-weight: $bold;
+								border:2px solid $blu;
+							}
+							a:hover{
+								color: $white;
+								background-color: $blu;
 							}
 						}
+
 
 					}
 				}
@@ -1309,7 +1315,19 @@ a:hover{
 	
 	}
 	//RESOURCES DESKTOP STYLES
-	
+	.resources{
+		.oncology-boxes{
+			display: flex;
+			.yellow-box{
+				width: 31.66666%;
+				margin-right:2.5%;
+			}
+			.yellow-box:last-child{
+				margin-right:0;
+			}
+
+		}
+	}
 
 
 

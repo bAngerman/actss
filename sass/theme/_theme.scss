@@ -816,20 +816,25 @@ a:hover{
 				color: $almost-white;
 			}
 		h2{
-			color: $almost-white;
+			color: $yellowish;
 			margin-bottom:24px;
 		}
 
 		a{
-			color:$almost-white;
-			border: 2px solid $almost-white;
+			color:$yellowish;
+			border: 2px solid $yellowish;
 			padding: 6px 36px 6px 36px;
-			float:right;
 			margin:24px 0px 24px 0px;
+			float: right;
 		}
+		a:hover{
+			color: $white;
+			background-color: $yellowish;
+		}
+
 	}
 	.contain-cancer-types{
-		background-color: $almost-white;
+		background-color: $white;
 		background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
 		background-repeat: no-repeat;
 		background-position: left top, right bottom;
@@ -841,9 +846,14 @@ a:hover{
 		margin:0 auto;
 		padding: 24px;
 
+		select{
+			margin-bottom: 24px;
+			margin-left:16px;
+		}
 		h2{
 			color: $blu;
 			margin-bottom:24px;
+			padding-left:16px;
 		}
 		h4{
 			color: $orangerish;
@@ -878,6 +888,107 @@ a:hover{
 		}
 	}
 }
+
+//SUBSIDY START
+.subsidy-points-content{
+	padding: 24px;
+	background-color: $almost-white;
+	background-image:url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
+	background-repeat: no-repeat;
+	background-position: right center, left bottom;
+	background-size: 200px, 200px;
+	.contain-points{
+		max-width: 1100px;
+			margin: 0 auto;
+		h2{
+			color: $blu;
+		}
+		
+		.points{
+			background-color: $transparentyellow;
+			padding:24px;
+			
+			
+			.point{
+				padding-top:36px;
+				img{
+					width: 50px;
+					float:left;
+					margin-right:24px;
+				}
+				div{
+					p{
+						overflow: hidden;
+						color: $white;
+					}
+				}
+
+			}
+		}
+	}
+}
+.contain-apply-info{
+	background-color: $white;
+	background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+	background-repeat: no-repeat;
+	background-position: left top, right bottom;
+	background-size: 200px, 200px;
+	.apply-info{
+		padding:24px;
+		max-width: 1100px;
+		margin: 0 auto;
+		h2{
+			color: $blu;
+			padding-left:18px;
+		}
+		.col{
+			column-count: 1;
+			a{
+				color: $orangerish;
+			}
+			a:hover{
+				color: $blu;
+			}
+		}
+	}
+	.btn-styles{
+		border:2px solid $blu;
+		color:$blu;
+		float:right;
+		
+	}
+	.btn-styles:hover{
+		background-color: $blu;
+		color:$white;
+	}
+}
+.contain-eligibility{
+	background-image:linear-gradient($transparentblu,$transparentblu),url(../img/concrete-1200w.jpg);
+	.eligibility-info{
+		max-width: 1100px;
+		margin: 0 auto;
+		padding:24px;
+		color:$white;
+	
+		h2{
+			color: $yellowish;
+			padding-left:18px;
+		}
+		.col{
+			column-count: 1;
+			h3{
+				color: $yellowish;
+			}
+			a{
+				color: $yellowish;
+			}
+			a:hover{
+				color: $white;
+			}
+		}
+	}
+}
+
 
 
 
@@ -1047,16 +1158,61 @@ a:hover{
 			}
 		}
 	}
-	//PRIVACY TABLET STYLES
-	.contain-privacy{
+	//RESOURCES TABLET STYLES
+	.resources{
+		.contain-oncology, .contain-cancer-types{
+			.oncology, .cancer-types{
+				padding:48px 24px;
+			}
+		}
+
+		.contain-cancer-types{
+			.cancer-types{
+				.col{
+					p{
+						letter-spacing: 0.25px;
+					}
+				}
+			}
+		}
+		.contain-support{
+			.support{
+				padding: 48px 24px;
+				text-align: center;
+				max-width: 800px;
+				p{
+					padding-bottom:16px;
+				}
+				a{
+					padding: 12px 36px 12px 36px;
+					float:none;
+				
+				}
+			}
+		}
+	}
 	
-		.privacy{
+
+	//PRIVACY + SUBSIDY TABLET STYLES
+
+	.subsidy-points-content{
+		padding:48px 24px 48px 24px;
+		.contain-points{
+			.points{
+				padding:24px 36px;
+			}
+		}
+	}
+	.contain-privacy, .contain-apply-info, .contain-eligibility{
+	
+		.privacy, .apply-info, .eligibility-info{
 			padding:48px 24px 48px 24px;
 			.col{
 				column-count: 2;
 			}
 		}
 	}
+	
 	
 
 }
@@ -1152,15 +1308,32 @@ a:hover{
 		}
 	
 	}
-
-	//PRIVACY TABLET STYLES
-	.contain-privacy{
+	//RESOURCES DESKTOP STYLES
 	
+
+
+
+
+
+
+	//PRIVACY DESKTOP STYLES
+	.contain-privacy{
+		
 		.privacy{
 			padding:56px 24px 48px 24px;
 			.col{
 				column-count: 3;
 			}
+		}
+	}
+
+	.subsidy-points-content{
+		padding:56px 24px 48px 24px;
+	}
+	
+	.contain-apply-info{
+		.eligibility-info, .apply-info{
+			padding:56px 24px 48px 24px;
 		}
 	}
 	

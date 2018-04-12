@@ -28,6 +28,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <main>
     <div class="resources">
+        <div class="contain-cancer-questions">
+        </div>
         <div class="contain-oncology">
             <div class="oncology clearfix">
                 <h2>Oncology Centres</h2>
@@ -68,38 +70,39 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>  <!-- close oncology boxes -->
             </div> <!-- close oncology -->
         </div><!-- contain oncology close -->
+    <div class="contain-cancer-types">
+        <div class="cancer-types clearfix">
+            <h2>Cancer Types</h2>
+            <select name="cancer_types" id="cancer_types">
+                <?php
+                $args = array(  'numberposts' => -1,
+                                'category_name' => 'cancer',
+                                'orderby'			=> 'title',
+                                'order' => 'ASC');
+                $posts = get_posts($args);
+                foreach( $posts as $post ) : setup_postdata($post); ?>
+                            <option value="<?php echo $post->ID; ?>"><?php the_title(); ?></option>
+                <?php endforeach; ?>
+            </select>
+            <div class="col">
+                <h4>Description</h4>
+                    <div id="desc"></div>
+                <h4>Diagnosis</h4>
+                    <div id="diagnosis"></div>
+                <h4>Treatment</h4>
+                    <div id="treatment"></div>
+            </div>
+        </div> <!-- close cancer-types -->
+    </div><!-- close contain cancer-types -->
     <div class="contain-support">
         <div class="support clearfix">
 
         <h2>Support</h2>
         
             <p>Losing a pet, or dealing with a recent diagnosis can be tough, but there are resources out there to help. Remember a Pet is a non-profit society that has resources and ways to memorialize your pet. </p>
+            <a href="https://rememberapet.org/" class="btn-transition btn-styles">Remember a Pet</a>
         </div> <!-- close support -->
     </div><!-- close contain support -->
-    <div class="contain-cancer-types">
-        <div class="cancer-types clearfix">
-
-        <h2>Cancer Types</h2>
-        <select name="cancer_types" id="cancer_types">
-            <?php
-            $args = array(  'numberposts' => -1,
-                            'category_name' => 'cancer',
-                            'orderby'			=> 'title',
-                            'order' => 'ASC');
-            $posts = get_posts($args);
-            foreach( $posts as $post ) : setup_postdata($post); ?>
-                        <option value="<?php echo $post->ID; ?>"><?php the_title(); ?></option>
-            <?php endforeach; ?>
-        </select>
-        <h4>Description</h4>
-            <div id="desc"></div>
-        <h4>Diagnosis</h4>
-            <div id="diagnosis"></div>
-        <h4>Treatment</h4>
-            <div id="treatment"></div>
-
-        </div> <!-- close cancer-types -->
-    </div><!-- close contain cancer-types -->
 </div> <!-- close resources -->
 </main>
 

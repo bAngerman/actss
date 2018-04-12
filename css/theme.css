@@ -10029,17 +10029,20 @@ a:hover {
   .resources .support p {
     color: #e8e8e8; }
   .resources .support h2 {
-    color: #e8e8e8;
+    color: #ffad40;
     margin-bottom: 24px; }
   .resources .support a {
-    color: #e8e8e8;
-    border: 2px solid #e8e8e8;
+    color: #ffad40;
+    border: 2px solid #ffad40;
     padding: 6px 36px 6px 36px;
-    float: right;
-    margin: 24px 0px 24px 0px; }
+    margin: 24px 0px 24px 0px;
+    float: right; }
+  .resources .support a:hover {
+    color: #fff;
+    background-color: #ffad40; }
 
 .resources .contain-cancer-types {
-  background-color: #e8e8e8;
+  background-color: #fff;
   background-image: url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
@@ -10049,9 +10052,13 @@ a:hover {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px; }
+  .resources .cancer-types select {
+    margin-bottom: 24px;
+    margin-left: 16px; }
   .resources .cancer-types h2 {
     color: #01076d;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    padding-left: 16px; }
   .resources .cancer-types h4 {
     color: #dc6836;
     font-weight: 900;
@@ -10075,6 +10082,77 @@ a:hover {
         font-weight: 900; }
       .contain-privacy .privacy .col p {
         font-size: 1em; }
+
+.subsidy-points-content {
+  padding: 24px;
+  background-color: #e8e8e8;
+  background-image: url(../img/orange-triangle-1.svg), url(../img/shape-orange-1.svg);
+  background-repeat: no-repeat;
+  background-position: right center, left bottom;
+  background-size: 200px, 200px; }
+  .subsidy-points-content .contain-points {
+    max-width: 1100px;
+    margin: 0 auto; }
+    .subsidy-points-content .contain-points h2 {
+      color: #01076d; }
+    .subsidy-points-content .contain-points .points {
+      background-color: rgba(255, 173, 64, 0.85);
+      padding: 24px; }
+      .subsidy-points-content .contain-points .points .point {
+        padding-top: 36px; }
+        .subsidy-points-content .contain-points .points .point img {
+          width: 50px;
+          float: left;
+          margin-right: 24px; }
+        .subsidy-points-content .contain-points .points .point div p {
+          overflow: hidden;
+          color: #fff; }
+
+.contain-apply-info {
+  background-color: #fff;
+  background-image: url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 200px, 200px; }
+  .contain-apply-info .apply-info {
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    .contain-apply-info .apply-info h2 {
+      color: #01076d;
+      padding-left: 18px; }
+    .contain-apply-info .apply-info .col {
+      column-count: 1; }
+      .contain-apply-info .apply-info .col a {
+        color: #dc6836; }
+      .contain-apply-info .apply-info .col a:hover {
+        color: #01076d; }
+  .contain-apply-info .btn-styles {
+    border: 2px solid #01076d;
+    color: #01076d;
+    float: right; }
+  .contain-apply-info .btn-styles:hover {
+    background-color: #01076d;
+    color: #fff; }
+
+.contain-eligibility {
+  background-image: linear-gradient(rgba(1, 7, 109, 0.85), rgba(1, 7, 109, 0.85)), url(../img/concrete-1200w.jpg); }
+  .contain-eligibility .eligibility-info {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #fff; }
+    .contain-eligibility .eligibility-info h2 {
+      color: #ffad40;
+      padding-left: 18px; }
+    .contain-eligibility .eligibility-info .col {
+      column-count: 1; }
+      .contain-eligibility .eligibility-info .col h3 {
+        color: #ffad40; }
+      .contain-eligibility .eligibility-info .col a {
+        color: #ffad40; }
+      .contain-eligibility .eligibility-info .col a:hover {
+        color: #fff; }
 
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
@@ -10173,9 +10251,26 @@ a:hover {
       width: 70%; }
   .contain-involved .boxes .colored-box-blue {
     width: 50%; }
-  .contain-privacy .privacy {
+  .resources .contain-oncology .oncology, .resources .contain-oncology .cancer-types, .resources .contain-cancer-types .oncology, .resources .contain-cancer-types .cancer-types {
+    padding: 48px 24px; }
+  .resources .contain-cancer-types .cancer-types .col p {
+    letter-spacing: 0.25px; }
+  .resources .contain-support .support {
+    padding: 48px 24px;
+    text-align: center;
+    max-width: 800px; }
+    .resources .contain-support .support p {
+      padding-bottom: 16px; }
+    .resources .contain-support .support a {
+      padding: 12px 36px 12px 36px;
+      float: none; }
+  .subsidy-points-content {
     padding: 48px 24px 48px 24px; }
-    .contain-privacy .privacy .col {
+    .subsidy-points-content .contain-points .points {
+      padding: 24px 36px; }
+  .contain-privacy .privacy, .contain-privacy .apply-info, .contain-privacy .eligibility-info, .contain-apply-info .privacy, .contain-apply-info .apply-info, .contain-apply-info .eligibility-info, .contain-eligibility .privacy, .contain-eligibility .apply-info, .contain-eligibility .eligibility-info {
+    padding: 48px 24px 48px 24px; }
+    .contain-privacy .privacy .col, .contain-privacy .apply-info .col, .contain-privacy .eligibility-info .col, .contain-apply-info .privacy .col, .contain-apply-info .apply-info .col, .contain-apply-info .eligibility-info .col, .contain-eligibility .privacy .col, .contain-eligibility .apply-info .col, .contain-eligibility .eligibility-info .col {
       column-count: 2; } }
 
 @media only screen and (min-width: 992px) {
@@ -10220,7 +10315,11 @@ a:hover {
   .contain-privacy .privacy {
     padding: 56px 24px 48px 24px; }
     .contain-privacy .privacy .col {
-      column-count: 3; } }
+      column-count: 3; }
+  .subsidy-points-content {
+    padding: 56px 24px 48px 24px; }
+  .contain-apply-info .eligibility-info, .contain-apply-info .apply-info {
+    padding: 56px 24px 48px 24px; } }
 
 /*! X STYLES */
 /*

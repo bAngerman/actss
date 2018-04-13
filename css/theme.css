@@ -10173,6 +10173,36 @@ a:hover {
       .contain-eligibility .eligibility-info .col a:hover {
         color: #fff; }
 
+.contain-blog {
+  background-color: #e8e8e8; }
+  .contain-blog .blog {
+    max-width: 1100px;
+    margin: 0 auto; }
+    .contain-blog .blog h2 {
+      color: #01076d;
+      padding: 24px; }
+
+.blog-archive-posts {
+  padding: 24px;
+  margin: 0; }
+  .blog-archive-posts li:nth-child(odd) .blog-content {
+    background-color: #dc6836; }
+  .blog-archive-posts li:nth-child(even) .blog-content {
+    background-color: #01076d; }
+  .blog-archive-posts li .blog-content {
+    padding: 24px;
+    color: #fff;
+    margin-bottom: 24px; }
+    .blog-archive-posts li .blog-content a {
+      color: #fff; }
+    .blog-archive-posts li .blog-content .more {
+      border: 2px solid #fff;
+      color: #fff;
+      float: right; }
+    .blog-archive-posts li .blog-content .more:hover {
+      color: #4d4d4d;
+      background-color: #fff; }
+
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
     width: 50%;

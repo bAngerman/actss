@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 
 		?>
-			<a href="category/events" class="more-events-btn btn-transition btn-styles">More Events</a>
+			<a href="category/event" class="more-events-btn btn-transition btn-styles">More Events</a>
 		</div><!-- events-home close -->
 	</div><!-- contain events home close -->
 	<div class="contain-pets-home">

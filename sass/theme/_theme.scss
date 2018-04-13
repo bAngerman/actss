@@ -1015,8 +1015,57 @@ a:hover{
 }
 
 //blog/event page archive
+.contain-blog{
+	background-color: $almost-white;
+	.blog{
+		max-width:1100px;
+		margin: 0 auto;
+		h2{
+			color: $blu;
+			padding:24px;
+		}
+	}
+}
+.blog-archive-posts{
+	padding:24px;
+	margin:0;
+	li:nth-child(odd){
+		.blog-content{
+			background-color: $orangerish;
+		}
+	}
+	li:nth-child(even){
+		.blog-content{
+			background-color: $blu;
+		}
+	}
 
+	li{
 
+		.blog-content{
+			padding:24px;
+			color: $white;
+			margin-bottom:24px;
+
+				a{
+					color: $white;
+				}
+
+				.more{
+					border: 2px solid $white;
+					color: $white;
+					float: right;
+
+				}
+				.more:hover{
+					color:$d-grey;
+					background-color: $white;
+					
+				}
+ 
+		}
+	}
+}
 
 
 

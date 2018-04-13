@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="contain-cancer-questions">
             <div class="cancer-questions">
             <h2>Pet Cancer FAQ</h2>
-            <p>For many people the word cancer conjures up images of pain, decline and death. Veterinarians have learned through the years that when the word cancer is used to describe a pet’s disease, often the pet owner immediately develops the impression that little can be done to save their beloved friend. Fortunately, this is frequently not the case, as veterinary medicine has made tremendous progress during the past decades in the diagnosis and treatment of cancer in animals. Successful treatments are becoming more readily available with each passing year.</p>
+            <p class="col">For many people the word cancer conjures up images of pain, decline and death. Veterinarians have learned through the years that when the word cancer is used to describe a pet’s disease, often the pet owner immediately develops the impression that little can be done to save their beloved friend. Fortunately, this is frequently not the case, as veterinary medicine has made tremendous progress during the past decades in the diagnosis and treatment of cancer in animals. Successful treatments are becoming more readily available with each passing year.</p>
            
             <?php echo do_shortcode("[accordions_pickplguins id='530']"); ?>
             </div>

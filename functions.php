@@ -95,4 +95,21 @@ function custom_field_excerpt_events() {
     }
     return apply_filters('the_excerpt', $text);
 }
+
+function custom_field_excerpt_blog() {
+    global $post;
+    $text = get_field('blog_content'); //Replace 'your_field_name'
+    if ( '' != $text ) {
+        $text = strip_shortcodes( $text );
+        $text = apply_filters('the_content', $text);
+        $text = str_replace(']]&gt;', ']]&gt;', $text);
+        $excerpt_length = 50; 
+        $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+        $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
+    }
+    return apply_filters('the_excerpt', $text);
+}
+
+
+
 ?>

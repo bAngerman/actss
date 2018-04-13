@@ -191,11 +191,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 								
 							</div>
 							<div class="blog-content-home">
-								<?php the_content(); ?> 
+								<?php echo custom_field_excerpt_blog(); ?> 
 							</div>
 							</a>
 							<div class="more-container">
-								<a href="category/blog" class="btn-transition btn-styles">Read more</a>
+								<a href="category/blog-post" class="btn-transition btn-styles">Read more</a>
 							</div>
 							
 						</li>

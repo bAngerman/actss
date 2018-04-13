@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p>Dr. Neal Mauldin<br>
                             (403) 770-1340<br>
                             oncology@westernvet.ca</p>
-                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
+                            <a href="https://vcacanada.com/western" target="_blank" class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                     <div class="yellow-box">
@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p> Dr. Larson<br>
                             (403) 520-8387<br>
                             info@carecentre.ca</p>
-                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
+                            <a href="https://vcacanada.com/carecentre/services/oncology" target="_blank"  class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                     <div class="yellow-box">
@@ -71,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="doctor-info">
                             <p>The Western College of Veterinary Medicine<br>
                             (306) 966-7103</p>
-                            <a href="#" class="btn-transition btn-styles">Visit their site</a>
+                            <a href="petradtherapy.usask.ca" target="_blank"  class="btn-transition btn-styles">Visit their site</a>
                         </div>
                     </div>
                 </div>  <!-- close oncology boxes -->
@@ -107,7 +107,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h2>Support</h2>
         
             <p>Losing a pet, or dealing with a recent diagnosis can be tough, but there are resources out there to help. Remember a Pet is a non-profit society that has resources and ways to memorialize your pet. </p>
-            <a href="https://rememberapet.org/" class="btn-transition btn-styles">Remember a Pet</a>
+            <a href="https://rememberapet.org/" target="_blank" class="btn-transition btn-styles">Remember a Pet</a>
         </div> <!-- close support -->
     </div><!-- close contain support -->
 </div> <!-- close resources -->

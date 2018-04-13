@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 
 		?>
-			<a href="#" class="more-events-btn btn-transition btn-styles">More Events</a>
+			<a href="category/events" class="more-events-btn btn-transition btn-styles">More Events</a>
 		</div><!-- events-home close -->
 	</div><!-- contain events home close -->
 	<div class="contain-pets-home">
@@ -128,7 +128,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<?php 
 
 								if (has_post_thumbnail()) {
-									the_post_thumbnail('thumbnail', array('class' => "pet-pic"));
+									the_post_thumbnail('full', array('class' => "pet-pic"));
 								}
 							?>
 							<h3><?php the_title(); ?></h3>
@@ -148,7 +148,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
-					<a href="#" class="more-pet-btn btn-transition btn-styles">More Pets</a>
+					<a href="category/pets" class="more-pet-btn btn-transition btn-styles">More Pets</a>
 		
 			</div>  <!-- close pets overlay -->
 		</div> <!-- close pets-home -->
@@ -195,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							</a>
 							<div class="more-container">
-								<a href="#" class="btn-transition btn-styles">Read more</a>
+								<a href="category/blog" class="btn-transition btn-styles">Read more</a>
 							</div>
 							
 						</li>

@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <p>If you answered positively to the above questions, the next step is to speak to your veterinarian about applying for subsidization.</p>
                 <p>Do not apply without having your veterinarian fill out the Veterinarian Report, which they can obtain directly from ACTSS. Your application cannot be processed without all the necessary medical information from your veterinarian.</p>
                 <p>The pet owner's application/information form is available from ACTSS (see below for telephone number and address). However, we encourage applications submitted online. A short essay (maximum 300 words) should be submitted along with your application/information form. The topic is "Why I wish my pet to receive advanced oncology therapy".</p>
-                <p>If you require any assistance completing the online application, or require a hard copy sent to you, please call ACTSS at 780-732-3522 or contact the ACTSS Needs Committee Chair at <a href="#" class="btn-transition">subsidization@actssalberta.ca</a></p>
+                <p>If you require any assistance completing the online application, or require a hard copy sent to you, please call ACTSS at 780-732-3522 or contact the ACTSS Needs Committee Chair at <a href="mailto:subsidization@actssalberta.ca" class="btn-transition">subsidization@actssalberta.ca</a></p>
             </div><!-- close col -->
             <a href="#" class="btn-transition btn-styles">Apply Now</a>
         </div><!-- close apply info -->

@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="copyright footer-text">
 			<p><i class="far fa-copyright"></i> ACTSS <?php echo date("Y"); ?></p>
 		</div>
-		<div class="privacy footer-text"><a href="#">Privacy Policy and Terms of Use</a></div>
+		<div class="privacy footer-text"><a href="privacy-policy">Privacy Policy and Terms of Use</a></div>
 		
 	</div><!-- footer container end -->
 

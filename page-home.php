@@ -195,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							</a>
 							<div class="more-container">
-								<a href="category/blog-post" class="btn-transition btn-styles">Read more</a>
+								<a href="<?php the_permalink(); ?>" class="btn-transition btn-styles">Read more</a>
 							</div>
 							
 						</li>
@@ -205,6 +205,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
+					<a href="category/blog-posts" class="more-blog-btn btn-transition btn-styles">More Blog Posts</a>
 		
 			</div>  <!-- close blog excerpt home -->
 		</div> <!-- close blog-home -->

@@ -9836,6 +9836,15 @@ a:hover {
     margin-bottom: 0; }
   .blog-home .blog-excerpt-home {
     margin: 24px 24px 0px 24px; }
+    .blog-home .blog-excerpt-home .more-blog-btn {
+      color: #01076d;
+      border: 2px solid #01076d;
+      float: right;
+      margin-top: 48px; }
+    .blog-home .blog-excerpt-home .more-blog-btn:hover {
+      color: #fff;
+      border-color: #01076d;
+      background-color: #01076d; }
     .blog-home .blog-excerpt-home li {
       background-color: #e8e8e8; }
     .blog-home .blog-excerpt-home li:nth-child(2) {
@@ -10202,6 +10211,21 @@ a:hover {
     .blog-archive-posts li .blog-content .more:hover {
       color: #4d4d4d;
       background-color: #fff; }
+
+.contain-pets .blog {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .contain-pets .blog h2 {
+    color: #01076d;
+    padding: 24px; }
+  .contain-pets .blog img {
+    width: 280px; }
+  .contain-pets .blog li {
+    float: left;
+    margin: 24px; }
+    .contain-pets .blog li .blog-content {
+      max-width: 280px;
+      background-color: #dc6836; }
 
 .contain-single-blog {
   background-color: #e8e8e8;

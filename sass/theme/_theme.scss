@@ -1042,22 +1042,35 @@ a:hover{
 	padding:24px;
 	margin:0;
 	li:nth-child(odd){
-		.blog-content{
+		.blog-content-text{
 			background-color: $orangerish;
 		}
 	}
 	li:nth-child(even){
-		.blog-content{
+		.blog-content-text{
 			background-color: $blu;
 		}
 	}
 
-	li{
 
-		.blog-content{
+	li{
+		
+	
+		.blog-squarre{
+			width:100%;
+		}
+		.blog-square:after{
+			content:"";
+			display: block;
+			padding-bottom:100%;
+		}
+
+		.blog-content-text{
 			padding:24px;
 			color: $white;
 			margin-bottom:24px;
+			
+
 
 				a{
 					color: $white;
@@ -1080,7 +1093,7 @@ a:hover{
 }
 //Pets category page
 .contain-pets{
-		background-color:$almost;
+		background-color:$almost-white;
 	.blog{
 		max-width:1100px;
 		margin: 0 auto;
@@ -1371,7 +1384,78 @@ a:hover{
 			}
 		}
 	}
-	
+	.blog-archive-posts{
+	padding:24px;
+	margin:0;
+	li:nth-child(odd){
+		.blog-content-text{
+			background-color: $orangerish;
+		}
+	}
+	li:nth-child(even){
+		.blog-content-text{
+			background-color: $blu;
+		}
+	}
+
+
+	li{
+		
+		margin-bottom:24px;
+
+
+		.blog-content-text{
+			padding:24px;
+			color: $white;
+			margin-bottom:24px;
+			
+
+
+				a{
+					color: $white;
+				}
+
+				.more{
+					border: 2px solid $white;
+					color: $white;
+					float: right;
+
+				}
+				.more:hover{
+					color:$d-grey;
+					background-color: $white;
+					
+				}
+ 
+		}
+	}
+}
+//Pets category page
+.contain-pets{
+		background-color:$almost-white;
+	.blog{
+		max-width:1100px;
+		margin: 0 auto;
+		h2{
+			color: $blu;
+			padding:24px;
+		}
+		img{
+			width: 280px;
+		}
+		li{
+			float: left;
+			margin:24px;
+
+			.blog-content{
+				max-width: 280px;
+				background-color: $orangerish;
+			}
+		}
+	}
+}
+
+
 	
 
 }
@@ -1526,10 +1610,37 @@ a:hover{
 			padding-left:8.5%;
 		}
 	}
+	.blog-content{
+
+		.blog-archive-posts{
+
+
+			li:nth-child(odd){
+				background-color: $orangerish;
+			}
+			li:nth-child(even){
+				background-color: $blu;
+			}
+			li{
+				float: left;
+				width: 100%;
+				position: relative;
+			
+				.blog-square{
+					width: 50%;
+					float: left;
+					position: relative;
+				}
+				.blog-content-text{
+					float: right;
+					position: relative;
+					width: 50%;
+				}
+			}
+		}
+
+	}
 	
-
-
-
 
 }
 

@@ -89,7 +89,7 @@ function custom_field_excerpt_events() {
         $text = strip_shortcodes( $text );
         $text = apply_filters('the_content', $text);
         $text = str_replace(']]&gt;', ']]&gt;', $text);
-        $excerpt_length = 80; 
+        $excerpt_length = 40; 
         $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
         $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
     }
@@ -103,7 +103,7 @@ function custom_field_excerpt_blog() {
         $text = strip_shortcodes( $text );
         $text = apply_filters('the_content', $text);
         $text = str_replace(']]&gt;', ']]&gt;', $text);
-        $excerpt_length = 50; 
+        $excerpt_length = 40; 
         $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
         $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
     }

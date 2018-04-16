@@ -48,13 +48,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 
 						<li class="clearfix">
-                                <?php 
-
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail('full', array('class' => "blog-pic"));
-                                    }
-                                ?>
-                                <div class="blog-content clearfix">
+						<?php 
+									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(900,900) );
+								
+								?>
+								<div class="blog-square" style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat; background-size:cover; background-position:center center;">
+								</div>
+                                <div class="blog-content-text clearfix">
                                     <a href="<?php the_permalink(); ?>" class="blog-title-home">
                                          <h3><?php the_title(); ?></h3>
                                     </a>
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <h4> Filter by Date</h4>
                 <select name="archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
           <option value="0"><?php echo attribute_escape(__('Select Month')); ?></option>
-          <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> 
+          <?php wp_get_archives('type=monthly&cat=event&format=option&show_post_count=1'); ?> 
         </select>
             </div>
 		</div> <!-- close blog-home -->

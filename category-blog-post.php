@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     <a href="<?php the_permalink(); ?>" class="blog-title-home">
                                          <h3><?php the_title(); ?></h3>
                                     </a>
-                                    <p class="date date-blog-home"><?php the_date(); ?></p>
+                                    <p class="date date-blog-home"><?php echo get_the_date('F j, Y');?></p>
                                     <?php echo custom_field_excerpt_blog(); ?> 
                                     <a href="<?php the_permalink(); ?>" class="btn-transition btn-styles more">Read more</a>
                                 </div>

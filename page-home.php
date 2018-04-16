@@ -185,7 +185,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								
 
 								<h3><?php the_title(); ?></h3>
-								<p class="date date-blog-home"><?php the_date(); ?></p>
+								<p class="date date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
 
 								
 								
@@ -205,7 +205,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
-					<a href="category/blog-posts" class="more-blog-btn btn-transition btn-styles">More Blog Posts</a>
+					<a href="category/blog-post" class="more-blog-btn btn-transition btn-styles">More Blog Posts</a>
 		
 			</div>  <!-- close blog excerpt home -->
 		</div> <!-- close blog-home -->

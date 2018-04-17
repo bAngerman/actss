@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<div class="blog-square" style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat; background-size:cover; background-position:center center;">
 								</div>
 								<div class="blog-content-text clearfix">
-									<a href="<?php the_permalink(); ?>" class="blog-title-home">
+									<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 										<h3><?php the_title(); ?></h3>
 									</a>
 									<p class="date date-blog-home">

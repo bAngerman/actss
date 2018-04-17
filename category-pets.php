@@ -28,14 +28,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <main>
 <div class="contain-pets">
-		<div class="blog clearfix">
+		<div class="pets clearfix">
 			<h2>Our Pets</h2>
-			<div class="blog-content clearfix">
 				<?php  
 					$args = array(
 						'category_name' => 'pets',
-                        'orderby'			=> 'rand',
-                        'posts_per_page' => -1,
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                        'posts_per_page' => 12,
 						'posts_type'		=> 'post',
 						'post_status'		=> 'publish',
 						
@@ -43,22 +43,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					$myposts = get_posts($args);
 
-					echo '<ul class="blog-archive-posts">';
+					echo '<ul class="blog-pets-posts">';
 					foreach ($myposts as $post) : setup_postdata($post);
 
 					?>
 
 						<li class="clearfix">
+                        <a href="<?php the_permalink(); ?>" class="blog-title-home">
                                 <?php 
 
                                     if (has_post_thumbnail()) {
                                         the_post_thumbnail('full', array('class' => "blog-pic"));
                                     }
                                 ?>
-                                <div class="blog-content clearfix">
-                                    <a href="<?php the_permalink(); ?>" class="blog-title-home">
+                                <div class="pets-content-text clearfix">
+                                    
                                          <h3><?php the_title(); ?></h3>
                                     </a>
+                                    <h5><?php the_field('breed'); ?> </h5>
+							        <h5><?php the_field('cancer_type'); ?> </h5>
                                 </div>
 						</li>
 
@@ -66,18 +69,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						endforeach;
 						echo '</ul>';
 					
-					?>
-		
-            </div>  <!-- close blog excerpt home -->
-            <div class="filter-date">
-                <h4> Filter by Date</h4>
-                <select name="archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-          <option value="0"><?php echo attribute_escape(__('Select Month')); ?></option>
-          <?php wp_get_archives('type=monthly&category=event&format=option&show_post_count=1'); ?> 
-        </select>
-            </div>
-		</div> <!-- close blog-home -->
-    </div> <!-- contain blog -->
+                    ?>
+
+		</div> <!-- close pets -->
+    </div> <!-- contain pets -->
 </main>
 
 <?php get_footer(); ?>

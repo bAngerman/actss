@@ -9613,7 +9613,7 @@ a.skip-link {
 html body {
   font-family: "Montserrat", sans-serif; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
   font-weight: 900; }
 
@@ -10225,20 +10225,27 @@ a:hover {
 
 .contain-pets {
   background-color: #e8e8e8; }
-  .contain-pets .blog {
+  .contain-pets .pets {
     max-width: 1100px;
-    margin: 0 auto; }
-    .contain-pets .blog h2 {
-      color: #01076d;
-      padding: 24px; }
-    .contain-pets .blog img {
-      width: 280px; }
-    .contain-pets .blog li {
-      float: left;
-      margin: 24px; }
-      .contain-pets .blog li .blog-content {
-        max-width: 280px;
-        background-color: #dc6836; }
+    margin: 0 auto;
+    padding: 24px; }
+    .contain-pets .pets h2 {
+      color: #01076d; }
+    .contain-pets .pets .blog-pets-posts {
+      padding: 0; }
+      .contain-pets .pets .blog-pets-posts li {
+        width: 100%;
+        margin-bottom: 24px; }
+        .contain-pets .pets .blog-pets-posts li img {
+          width: 100%; }
+        .contain-pets .pets .blog-pets-posts li .pets-content-text {
+          background-color: #01076d;
+          color: #fff;
+          padding: 24px; }
+          .contain-pets .pets .blog-pets-posts li .pets-content-text a {
+            color: #dc6836; }
+          .contain-pets .pets .blog-pets-posts li .pets-content-text a:hover {
+            color: #fff; }
 
 .contain-single-blog {
   background-color: #e8e8e8;
@@ -10266,7 +10273,13 @@ a:hover {
     padding: 0; }
   .contain-single-blog .sidebar .blog-content {
     text-align: left;
-    background-color: #dc6836 !important; }
+    background-color: #dc6836 !important;
+    padding: 24px;
+    color: #fff; }
+    .contain-single-blog .sidebar .blog-content h4 {
+      color: #fff; }
+    .contain-single-blog .sidebar .blog-content h4:hover {
+      color: #01076d; }
 
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {
@@ -10410,20 +10423,17 @@ a:hover {
           background-color: #fff; }
   .contain-pets {
     background-color: #e8e8e8; }
-    .contain-pets .blog {
-      max-width: 1100px;
-      margin: 0 auto; }
-      .contain-pets .blog h2 {
-        color: #01076d;
-        padding: 24px; }
-      .contain-pets .blog img {
-        width: 280px; }
-      .contain-pets .blog li {
-        float: left;
-        margin: 24px; }
-        .contain-pets .blog li .blog-content {
-          max-width: 280px;
-          background-color: #dc6836; } }
+    .contain-pets .pets {
+      padding: 24px; }
+      .contain-pets .pets .blog-pets-posts li {
+        margin-left: 6.54%;
+        width: 46.7%;
+        margin-bottom: 6.54%;
+        float: left; }
+        .contain-pets .pets .blog-pets-posts li img {
+          width: 100%; }
+      .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
+        margin-left: 0; } }
 
 @media only screen and (min-width: 992px) {
   h2 {

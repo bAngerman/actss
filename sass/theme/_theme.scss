@@ -260,7 +260,7 @@ $t-fast: 100ms;
 	font-family: "Montserrat", sans-serif;
 
  }
-h1, h2, h3{
+h1, h2, h3, h4{
 	text-transform:uppercase;
 	font-weight: $boldest;
 }
@@ -1098,24 +1098,33 @@ a:hover{
 }
 //Pets category page
 .contain-pets{
-		background-color:$almost-white;
-	.blog{
+	background-color: $almost-white;
+	.pets{
 		max-width:1100px;
-		margin: 0 auto;
+		margin:0 auto;
+		padding:24px;
 		h2{
-			color: $blu;
-			padding:24px;
+			color:$blu;
 		}
-		img{
-			width: 280px;
-		}
-		li{
-			float: left;
-			margin:24px;
-
-			.blog-content{
-				max-width: 280px;
-				background-color: $orangerish;
+		.blog-pets-posts{
+			padding:0;
+			li{
+				width:100%;
+				margin-bottom:24px;
+				img{
+					width:100%;
+				}
+				.pets-content-text{
+					background-color: $blu;
+					color:$white;
+					padding:24px;
+					a{
+						color: $orangerish;
+					}
+					a:hover{
+						color:$white;
+					}
+				}
 			}
 		}
 	}
@@ -1162,6 +1171,14 @@ a:hover{
 		.blog-content{
 			text-align: left;
 			background-color: $orangerish!important;
+			padding:24px;
+			color: $white;
+			h4{
+				color:$white;
+			}
+			h4:hover{
+				color: $blu;
+			}
 		}
 	}
 }
@@ -1435,30 +1452,28 @@ a:hover{
 		}
 	}
 }
-//Pets category page
+//Pets category page - tablet
 .contain-pets{
-		background-color:$almost-white;
-	.blog{
-		max-width:1100px;
-		margin: 0 auto;
-		h2{
-			color: $blu;
-			padding:24px;
-		}
-		img{
-			width: 280px;
-		}
-		li{
-			float: left;
-			margin:24px;
-
-			.blog-content{
-				max-width: 280px;
-				background-color: $orangerish;
+	background-color: $almost-white;
+	.pets{
+		padding:24px;
+		.blog-pets-posts{
+			li{
+				margin-left:6.54%;
+				width:46.7%;
+				margin-bottom:6.54%;
+				float:left;
+				img{
+					width:100%;
+				}
+			}
+			li:nth-child(odd){
+				margin-left:0;
 			}
 		}
 	}
 }
+
 
 
 	
@@ -1645,6 +1660,8 @@ a:hover{
 		}
 
 	}
+	//pets category page - desktop 
+
 	
 
 }

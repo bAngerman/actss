@@ -93,6 +93,11 @@ $t-fast: 100ms;
   flex-direction: column;
 }
 
+.d-flex-around{
+	justify-content:center;
+	align-items: space-around;
+}
+
 .bg-cover {
 	// bg cover compatibility
   -webkit-background-size: cover;
@@ -1183,6 +1188,37 @@ a:hover{
 	}
 }
 
+//donate/membership/volunteer
+.contain-memberships{
+	background-color: $yellowish;
+}
+.memberships{
+	max-width: 1100px;
+	margin: 0 auto;
+	letter-spacing: 0.25px;
+	padding:36px 24px 36px 24px;
+	color:$white;
+
+
+	h2{
+		color: $d-grey;
+		margin-bottom:10px;
+	}
+		
+	a{
+		color:$d-grey;
+		border: 2px solid $d-grey;
+		margin:24px 0px 6px 0px;
+		font-weight: $bold;
+		float:right;
+		// display:inline-block;
+	}
+	a:hover{
+		color: $white;
+		background-color:$d-grey;
+	}
+	
+}
 
 
 

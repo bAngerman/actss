@@ -9492,6 +9492,10 @@ a.skip-link {
 .d-flex-c {
   flex-direction: column; }
 
+.d-flex-around {
+  justify-content: center;
+  align-items: space-around; }
+
 .bg-cover, .contain-events-home, .aboutus-container .contain-history, .aboutus-container .contain-chet, .resources .contain-cancer-questions, .resources .contain-support {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10280,6 +10284,28 @@ a:hover {
       color: #fff; }
     .contain-single-blog .sidebar .blog-content h4:hover {
       color: #01076d; }
+
+.contain-memberships {
+  background-color: #ffad40; }
+
+.memberships {
+  max-width: 1100px;
+  margin: 0 auto;
+  letter-spacing: 0.25px;
+  padding: 36px 24px 36px 24px;
+  color: #fff; }
+  .memberships h2 {
+    color: #4d4d4d;
+    margin-bottom: 10px; }
+  .memberships a {
+    color: #4d4d4d;
+    border: 2px solid #4d4d4d;
+    margin: 24px 0px 6px 0px;
+    font-weight: 700;
+    float: right; }
+  .memberships a:hover {
+    color: #fff;
+    background-color: #4d4d4d; }
 
 @media only screen and (min-width: 600px) {
   .colored-box-orange, .colored-box-yellow {

@@ -1473,11 +1473,21 @@ a:hover{
 		}
 	}
 }
+//membership/volunteer/donate
 
-
-
-	
-
+	.memberships{
+		padding-bottom:0;
+		text-align: center;
+		
+		a{
+			float:none;
+			display:inline-block;
+			margin-bottom:36px;
+		}
+		h2{
+			padding-bottom:18px;
+		}
+	}
 }
 
 

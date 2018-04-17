@@ -10433,7 +10433,16 @@ a:hover {
         .contain-pets .pets .blog-pets-posts li img {
           width: 100%; }
       .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
-        margin-left: 0; } }
+        margin-left: 0; }
+  .memberships {
+    padding-bottom: 0;
+    text-align: center; }
+    .memberships a {
+      float: none;
+      display: inline-block;
+      margin-bottom: 36px; }
+    .memberships h2 {
+      padding-bottom: 18px; } }
 
 @media only screen and (min-width: 992px) {
   h2 {

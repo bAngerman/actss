@@ -173,7 +173,12 @@ $t-fast: 100ms;
 		}
 	}
 	@include screen('tablet') {
-
+		.menu-main-menu-container {
+			max-width: 400px;
+			&.show {
+				left: calc(100% - 400px);
+			}
+		}
 	}
 }
 
@@ -202,7 +207,7 @@ $t-fast: 100ms;
 	@include screen('desktop') {
 		& {
 			background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-image-1600px.png);
-			height: 100vh;
+			height: 600px;
 		}
 	}
 }

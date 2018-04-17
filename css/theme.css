@@ -9550,6 +9550,11 @@ a.skip-link {
     .nav .menu-main-menu-container.show {
       left: 0%;
       transition: left 0.5s; }
+  @media only screen and (min-width: 600px) {
+    .nav .menu-main-menu-container {
+      max-width: 400px; }
+      .nav .menu-main-menu-container.show {
+        left: calc(100% - 400px); } }
 
 .banner {
   height: 400px;
@@ -9571,7 +9576,7 @@ a.skip-link {
   @media only screen and (min-width: 992px) {
     .banner {
       background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-image-1600px.png);
-      height: 100vh; } }
+      height: 600px; } }
 
 .footer {
   background-color: #4d4d4d;

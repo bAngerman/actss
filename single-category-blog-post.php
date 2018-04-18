@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		?>
 			<p><span>Blog</span></p>
 			<h2><?php the_title(); ?></h2>
-			<p class="date"><?php the_date(); ?></p>
+			<p class="date"><?php echo get_the_date('F j, Y'); ?></p>
 			<div class="single-main">
 				<div class="single-content">
 					<p><?php the_field('blog_content'); ?></p>
@@ -75,10 +75,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 										}
 									?>
 									<div class="blog-content clearfix">
-										<a href="<?php the_permalink(); ?>" class="blog-title-home">
+										<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 											<h4><?php the_title(); ?></h4>
 										</a>
-										<p class="date date-blog-home"><?php the_date(); ?></p>
+										<p class="date date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
 										
 									</div>
 							</li>

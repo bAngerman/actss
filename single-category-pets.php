@@ -36,20 +36,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 				the_post_thumbnail('full', array('class' => "blog-pic"));
 			}
 		?>
-			<p><span>Events</span></p>
+			
 			<h2><?php the_title(); ?></h2>
 			<p class="date"><?php the_date(); ?></p>
 			<div class="single-main">
 				<div class="single-content">
-					<p><?php the_field('details'); ?></p>
+					<p><?php the_field('blog_content'); ?></p>
 				</div>
 				<div class="sidebar">
-					<h3>Latest Events</h3>
+					<h3>Latest Blog Posts</h3>
 				<?php  
 					$currentPostID= get_the_id();
 					
 					$args= array(
-							'category_name' => 'event',
+							'category_name' => 'blog-post',
 							'post__not_in' =>	array($currentPostID),
 							'posts_per_page' => 3,
 							'orderby'			=> 'DESC',
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										}
 									?>
 									<div class="blog-content clearfix">
-										<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
+										<a href="<?php the_permalink(); ?>" class="blog-title-home">
 											<h4><?php the_title(); ?></h4>
 										</a>
 										<p class="date date-blog-home"><?php the_date(); ?></p>

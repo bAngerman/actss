@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<div class="blog-square" style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat; background-size:cover; background-position:center center;">
 								</div>
 								<div class="blog-content-text clearfix">
-									<a href="<?php the_permalink(); ?>" class="blog-title-home">
+									<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 										<h3><?php the_title(); ?></h3>
 									</a>
 									<p class="date date-blog-home">
@@ -83,10 +83,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
             </div>  <!-- close blog excerpt home -->
             <div class="filter-date">
-                <h4> Filter by Date</h4>
+				<h4> Filter by Date</h4>
                 <select name="archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
           <option value="0"><?php echo attribute_escape(__('Select Month')); ?></option>
-          <?php wp_get_archives('type=monthly&category=event&format=option&show_post_count=1'); ?> 
+          <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> 
         </select>
             </div>
 		</div> <!-- close blog-home -->

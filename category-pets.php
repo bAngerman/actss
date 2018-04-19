@@ -30,14 +30,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="contain-pets">
 		<div class="pets clearfix">
 			<h2>Our Pets</h2>
-				<?php  
+				<?php 
+					$paged = (get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+
 					$args = array(
 						'category_name' => 'pets',
                         'orderby' => 'title',
                         'order' => 'ASC',
-                        'posts_per_page' => 12,
-						'posts_type'		=> 'post',
-						'post_status'		=> 'publish',
+                        'posts_per_page' => 8,
+						// 'posts_type'		=> 'post',
+						// 'post_status'		=> 'publish',
+						'paged' =>	$paged
 						
 					);
 
@@ -64,12 +67,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 							        <h5><?php the_field('cancer_type'); ?> </h5>
                                 </div>
 						</li>
-
+						
 					<?php 
 						endforeach;
 						echo '</ul>';
 					
-                    ?>
+					?>
+						<div class="nav-next alignright btn-transition btn-styles"><?php next_posts_link( 'More Pets' ); ?></div>
+						<div class="nav-previous alignleft btn-transition btn-styles"><?php previous_posts_link( 'Previous Pets' ); ?></div>
 
 		</div> <!-- close pets -->
     </div> <!-- contain pets -->

@@ -1156,8 +1156,15 @@ a:hover{
 			h2{
 				color: $blu;;
 			}
+			.pet-name{
+				margin-bottom:0;
+				color:$blu;
+			}
 			.single-content{
 				text-align: left;
+			}
+			.pets{
+				padding:24px;
 			}
 	}
 
@@ -1173,6 +1180,13 @@ a:hover{
 		ul{
 			padding:0;
 		}
+		.pet-posts{
+			width:280px;
+			margin:0 auto;
+			.pet-pic{
+				width:280px;
+			}
+		}
 		.blog-content{
 			text-align: left;
 			background-color: $orangerish!important;
@@ -1187,6 +1201,8 @@ a:hover{
 		}
 	}
 }
+
+
 
 //donate/membership/volunteer
 .contain-memberships{
@@ -1219,6 +1235,7 @@ a:hover{
 	}
 	
 }
+
 
 
 
@@ -1487,6 +1504,7 @@ a:hover{
  
 		}
 	}
+
 }
 //Pets category page - tablet
 .contain-pets{
@@ -1723,9 +1741,6 @@ a:hover{
 					img{
 						width:100%;
 					}
-					// .pets-content-text{
-					// 	min-height:200px;
-					// }
 					h5{
 						font-size: 1.1rem;
 					}

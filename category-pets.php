@@ -30,6 +30,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="contain-pets">
 		<div class="pets clearfix">
 			<h2>Our Pets</h2>
+			<?php
+				$cat_id = get_cat_ID('pets');
+				$args=array(
+				'cat' => $cat_id,
+				'orderby' => 'title',
+				'order' => 'ASC',
+				'post_type' => 'post',
+				'post_status' => 'publish',
+				'posts_per_page' => -1,
+				);
+				$my_query = null;
+				$my_query = new WP_Query($args);
+				if( $my_query->have_posts() ) {
+				?>
+				<form name="jump">
+				<select name="menu" onChange="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="Go">
+				<option value="0"><?php echo attribute_escape(__('Select Pet')); ?></option>
+				<?php
+				while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				<option value="<?php the_permalink() ?>"><?php the_title(); ?></option>
+				<?php
+				endwhile;
+				}
+			?>
+			</select>
+			
+		</form>
+		<?php
+		wp_reset_query();
+		?>
 				<?php 
 					$paged = (get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
 

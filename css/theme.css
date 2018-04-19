@@ -10266,8 +10266,13 @@ a:hover {
       padding-bottom: 6px; }
     .contain-single-blog .single-blog h2 {
       color: #01076d; }
+    .contain-single-blog .single-blog .pet-name {
+      margin-bottom: 0;
+      color: #01076d; }
     .contain-single-blog .single-blog .single-content {
       text-align: left; }
+    .contain-single-blog .single-blog .pets {
+      padding: 24px; }
   .contain-single-blog .sidebar img {
     margin-bottom: 0; }
   .contain-single-blog .sidebar h3 {
@@ -10275,6 +10280,11 @@ a:hover {
     color: #dc6836; }
   .contain-single-blog .sidebar ul {
     padding: 0; }
+  .contain-single-blog .sidebar .pet-posts {
+    width: 280px;
+    margin: 0 auto; }
+    .contain-single-blog .sidebar .pet-posts .pet-pic {
+      width: 280px; }
   .contain-single-blog .sidebar .blog-content {
     text-align: left;
     background-color: #dc6836 !important;

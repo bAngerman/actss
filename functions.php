@@ -126,4 +126,6 @@ function check_for_category_single_template( $t )
 }
 
 
+
+
 ?>

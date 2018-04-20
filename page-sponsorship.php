@@ -40,12 +40,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 
 						<li class="clearfix">
-						        <?php 
-									$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(300,300) );
-								
-								?>
+
 							
-								<div class="sponsor-square" style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat; background-size:cover; background-position:center center;">
+								<div class="sponsor-square">
+                                <?php 
+
+                                    if (has_post_thumbnail()) {
+                                        the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                    }   
+                                ?>
 								</div>
                                 <div class="sponsor-name"><?php the_field('name'); ?></div>
 
@@ -57,12 +60,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
-                    
-                    
-                    
-                    
-                    
-                    
                     </div>
                 </div>
                 <div class="sponsor-type"><h3>Media Sponsor</h3></div>

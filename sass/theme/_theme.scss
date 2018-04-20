@@ -1755,6 +1755,18 @@ a:hover{
 
 	}
 	//pets category page - desktop 
+
+	//memberships, volunteer, donate
+	.volunteer{
+		display: flex;
+		justify-content: center;
+		padding-top:56px;
+		padding-bottom:56px;
+		.volunteer-info p{
+			max-width: 800px;
+			
+		}
+	}	
 	.contain-pets{
 		.pets{
 			.blog-pets-posts{

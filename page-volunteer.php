@@ -10,31 +10,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="banner">
 </div>
 <main>
-<<<<<<< HEAD
-    <div class="contain-volunteer">
-        <div class="volunteer">
-            <div class="volunteer-info clearfix">
-                <h2>Volunteer</h2>
-                <p>ACTSS is a volunteer based non-profit charitable organization and is always looking for positive, dedicated volunteers to become a part of our team. As our organization continues to grow, so does our need for volunteers.</p>
-=======
     <div class="contain-memberships">
         <div class="memberships clearfix">
             <h2>Volunteer</h2>
             <p>ACTSS is a volunteer based non-profit charitable organization and is always looking for positive, dedicated volunteers to become a part of our team. As our organization continues to grow, so does our need for volunteers.</p>
->>>>>>> 3a6c9701216a6dc67687758545300875fad18121
 
                 <p>ACTSS has a volunteer recognition program in place and is developing a long-service award program. We support and encourage youth volunteer participation with parental consent.</p>
 
-<<<<<<< HEAD
-                <p>ACTSS has such a wide variety of volunteer opportunities with events throughout the years. Trade show display at dog/cat shows, Pets in the Park, working a casino and major fundraising events such as our annual dog wash and Halloween extravaganza, are just a few of the types of activities we do. We are always looking for committee members as well.</p>
-                <a href="" class="btn-transition btn-styles">Get More Info</a>
-                <a href="" class="btn-transition btn-styles">Sign Up Now!</a>
-            </div>
-=======
             <p>ACTSS has such a wide variety of volunteer opportunities with events throughout the years. Trade show display at dog/cat shows, Pets in the Park, working a casino and major fundraising events such as our annual dog wash and Halloween extravaganza, are just a few of the types of activities we do. We are always looking for committee members as well.</p>
             <a href="" class="btn-transition btn-styles">Get More Info</a>
             <a href="" class="btn-transtion btn-styles">Sign Up Now!</a>
->>>>>>> 3a6c9701216a6dc67687758545300875fad18121
         </div>
         <div class="contain-membership-photos">
             <div class="membership-photos">

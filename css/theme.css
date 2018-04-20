@@ -10285,25 +10285,25 @@ a:hover {
     .contain-single-blog .sidebar .blog-content h4:hover {
       color: #01076d; }
 
-.contain-memberships {
+.contain-memberships, .contain-volunteer {
   background-color: #ffad40; }
 
-.memberships {
+.memberships, .volunteer {
   max-width: 1100px;
   margin: 0 auto;
   letter-spacing: 0.25px;
   padding: 36px 24px 36px 24px;
   color: #fff; }
-  .memberships h2 {
+  .memberships h2, .volunteer h2 {
     color: #4d4d4d;
     margin-bottom: 10px; }
-  .memberships a {
+  .memberships a, .volunteer a {
     color: #4d4d4d;
     border: 2px solid #4d4d4d;
     margin: 24px 0px 6px 0px;
     font-weight: 700;
     float: right; }
-  .memberships a:hover {
+  .memberships a:hover, .volunteer a:hover {
     color: #fff;
     background-color: #4d4d4d; }
 
@@ -10460,14 +10460,14 @@ a:hover {
           width: 100%; }
       .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
         margin-left: 0; }
-  .memberships {
+  .volunteer .volunteer-info {
     padding-bottom: 0;
     text-align: center; }
-    .memberships a {
+    .volunteer .volunteer-info a {
       float: none;
       display: inline-block;
       margin-bottom: 36px; }
-    .memberships h2 {
+    .volunteer .volunteer-info h2 {
       padding-bottom: 18px; } }
 
 @media only screen and (min-width: 992px) {
@@ -10546,7 +10546,14 @@ a:hover {
     .blog-content .blog-archive-posts li .blog-content-text {
       float: right;
       position: relative;
-      width: 50%; } }
+      width: 50%; }
+  .volunteer {
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 56px; }
+    .volunteer .volunteer-info p {
+      max-width: 800px; } }
 
 /*! X STYLES */
 /*

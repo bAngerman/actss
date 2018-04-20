@@ -1189,10 +1189,10 @@ a:hover{
 }
 
 //donate/membership/volunteer
-.contain-memberships{
+.contain-memberships, .contain-volunteer{
 	background-color: $yellowish;
 }
-.memberships{
+.memberships, .volunteer{
 	max-width: 1100px;
 	margin: 0 auto;
 	letter-spacing: 0.25px;
@@ -1510,18 +1510,20 @@ a:hover{
 	}
 }
 //membership/volunteer/donate
-
-	.memberships{
-		padding-bottom:0;
-		text-align: center;
-		
-		a{
-			float:none;
-			display:inline-block;
-			margin-bottom:36px;
-		}
-		h2{
-			padding-bottom:18px;
+	.volunteer{
+		.volunteer-info{
+			padding-bottom:0;
+			text-align: center;
+			
+			
+			a{
+				float:none;
+				display:inline-block;
+				margin-bottom:36px;
+			}
+			h2{
+				padding-bottom:18px;
+			}
 		}
 	}
 }
@@ -1633,10 +1635,6 @@ a:hover{
 	}
 
 
-
-
-
-
 	//PRIVACY DESKTOP STYLES
 	.contain-privacy{
 		
@@ -1708,8 +1706,17 @@ a:hover{
 	}
 	//pets category page - desktop 
 
-	
-
+	//memberships, volunteer, donate
+	.volunteer{
+		display: flex;
+		justify-content: center;
+		padding-top:56px;
+		padding-bottom:56px;
+		.volunteer-info p{
+			max-width: 800px;
+			
+		}
+	}	
 }
 
 

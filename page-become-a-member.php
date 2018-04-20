@@ -9,6 +9,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!-- Banner -->
 <div class="banner">
+  <div class="<?php echo $container; ?>">
+    <?php echo do_shortcode('[swpm_payment_button id=567]'); ?>
+  </div>
 </div>
 <main>
     <div class="contain-memberships">

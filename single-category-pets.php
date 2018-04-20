@@ -37,22 +37,31 @@ $container = get_theme_mod( 'understrap_container_type' );
 			}
 		?>
 			
-			<h2><?php the_title(); ?></h2>
-			<p class="date"><?php the_date(); ?></p>
+			<h2 class="pet-name"><?php the_title(); ?></h2>
+			<p class="pet-name"><?php the_field('breed'); ?></p>
+			<p class="pet-name"><?php the_field('cancer_type'); ?></p>
+
+
+
 			<div class="single-main">
-				<div class="single-content">
-					<p><?php the_field('blog_content'); ?></p>
+				<div class="single-content pets">
+					<p><?php the_field('pet_bio'); ?></p>
+					<div class="nav-next nav-pet alignleft btn-transition btn-styles"><?php previous_post_link(); ?></div>
+					<div class="nav-next nav-pet alignright btn-transition btn-styles"><?php next_post_link(); ?></div>
 				</div>
+
+
+
 				<div class="sidebar">
-					<h3>Latest Blog Posts</h3>
+					<h3>More Pets</h3>
 				<?php  
 					$currentPostID= get_the_id();
 					
 					$args= array(
-							'category_name' => 'blog-post',
+							'category_name' => 'pets',
 							'post__not_in' =>	array($currentPostID),
 							'posts_per_page' => 3,
-							'orderby'			=> 'DESC',
+							'orderby'			=> 'rand',
 							'posts_type'		=> 'post',
 							'post_status'		=> 'publish'
 							
@@ -62,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						$myposts = get_posts($args);
 
-						echo '<ul class="blog-archive-posts">';
+						echo '<ul class="blog-archive-posts pet-posts">';
 						foreach ($myposts as $post) : setup_postdata($post);
 
 						?>
@@ -71,15 +80,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<?php 
 
 										if (has_post_thumbnail()) {
-											the_post_thumbnail('full', array('class' => "blog-pic"));
+											the_post_thumbnail('full', array('class' => "blog-pic pet-pic"));
 										}
 									?>
 									<div class="blog-content clearfix">
-										<a href="<?php the_permalink(); ?>" class="blog-title-home">
+										<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 											<h4><?php the_title(); ?></h4>
 										</a>
-										<p class="date date-blog-home"><?php the_date(); ?></p>
-										
 									</div>
 							</li>
 

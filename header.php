@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<nav class="nav">
 		<div class="brand">
-			<a href="#">
+			<a href="<?php echo get_site_url(); ?>">
 				<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
 			</a>
 			<div class="brand-tagline">Animal Cancer Therapy Subsidization Society</div>

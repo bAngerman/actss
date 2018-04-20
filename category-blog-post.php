@@ -19,8 +19,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- Banner -->
 <div class="banner">
 	<div class="<?php echo $container; ?>">
-		<div class="banner-text">
-			<h4>Animal Cancer Therapy Subsidization Society</h4>
 		</div>
   </div>
 </div>

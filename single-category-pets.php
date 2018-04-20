@@ -46,8 +46,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="single-main">
 				<div class="single-content pets">
 					<p><?php the_field('pet_bio'); ?></p>
-					<div class="nav-next nav-pet alignleft btn-transition btn-styles"><?php previous_post_link(); ?></div>
-					<div class="nav-next nav-pet alignright btn-transition btn-styles"><?php next_post_link(); ?></div>
+					<div class="nav-next nav-pet alignleft btn-transition btn-styles"><?php previous_post_link('%link', 'Previous Pet', TRUE); ?></div>
+					<div class="nav-next nav-pet alignright btn-transition btn-styles"><?php next_post_link('%link', 'Next Pet', TRUE); ?></div>
 				</div>
 
 

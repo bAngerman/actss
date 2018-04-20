@@ -10,15 +10,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="banner">
 </div>
 <main>
-    <div class="contain-donate">
-        <div class="donate">
+    <div class="contain-memberships">
+        <div class="memberships">
             <h2>Donate</h2>
             <p>Our organization runs on donations from people like you. Donations to ACTSS go straight to the heart of our organization. It helps us in our day to day running and helps fund the subsidization families rely on to treat their beloved pets.</p>
 
-            <a href="">Donate Now!</a>
+            <a href=""class="btn-transition btn-styles">Donate Now!</a>
         </div>
-        <div class="contain-donate-photos">
-            <div class="donate-photos">
+        <div class="contain-membership-photos">
+            <div class="membership-photos">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">

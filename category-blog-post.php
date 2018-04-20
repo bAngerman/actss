@@ -19,6 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- Banner -->
 <div class="banner">
 	<div class="<?php echo $container; ?>">
+		<div class="banner-text rocksalt">
+			<h1>Blog</h1>
 		</div>
   </div>
 </div>

@@ -36,6 +36,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <a href="" class="btn-transtion btn-styles">Sign Up Now!</a>
 >>>>>>> 3a6c9701216a6dc67687758545300875fad18121
         </div>
+        <div class="contain-membership-photos">
+            <div class="membership-photos">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">

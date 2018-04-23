@@ -32,9 +32,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<nav class="nav">
 		<div class="brand">
 			<a href="<?php echo get_site_url(); ?>">
-				<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
+				<img class="logo" src="<?php echo get_site_url(); ?>/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
 			</a>
-			<div class="brand-tagline">Animal Cancer Therapy Subsidization Society</div>
+			<div class="brand-tagline"><?php echo $pagename; ?></div>
 		</div>
 		<div class="mobile-nav-btn">
 			<a href="#" id="toggleNav"><i class="fas fa-bars fa-2x"></i><i class="hidden fas fa-times fa-2x"></i></a>
@@ -49,3 +49,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		); ?>
 
 	</nav><!-- /nav -->
+
+<!-- Banner -->
+	<div class="banner">
+		<div class="<?php echo $container; ?>">
+			<div class="banner-text rocksalt">
+				<h4><?php echo $pagename; ?></h4>
+			</div>
+		</div>
+	</div>
+<!-- /Banner -->

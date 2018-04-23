@@ -7,15 +7,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- Banner -->
-<div class="banner">
-  <div class="<?php echo $container; ?>">
-
-  </div>
-</div>
-
-<!-- /Banner -->
-
   <div class="contain-privacy">
     <div class="privacy clearfix">
       

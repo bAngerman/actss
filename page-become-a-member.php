@@ -7,15 +7,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- Banner -->
-<div class="banner">
-<<<<<<< HEAD
-  <div class="<?php echo $container; ?>">
-    <?php //echo do_shortcode('[swpm_payment_button id=567]'); ?>
-  </div>
-=======
->>>>>>> 7ad790703154d826f4e99f58579c2fcd898adde5
-</div>
 <main>
     <div class="contain-memberships">
         <div class="memberships clearfix">

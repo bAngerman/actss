@@ -6,9 +6,7 @@
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-<!-- Banner -->
-<div class="banner">
-</div>
+
 <main>
     <div class="contain-memberships">
         <div class="memberships clearfix">

@@ -9561,12 +9561,12 @@ a.skip-link {
         left: calc(100% - 400px); } }
 
 .banner {
-  height: 400px;
   width: 100%;
   margin-top: -65px;
   padding-top: 65px;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center center; }
   .banner .banner-text {
     max-width: 80%;
     margin: 0 auto;
@@ -9574,12 +9574,6 @@ a.skip-link {
     color: #fff; }
     .banner .banner-text .yellow {
       color: #ffad40; }
-  @media only screen and (min-width: 600px) {
-    .banner {
-      height: 450px; } }
-  @media only screen and (min-width: 992px) {
-    .banner {
-      height: 600px; } }
 
 .contain-page {
   background-color: #e8e8e8;

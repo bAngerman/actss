@@ -125,5 +125,31 @@ function check_for_category_single_template( $t )
   return $t;
 }
 
+function custom_posts_per_page( $query ) {
+
+    if ( $query->is_archive() ) {
+  
+      // check for current page number, if it doesnt exist set it as 1
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      set_query_var('paged', $paged);
+
+      if( is_category('blog-post') ) {
+        $num_of_pages = 4;
+      } 
+      elseif ( is_category('event') ) {
+        $num_of_pages = 4;
+      } elseif( is_category('pets') ) {
+        $num_of_pages = 8;
+      }
+  
+      // 6 Posts per page on archive.php
+      set_query_var('posts_per_page', $num_of_pages);
+    }
+  
+  }
+    add_action( 'pre_get_posts', 'custom_posts_per_page' );
+
+
+
 
 ?>

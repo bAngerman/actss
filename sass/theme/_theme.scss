@@ -216,6 +216,22 @@ $t-fast: 100ms;
 		}
 	}
 }
+//default page
+.contain-page{
+	background-color: $almost-white;
+	background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+	background-repeat: no-repeat;
+	background-position: left top, right bottom;
+	background-size: 200px, 200px;
+	.page-content{
+		max-width:1100px;
+		margin:0 auto;
+		padding:24px;
+		h1,h2,h3,h4{
+			color:$blu;
+		}
+	}
+}
 
 //footer style
 	.footer{
@@ -318,6 +334,15 @@ a:hover{
 	background-size: cover;
 	color: $almost-white;
 }
+.colored-box-grey{
+	background-image: linear-gradient($transparentdgrey,$transparentdgrey), url(../img/dog-bath-600w-300h.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $almost-white;
+		p{
+			max-width:672px;
+		}
+}
 
 .btn-transition{
 	transition:all 0.3s ease-in-out;
@@ -328,6 +353,13 @@ a:hover{
 	border-radius:24px;
 	text-transform:uppercase;
 	font-weight:$bold;
+}
+select{
+	width: 236px;
+   height: 40px;
+   border: none;
+   background: #ffad40;
+   color: white;
 }
 
 // HOME PAGE STYLES
@@ -435,13 +467,23 @@ a:hover{
 		
 		a{
 			color: $orangerish;
+			border:2px solid $orangerish;
 		}
 		a:hover{
-			color: $d-grey;
+			color: $white;
+			background-color: $orangerish;
 		}
 		li{
 			h3{
 				margin-bottom:0;
+				padding-top:24px;
+				color: $orangerish;
+			}
+			p{
+				padding-bottom:24px;
+			}
+			.date{
+				padding-bottom:0;
 			}
 
 		}
@@ -470,10 +512,10 @@ a:hover{
 .pets-home{
 	max-width:1100px;
 	margin:0 auto;
-	padding-bottom:56px 0 48px 0px;
+	padding:56px 0 48px 0px;
 	h2{
 		color: $blu;
-		padding: 0 0 0 24px;
+		padding: 24px 0 0 24px;
 		margin-bottom: 0;
 	}
 	.pets-home-overlay{
@@ -1108,6 +1150,9 @@ a:hover{
 		max-width:1100px;
 		margin:0 auto;
 		padding:24px;
+		select{
+			margin-bottom:24px;
+		}
 		h2{
 			color:$blu;
 		}
@@ -1156,8 +1201,16 @@ a:hover{
 			h2{
 				color: $blu;;
 			}
+			.pet-name{
+				margin-bottom:0;
+				color:$blu;
+			}
 			.single-content{
 				text-align: left;
+			}
+			.pets{
+				padding:24px;
+
 			}
 	}
 
@@ -1172,6 +1225,13 @@ a:hover{
 		}
 		ul{
 			padding:0;
+		}
+		.pet-posts{
+			width:280px;
+			margin:0 auto;
+			.pet-pic{
+				width:280px;
+			}
 		}
 		.blog-content{
 			text-align: left;
@@ -1188,11 +1248,13 @@ a:hover{
 	}
 }
 
+
+
 //donate/membership/volunteer
-.contain-memberships{
+.contain-memberships, .contain-volunteer{
 	background-color: $yellowish;
 }
-.memberships{
+.memberships, .volunteer{
 	max-width: 1100px;
 	margin: 0 auto;
 	letter-spacing: 0.25px;
@@ -1220,14 +1282,83 @@ a:hover{
 	
 }
 
+	.contain-membership-faq{
+		background-image:linear-gradient($transparentdgrey,$transparentdgrey),url(../img/concrete-1200w.jpg);
+		@extend .bg-cover;
+		background-position: center center;
+		width: 100%;
+		.membership-faq{
+			max-width: 1100px;
+			margin: 0 auto;
+			padding:24px 24px 36px 24px;
+			h2{
+				padding-left:16px;
+				color: $yellowish;
+			}
+			p{
+				color:$white;
+				padding-bottom:24px; 
+			}
+		}
+	}
+
+
+.contain-sponsors{
+	background-color: $white;
+
+	.sponsors{
+		max-width:1100px;
+		margin:0 auto;
+		h2{
+			color:$blu;
+			padding:24px 0 0 24px;
+		}
+		.sponsor-type{
+			margin: 24px 24px 0 24px;
+			h3{
+				color: $yellowish;
+				font-size: 1.9em;
+				padding-bottom:24px;
+				text-decoration: underline;
+			}
+			h4{
+				color:$blu;
+				font-size: 2.5em;
+			}
+			.sponsor-logos{
+				ul{
+					padding:0;
+					margin:0;
+				}
+				li{
+					padding:0 24px 24px 24px;
+					text-align: center;
+					margin:0 auto;
+					img{
+						max-height:200px;
+						width:auto;
+					}
+				}
+			}
+
+		}
+	}
+}
 
 
 
 
 
 @include screen(tablet) {
+		//page template
+		.contain-page{
+			.col{
+				column-count: 1;
+			}
+		}
+
 		//global styles for tablet
-		.colored-box-orange, .colored-box-yellow{
+		.colored-box-orange, .colored-box-yellow, .colored-box-grey{
 			width: 50%;
 			float: left;
 		}
@@ -1287,7 +1418,7 @@ a:hover{
 		}
 	}
 	.pets-home{
-		padding:36px 0 48px 0;
+		
 		h2{
 			padding:0px 0px 0px 24px;
 		}
@@ -1318,6 +1449,7 @@ a:hover{
 			li{
 				width: 47.5%;
 				float: left;
+
 			}
 			li:nth-child(2){
 				display: block;
@@ -1344,16 +1476,20 @@ a:hover{
 					padding:56px 0;
 				}
 				.goal-container{
-					display: flex;
-					flex-wrap: wrap;
 					.goals{
-						width: 47.5%;
+						display:block;
 						text-align: left;
+						height:120px;
+						img{
+							float:left;
+						}
+						p{
+							overflow: hidden;
+							padding:24px 0;
+						}
 						
 					}
-					.goals:nth-child(even){
-						margin-left:2.5%;
-					}
+
 				}
 			}
 		}
@@ -1487,12 +1623,14 @@ a:hover{
  
 		}
 	}
+
 }
 //Pets category page - tablet
 .contain-pets{
 	background-color: $almost-white;
 	.pets{
 		padding:24px;
+
 		.blog-pets-posts{
 			li{
 				margin-left:6.54%;
@@ -1502,6 +1640,9 @@ a:hover{
 				img{
 					width:100%;
 				}
+				.pets-content-text{
+					min-height: 196px;
+				}
 			}
 			li:nth-child(odd){
 				margin-left:0;
@@ -1510,26 +1651,60 @@ a:hover{
 	}
 }
 //membership/volunteer/donate
-
-	.memberships{
-		padding-bottom:0;
-		text-align: center;
-		
-		a{
-			float:none;
-			display:inline-block;
-			margin-bottom:36px;
+	.contain-memberships{
+		.memberships{
+			padding-bottom:0;
+			text-align: center;
+			
+			
+			a{
+				float:none;
+				display:inline-block;
+				margin-bottom:36px;
+			}
+			h2{
+				padding-bottom:18px;
+			}
 		}
-		h2{
-			padding-bottom:18px;
+	}
+}
+
+.contain-sponsors{
+	.sponsors{
+		.sponsor-type{
+			.sponsor-logos{
+				ul{
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+				}
+				li{
+					padding:0 24px 24px 24px;
+					text-align: left;
+					margin: 0;
+					width:50%;
+					img{
+						max-height:200px;
+						width:auto;
+					}
+				}
+			}
+
 		}
 	}
 }
 
 
+
 //DESKTOP STYLES
 
 @include screen(desktop){
+		//page template
+		.contain-page{
+			.col{
+				column-count: 2;
+			}
+		}
 	//global desktop styles
 	h2{
 		font-size:40px;
@@ -1633,10 +1808,6 @@ a:hover{
 	}
 
 
-
-
-
-
 	//PRIVACY DESKTOP STYLES
 	.contain-privacy{
 		
@@ -1706,8 +1877,49 @@ a:hover{
 		}
 
 	}
-	//pets category page - desktop 
+	
 
+	//memberships, volunteer, donate
+	.volunteer{
+		display: flex;
+		justify-content: center;
+		padding-top:56px;
+		padding-bottom:56px;
+		.volunteer-info p{
+			max-width: 800px;
+			
+		}
+	}	
+	//pets category page - desktop 
+	.contain-pets{
+		.pets{
+			.blog-pets-posts{
+				li{
+					
+					margin-left:1.8%;
+					margin-right:1.8%;
+					width:22.3%;
+					margin-bottom:3.6%;
+					float:left;
+					img{
+						width:100%;
+					}
+					h5{
+						font-size: 1.1rem;
+					}
+				}
+				li:nth-child(odd){
+					margin-left:1.8%;
+				}
+				li:nth-child(1),li:nth-child(5){
+					margin-left:0;
+				}
+				li:nth-child(4),li:nth-child(8){
+					margin-right:0;
+				}
+			}
+		}
+	}
 	
 
 }

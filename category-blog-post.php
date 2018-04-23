@@ -19,8 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- Banner -->
 <div class="banner">
 	<div class="<?php echo $container; ?>">
-		<div class="banner-text">
-			<h4>Animal Cancer Therapy Subsidization Society</h4>
+		<div class="banner-text rocksalt">
+			<h1>Blog</h1>
 		</div>
   </div>
 </div>
@@ -31,21 +31,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="blog clearfix">
 			<h2>Latest Posts</h2>
 			<div class="blog-content clearfix">
-				<?php  
-					$args = array(
-						'category_name' => 'blog-post',
-						'orderby'			=> 'DESC',
-						'posts_type'		=> 'post',
-						'post_status'		=> 'publish',
-						
-					);
 
-					$myposts = get_posts($args);
+				<?php  
+
 
 					echo '<ul class="blog-archive-posts">';
-					foreach ($myposts as $post) : setup_postdata($post);
+					if (have_posts() ) : while (have_posts() ) : the_post(); ?>
 
-					?>
+				
 
 						<li class="clearfix">
 						<?php 
@@ -65,19 +58,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</li>
 
 					<?php 
-						endforeach;
+						 endwhile; endif; 
 						echo '</ul>';
 					
 					?>
+
+
 		
-            </div>  <!-- close blog excerpt home -->
-            <div class="filter-date">
-                <h4> Filter by Date</h4>
-                <select name="archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-          <option value="0"><?php echo attribute_escape(__('Select Month')); ?></option>
-          <?php wp_get_archives('type=monthly&cat=event&format=option&show_post_count=1'); ?> 
-        </select>
-            </div>
+				</div>  <!-- close blog excerpt home -->
+				<div class="nav-next alignright btn-transition btn-styles"><?php next_posts_link( 'More Blog Posts' ); ?></div>
+						<div class="nav-previous alignleft btn-transition btn-styles"><?php previous_posts_link( 'Previous Blog Posts' ); ?></div>
 		</div> <!-- close blog-home -->
     </div> <!-- contain blog -->
 </main>

@@ -10,7 +10,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- Banner -->
 <div class="banner">
   <div class="<?php echo $container; ?>">
-    <?php echo do_shortcode('[swpm_payment_button id=567]'); ?>
+    <?php //echo do_shortcode('[swpm_payment_button id=567]'); ?>
   </div>
 </div>
 <main>
@@ -20,9 +20,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <h2>Memberships</h2>
                 <p>Looking to get more involved in a more dynamic way with ACTSS? Getting a membership might be the best option for you! Members play a key role in ACTSS, not only by providing great moral support but also by helping to  determine the future of those applying for subsidization. This is vital to our organization, and would love to have you join us! </p>
             
-                <a href="" class="btn-transition btn-styles">Get More Info</a>
+                <a href="mailto:secretary@actssalberta.ca" class="btn-transition btn-styles">Get More Info</a>
                 
-                <?php echo do_shortcode('[swpm_payment_button id=567]'); ?>
+                <?php //echo do_shortcode('[swpm_payment_button id=567]'); ?>
                 
             </div>
 

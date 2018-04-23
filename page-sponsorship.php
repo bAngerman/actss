@@ -24,53 +24,305 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <h2>Our Sponsors</h2>
                 <div class="sponsor-type"><h3>Lifesaver Sponsor</h3>
                     <div class="sponsor-logos">
-                    <?php  
-					$args = array(
-						'category_name' => 'lifesaver-sponsor',
-						'posts_type'		=> 'post',
-						'post_status'		=> 'publish',
-						
-					);
+                        <?php  
+                        $args = array(
+                            'category_name' => 'lifesaver-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
 
-					$myposts = get_posts($args);
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div><!-- \lifesaver sponsor -->
+                <div class="sponsor-type"><h3>Media Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'media-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
 
-					echo '<ul class="sponsor-list">';
-					foreach ($myposts as $post) : setup_postdata($post);
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div> <!-- \ media sponsor -->
+                
+                <div class="sponsor-type"><h3>Hero Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'hero-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
 
-					?>
-
-						<li class="clearfix">
-
-							
-								<div class="sponsor-square">
-                                <?php 
-
-                                    if (has_post_thumbnail()) {
-                                        the_post_thumbnail('full', array('class' => "sponsor-pic"));
-                                    }   
-                                ?>
-								</div>
-                                <div class="sponsor-name"><?php the_field('name'); ?></div>
-
-						
-						</li>
-
-					<?php 
-						endforeach;
-						echo '</ul>';
-					
-					?>
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
                     </div>
                 </div>
-                <div class="sponsor-type"><h3>Media Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Hero Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Ambassador Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Inspiration Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Friend Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Volunteer Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Pet Costume Contest Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Goods Sponsor</h3></div>
-                <div class="sponsor-type"><h3>Services Sponsor</h3></div>  
+                <div class="sponsor-type"><h3>Ambassador Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'ambassador-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Inspiration Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'inspiration-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Friend Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'friend-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Volunteer Sponsor</h3>
+                     <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'volunteer-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Pet Costume Contest Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'pet-costume-contest-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Goods Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'goods-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>
+                <div class="sponsor-type"><h3>Services Sponsor</h3>
+                    <div class="sponsor-logos">
+                        <?php  
+                        $args = array(
+                            'category_name' => 'services-sponsor',
+                            'posts_type'		=> 'post',
+                            'post_status'		=> 'publish',
+                        );
+
+                        $myposts = get_posts($args);
+                        echo '<ul class="sponsor-list">';
+                        foreach ($myposts as $post) : setup_postdata($post);
+                        ?>
+                            <li class="clearfix">
+                                <div class="sponsor-square">
+                                    <?php 
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', array('class' => "sponsor-pic"));
+                                        }   
+                                    ?>
+                                </div>
+                                <div class="sponsor-name"><h4><?php the_field('name'); ?></h4></div>
+                            </li>
+                        <?php 
+                            endforeach;
+                            echo '</ul>';
+                        
+                        ?>
+                    </div>
+                </div>  
             </div>
         </div>
 </main>

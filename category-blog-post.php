@@ -71,13 +71,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 		
             </div>  <!-- close blog excerpt home -->
-            <div class="filter-date">
-                <h4> Filter by Date</h4>
-                <select name="archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-          <option value="0"><?php echo attribute_escape(__('Select Month')); ?></option>
-          <?php wp_get_archives('type=monthly&cat=event&format=option&show_post_count=1'); ?> 
-        </select>
-            </div>
 		</div> <!-- close blog-home -->
     </div> <!-- contain blog -->
 </main>

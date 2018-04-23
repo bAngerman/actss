@@ -39,10 +39,10 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="contain-goals">
           <h2>Our Goals</h2>
             <div class="goal-container">
-              <div class="goals"><img src="/wp-content/themes/actss/img/goal-1.png" alt="goal 1"><p>To subsidize the cost of cancer therapies for pets.</p></div><!-- goals -->
-              <div class="goals"><img src="/wp-content/themes/actss/img/goal-2.png" alt="goal 2"><p>To support the well being of pet families.</p></div> <!-- goals -->
-              <div class="goals"><img src="/wp-content/themes/actss/img/goal-3.png" alt="goal 3"><p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p></div><!-- goals -->
-              <div class="goals"><img src="/wp-content/themes/actss/img/goal-4.png" alt="goal 4"><p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p></div><!-- goals -->
+              <div class="goals clearfix"><img src="/wp-content/themes/actss/img/goal-1.png" alt="goal 1"><p>To subsidize the cost of cancer therapies for pets.</p></div><!-- goals -->
+              <div class="goals clearfix"><img src="/wp-content/themes/actss/img/goal-2.png" alt="goal 2"><p>To support the well being of pet families.</p></div> <!-- goals -->
+              <div class="goals clearfix"><img src="/wp-content/themes/actss/img/goal-3.png" alt="goal 3"><p>To continually expand ACTSS' network of association, thereby offering ever greater numbers of people and pets the opportunity to benefit from its program.</p></div><!-- goals -->
+              <div class="goals clearfix"><img src="/wp-content/themes/actss/img/goal-4.png" alt="goal 4"><p>To provide education for veterinarians, animal health technologists and the pet owning public regarding the availability, uses and benefits of advanced cancer therapies.</p></div><!-- goals -->
             </div><!-- goal container -->
           </div><!-- contain goals -->
         </div><!-- close box -->

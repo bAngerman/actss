@@ -35,14 +35,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<p>
 				ACTSS is a not-for-profit society dedicated to bringing affordable modern veterinary cancer treatment to pets. Through our programs we provide subsidies to dedicated pet owners. We aim to educate animal owners and veterinarians on the availability, uses and benefits of advanced cancer therapies in the treatment of veterinary cancers.
 			</p>
-			<a href="page-about-us.php" class="btn-transition btn-styles">Read More</a>
+			<a href="about-us" class="btn-transition btn-styles">Read More</a>
 			</div> <!-- about text home close -->
 		
 
       <div class="about-donation-home clearfix">
         <div class="about-donation-overlay">
           <p>Your help gets us one step closer to helping families and their pets. Thanks for your generous support, we couldn’t do it without you.</p>
-          <a href="#" class="btn-transition btn-styles">Donate Now!</a>
+          <a href="donate" class="btn-transition btn-styles">Donate Now!</a>
 		</div> <!-- donation overlay close -->
         <div class="donation-home-img"></div>
 	  </div>  <!-- about donation home close -->
@@ -76,7 +76,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								?>
 								<img class="event-pic" src="<?php echo $backgroundImg[0]; ?>" alt="">
 
-					<a href="<?php the_permalink();?>" class="btn-transition">
+					
 					<h3><?php the_title(); ?></h3>
 
 					<?php 
@@ -88,9 +88,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					?>
 					<p class="date"><?php echo $date->format('F d, Y'); ?></p>
-					</a>
+					
 
 					<?php echo custom_field_excerpt_events(); ?> 
+					<a href="<?php the_permalink(); ?>" class="btn-transition btn-styles">Read more</a>
 				</li>
 
 			<?php 

@@ -9496,7 +9496,7 @@ a.skip-link {
   justify-content: center;
   align-items: space-around; }
 
-.bg-cover, .contain-events-home, .aboutus-container .contain-history, .aboutus-container .contain-chet, .resources .contain-cancer-questions, .resources .contain-support {
+.bg-cover, .contain-events-home, .aboutus-container .contain-history, .aboutus-container .contain-chet, .resources .contain-cancer-questions, .resources .contain-support, .contain-membership-faq {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9680,6 +9680,14 @@ a:hover {
   background-size: cover;
   color: #e8e8e8; }
 
+.colored-box-grey {
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/dog-bath-600w-300h.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e8e8e8; }
+  .colored-box-grey p {
+    max-width: 672px; }
+
 .btn-transition {
   transition: all 0.3s ease-in-out; }
 
@@ -9768,11 +9776,19 @@ a:hover {
     padding: 24px;
     margin: 24px; }
     .events-home ul a {
-      color: #dc6836; }
+      color: #dc6836;
+      border: 2px solid #dc6836; }
     .events-home ul a:hover {
-      color: #4d4d4d; }
+      color: #fff;
+      background-color: #dc6836; }
     .events-home ul li h3 {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding-top: 24px;
+      color: #dc6836; }
+    .events-home ul li p {
+      padding-bottom: 24px; }
+    .events-home ul li .date {
+      padding-bottom: 0; }
   .events-home .more-events-btn {
     color: #fff;
     border: 2px solid #fff;
@@ -9793,10 +9809,10 @@ a:hover {
 .pets-home {
   max-width: 1100px;
   margin: 0 auto;
-  padding-bottom: 56px 0 48px 0px; }
+  padding: 56px 0 48px 0px; }
   .pets-home h2 {
     color: #01076d;
-    padding: 0 0 0 24px;
+    padding: 24px 0 0 24px;
     margin-bottom: 0; }
   .pets-home .pets-home-overlay {
     width: 100%; }
@@ -10246,6 +10262,8 @@ a:hover {
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px; }
+    .contain-pets .pets select {
+      margin-bottom: 24px; }
     .contain-pets .pets h2 {
       color: #01076d; }
     .contain-pets .pets .blog-pets-posts {
@@ -10330,10 +10348,54 @@ a:hover {
     color: #fff;
     background-color: #4d4d4d; }
 
+.contain-membership-faq {
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
+  background-position: center center;
+  width: 100%; }
+  .contain-membership-faq .membership-faq {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 24px 36px 24px; }
+    .contain-membership-faq .membership-faq h2 {
+      padding-left: 16px;
+      color: #ffad40; }
+    .contain-membership-faq .membership-faq p {
+      color: #fff;
+      padding-bottom: 24px; }
+
+.contain-sponsors {
+  background-color: #fff; }
+  .contain-sponsors .sponsors {
+    max-width: 1100px;
+    margin: 0 auto; }
+    .contain-sponsors .sponsors h2 {
+      color: #01076d;
+      padding: 24px 0 0 24px; }
+    .contain-sponsors .sponsors .sponsor-type {
+      margin: 24px 24px 0 24px; }
+      .contain-sponsors .sponsors .sponsor-type h3 {
+        color: #ffad40;
+        font-size: 1.9em;
+        padding-bottom: 24px;
+        text-decoration: underline; }
+      .contain-sponsors .sponsors .sponsor-type h4 {
+        color: #01076d;
+        font-size: 2.5em; }
+      .contain-sponsors .sponsors .sponsor-type .sponsor-logos ul {
+        padding: 0;
+        margin: 0; }
+      .contain-sponsors .sponsors .sponsor-type .sponsor-logos li {
+        padding: 0 24px 24px 24px;
+        text-align: center;
+        margin: 0 auto; }
+        .contain-sponsors .sponsors .sponsor-type .sponsor-logos li img {
+          max-height: 200px;
+          width: auto; }
+
 @media only screen and (min-width: 600px) {
   .contain-page .col {
     column-count: 1; }
-  .colored-box-orange, .colored-box-yellow {
+  .colored-box-orange, .colored-box-yellow, .colored-box-grey {
     width: 50%;
     float: left; }
   .col {
@@ -10371,21 +10433,19 @@ a:hover {
       padding-right: 12px; }
     .events-home .more-events-btn {
       margin: 24px 0px 24px 0px; }
-  .pets-home {
-    padding: 36px 0 48px 0; }
-    .pets-home h2 {
-      padding: 0px 0px 0px 24px; }
-    .pets-home .pets-home-overlay .more-pet-btn {
-      margin: 24px 24px 0 0; }
-    .pets-home .pets-home-overlay ul li {
-      width: 47.5%;
-      float: left;
-      min-height: 742px; }
-    .pets-home .pets-home-overlay ul li:nth-child(2) {
-      display: block;
-      margin-left: 5%; }
-    .pets-home .pets-home-overlay .more-pet-btn {
-      margin-top: 48px; }
+  .pets-home h2 {
+    padding: 0px 0px 0px 24px; }
+  .pets-home .pets-home-overlay .more-pet-btn {
+    margin: 24px 24px 0 0; }
+  .pets-home .pets-home-overlay ul li {
+    width: 47.5%;
+    float: left;
+    min-height: 742px; }
+  .pets-home .pets-home-overlay ul li:nth-child(2) {
+    display: block;
+    margin-left: 5%; }
+  .pets-home .pets-home-overlay .more-pet-btn {
+    margin-top: 48px; }
   .blog-home {
     padding: 36px 0 56px 0; }
     .blog-home .blog-excerpt-home li {
@@ -10405,14 +10465,15 @@ a:hover {
     width: 100%; }
     .aboutus-container .miss-vis-goals .colored-box-blue .contain-goals {
       padding: 56px 0; }
-    .aboutus-container .miss-vis-goals .colored-box-blue .goal-container {
-      display: flex;
-      flex-wrap: wrap; }
-      .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
-        width: 47.5%;
-        text-align: left; }
-      .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals:nth-child(even) {
-        margin-left: 2.5%; }
+    .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals {
+      display: block;
+      text-align: left;
+      height: 120px; }
+      .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals img {
+        float: left; }
+      .aboutus-container .miss-vis-goals .colored-box-blue .goal-container .goals p {
+        overflow: hidden;
+        padding: 24px 0; }
   .aboutus-container .about-us, .aboutus-container .history, .aboutus-container .chet {
     padding: 56px 0; }
     .aboutus-container .about-us p, .aboutus-container .history p, .aboutus-container .chet p {
@@ -10487,15 +10548,29 @@ a:hover {
           min-height: 196px; }
       .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
         margin-left: 0; }
-  .volunteer .volunteer-info {
+  .contain-memberships .memberships {
     padding-bottom: 0;
     text-align: center; }
-    .volunteer .volunteer-info a {
+    .contain-memberships .memberships a {
       float: none;
       display: inline-block;
       margin-bottom: 36px; }
-    .volunteer .volunteer-info h2 {
+    .contain-memberships .memberships h2 {
       padding-bottom: 18px; } }
+
+.contain-sponsors .sponsors .sponsor-type .sponsor-logos ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.contain-sponsors .sponsors .sponsor-type .sponsor-logos li {
+  padding: 0 24px 24px 24px;
+  text-align: left;
+  margin: 0;
+  width: 50%; }
+  .contain-sponsors .sponsors .sponsor-type .sponsor-logos li img {
+    max-height: 200px;
+    width: auto; }
 
 @media only screen and (min-width: 992px) {
   .contain-page .col {

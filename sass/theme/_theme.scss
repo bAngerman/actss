@@ -334,6 +334,15 @@ a:hover{
 	background-size: cover;
 	color: $almost-white;
 }
+.colored-box-grey{
+	background-image: linear-gradient($transparentdgrey,$transparentdgrey), url(../img/dog-bath-600w-300h.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $almost-white;
+		p{
+			max-width:672px;
+		}
+}
 
 .btn-transition{
 	transition:all 0.3s ease-in-out;
@@ -451,13 +460,23 @@ a:hover{
 		
 		a{
 			color: $orangerish;
+			border:2px solid $orangerish;
 		}
 		a:hover{
-			color: $d-grey;
+			color: $white;
+			background-color: $orangerish;
 		}
 		li{
 			h3{
 				margin-bottom:0;
+				padding-top:24px;
+				color: $orangerish;
+			}
+			p{
+				padding-bottom:24px;
+			}
+			.date{
+				padding-bottom:0;
 			}
 
 		}
@@ -486,10 +505,10 @@ a:hover{
 .pets-home{
 	max-width:1100px;
 	margin:0 auto;
-	padding-bottom:56px 0 48px 0px;
+	padding:56px 0 48px 0px;
 	h2{
 		color: $blu;
-		padding: 0 0 0 24px;
+		padding: 24px 0 0 24px;
 		margin-bottom: 0;
 	}
 	.pets-home-overlay{
@@ -1124,6 +1143,9 @@ a:hover{
 		max-width:1100px;
 		margin:0 auto;
 		padding:24px;
+		select{
+			margin-bottom:24px;
+		}
 		h2{
 			color:$blu;
 		}
@@ -1181,6 +1203,7 @@ a:hover{
 			}
 			.pets{
 				padding:24px;
+
 			}
 	}
 
@@ -1252,7 +1275,68 @@ a:hover{
 	
 }
 
+	.contain-membership-faq{
+		background-image:linear-gradient($transparentdgrey,$transparentdgrey),url(../img/concrete-1200w.jpg);
+		@extend .bg-cover;
+		background-position: center center;
+		width: 100%;
+		.membership-faq{
+			max-width: 1100px;
+			margin: 0 auto;
+			padding:24px 24px 36px 24px;
+			h2{
+				padding-left:16px;
+				color: $yellowish;
+			}
+			p{
+				color:$white;
+				padding-bottom:24px; 
+			}
+		}
+	}
 
+
+.contain-sponsors{
+	background-color: $white;
+
+	.sponsors{
+		max-width:1100px;
+		margin:0 auto;
+		h2{
+			color:$blu;
+			padding:24px 0 0 24px;
+		}
+		.sponsor-type{
+			margin: 24px 24px 0 24px;
+			h3{
+				color: $yellowish;
+				font-size: 1.9em;
+				padding-bottom:24px;
+				text-decoration: underline;
+			}
+			h4{
+				color:$blu;
+				font-size: 2.5em;
+			}
+			.sponsor-logos{
+				ul{
+					padding:0;
+					margin:0;
+				}
+				li{
+					padding:0 24px 24px 24px;
+					text-align: center;
+					margin:0 auto;
+					img{
+						max-height:200px;
+						width:auto;
+					}
+				}
+			}
+
+		}
+	}
+}
 
 
 
@@ -1267,7 +1351,7 @@ a:hover{
 		}
 
 		//global styles for tablet
-		.colored-box-orange, .colored-box-yellow{
+		.colored-box-orange, .colored-box-yellow, .colored-box-grey{
 			width: 50%;
 			float: left;
 		}
@@ -1327,7 +1411,7 @@ a:hover{
 		}
 	}
 	.pets-home{
-		padding:36px 0 48px 0;
+		
 		h2{
 			padding:0px 0px 0px 24px;
 		}
@@ -1358,6 +1442,7 @@ a:hover{
 			li{
 				width: 47.5%;
 				float: left;
+
 			}
 			li:nth-child(2){
 				display: block;
@@ -1384,16 +1469,20 @@ a:hover{
 					padding:56px 0;
 				}
 				.goal-container{
-					display: flex;
-					flex-wrap: wrap;
 					.goals{
-						width: 47.5%;
+						display:block;
 						text-align: left;
+						height:120px;
+						img{
+							float:left;
+						}
+						p{
+							overflow: hidden;
+							padding:24px 0;
+						}
 						
 					}
-					.goals:nth-child(even){
-						margin-left:2.5%;
-					}
+
 				}
 			}
 		}
@@ -1534,6 +1623,7 @@ a:hover{
 	background-color: $almost-white;
 	.pets{
 		padding:24px;
+
 		.blog-pets-posts{
 			li{
 				margin-left:6.54%;
@@ -1554,8 +1644,8 @@ a:hover{
 	}
 }
 //membership/volunteer/donate
-	.volunteer{
-		.volunteer-info{
+	.contain-memberships{
+		.memberships{
 			padding-bottom:0;
 			text-align: center;
 			
@@ -1571,6 +1661,32 @@ a:hover{
 		}
 	}
 }
+
+.contain-sponsors{
+	.sponsors{
+		.sponsor-type{
+			.sponsor-logos{
+				ul{
+					display:flex;
+					flex-direction: row;
+					flex-wrap:wrap;
+				}
+				li{
+					padding:0 24px 24px 24px;
+					text-align: left;
+					margin: 0;
+					width:50%;
+					img{
+						max-height:200px;
+						width:auto;
+					}
+				}
+			}
+
+		}
+	}
+}
+
 
 
 //DESKTOP STYLES
@@ -1754,7 +1870,7 @@ a:hover{
 		}
 
 	}
-	//pets category page - desktop 
+	
 
 	//memberships, volunteer, donate
 	.volunteer{
@@ -1767,6 +1883,7 @@ a:hover{
 			
 		}
 	}	
+	//pets category page - desktop 
 	.contain-pets{
 		.pets{
 			.blog-pets-posts{

@@ -281,7 +281,7 @@ $t-fast: 100ms;
 	font-family: "Montserrat", sans-serif;
 
  }
-h1, h2, h3, h4{
+h2, h3, h4{
 	text-transform:uppercase;
 	font-weight: $boldest;
 }
@@ -807,7 +807,7 @@ select{
 	.join-us{
 		background-color: $almost-white;
 		padding: 24px;
-		h1{
+		h2{
 			display: none;
 		}	
 	}
@@ -1160,6 +1160,30 @@ select{
 //Pets category page
 .contain-pets{
 	background-color: $almost-white;
+	.contain-success-stories{
+		background-color: $yellowish;
+		text-align: center;
+		
+		.success-stories{
+			margin:0 auto;
+			max-width: 800px;
+			padding:56px 24px 48px 24px;
+			h2{
+				color:$white;
+			}
+			a:first-child{
+				margin-right:24px;
+			}
+			a{
+				border:2px solid $d-grey;
+				color: $d-grey;
+			}
+			a:hover{
+				background-color: $d-grey;
+				color: $white;
+			}
+		}
+	}
 	.pets{
 		max-width:1100px;
 		margin:0 auto;
@@ -1293,6 +1317,19 @@ select{
 	a:hover{
 		color: $white;
 		background-color:$d-grey;
+	}
+	
+}
+.contain-membership-photos{
+	padding:24px;
+	max-width: 1100px;
+	margin:0 auto;
+	div{
+		margin-bottom:24px;
+	}
+	img{
+		display:block;
+		margin:0 auto;
 	}
 	
 }
@@ -1524,7 +1561,7 @@ select{
 	.contain-involved{
 		.join-us{
 			display:flex;
-			h1{
+			h2{
 				display: block;
 				color: $blu;
 				width:30%;

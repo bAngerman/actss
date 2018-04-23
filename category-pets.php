@@ -18,8 +18,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <main>
 <div class="contain-pets">
-		<div class="success-stories">
-			
+		<div class="contain-success-stories">
+			<div class="success-stories">
+				<h2>Success Stories</h2>
+				<p>Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.</p>
+				<a href="" class="btn-transition btn-styles">Chet Dobson Story</a>
+				<a href="" class="btn-transition btn-styles">Lucky Moffat</a>
+			</div>
 		</div>
 		<div class="pets clearfix">
 			<h2>Our Pets</h2>

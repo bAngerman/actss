@@ -9630,7 +9630,7 @@ a.skip-link {
 html body {
   font-family: "Montserrat", sans-serif; }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   text-transform: uppercase;
   font-weight: 900; }
 
@@ -10032,7 +10032,7 @@ select {
 .contain-involved .join-us {
   background-color: #e8e8e8;
   padding: 24px; }
-  .contain-involved .join-us h1 {
+  .contain-involved .join-us h2 {
     display: none; }
 
 .contain-involved .boxes {
@@ -10277,6 +10277,23 @@ select {
 
 .contain-pets {
   background-color: #e8e8e8; }
+  .contain-pets .contain-success-stories {
+    background-color: #ffad40;
+    text-align: center; }
+    .contain-pets .contain-success-stories .success-stories {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 56px 24px 48px 24px; }
+      .contain-pets .contain-success-stories .success-stories h2 {
+        color: #fff; }
+      .contain-pets .contain-success-stories .success-stories a:first-child {
+        margin-right: 24px; }
+      .contain-pets .contain-success-stories .success-stories a {
+        border: 2px solid #4d4d4d;
+        color: #4d4d4d; }
+      .contain-pets .contain-success-stories .success-stories a:hover {
+        background-color: #4d4d4d;
+        color: #fff; }
   .contain-pets .pets {
     max-width: 1100px;
     margin: 0 auto;
@@ -10367,6 +10384,16 @@ select {
   .memberships a:hover, .volunteer a:hover {
     color: #fff;
     background-color: #4d4d4d; }
+
+.contain-membership-photos {
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto; }
+  .contain-membership-photos div {
+    margin-bottom: 24px; }
+  .contain-membership-photos img {
+    display: block;
+    margin: 0 auto; }
 
 .contain-membership-faq {
   background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
@@ -10502,7 +10529,7 @@ select {
       padding-left: 18px; }
   .contain-involved .join-us {
     display: flex; }
-    .contain-involved .join-us h1 {
+    .contain-involved .join-us h2 {
       display: block;
       color: #01076d;
       width: 30%; }

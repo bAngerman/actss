@@ -57,29 +57,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</select>
 			
 		</form>
-		<?php
-		wp_reset_query();
-		?>
 				<?php 
-					$paged = (get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
-
-					$args = array(
-						'category_name' => 'pets',
-                        'orderby' => 'title',
-                        'order' => 'ASC',
-                        'posts_per_page' => 8,
-						// 'posts_type'		=> 'post',
-						// 'post_status'		=> 'publish',
-						'paged' =>	$paged
-						
-					);
-
-					$myposts = get_posts($args);
-
 					echo '<ul class="blog-pets-posts">';
-					foreach ($myposts as $post) : setup_postdata($post);
-
-					?>
+					if (have_posts() ) : while (have_posts() ) : the_post(); ?>
 
 						<li class="clearfix">
                         <a href="<?php the_permalink(); ?>" class="blog-title-home">
@@ -99,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</li>
 						
 					<?php 
-						endforeach;
+						endwhile; endif; 
 						echo '</ul>';
 					
 					?>

@@ -354,6 +354,13 @@ a:hover{
 	text-transform:uppercase;
 	font-weight:$bold;
 }
+select{
+	width: 236px;
+   height: 40px;
+   border: none;
+   background: #ffad40;
+   color: white;
+}
 
 // HOME PAGE STYLES
 .contain-about-home{

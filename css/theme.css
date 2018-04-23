@@ -9697,6 +9697,13 @@ a:hover {
   text-transform: uppercase;
   font-weight: 700; }
 
+select {
+  width: 236px;
+  height: 40px;
+  border: none;
+  background: #ffad40;
+  color: white; }
+
 .contain-about-home {
   background-color: #ffad40; }
 

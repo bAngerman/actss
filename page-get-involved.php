@@ -10,7 +10,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <main>
     <div class="contain-involved">
        <div class="join-us">
-            <h1>Want to join us?</h1>
+            <h2>Want to join us?</h2>
             <p>Looking for a way to get involved with ACTSS Alberta? From sideline supporters who donate to our organization, sponsor our events or become a member to hands on work for those who enjoy volunteering, there is a place for everyone at ACTSS. We would love to have your support in anyway you choose. Your involvement helps change the lives of so many beloved family pets right here in Alberta! Check out the different options below on how you can get involved and help continue the heartfelt work we do here at ACTSS. </p>
        </div>
        <div class="boxes">

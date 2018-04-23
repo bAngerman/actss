@@ -20,11 +20,19 @@ $container = get_theme_mod( 'understrap_container_type' );
             <a href="" class="btn-transtion btn-styles">Sign Up Now!</a>
         </div>
         <div class="contain-membership-photos">
-            <div class="membership-photos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="membership-photos row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/actss/img/volunteer1.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/actss/img/volunteer2.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/actss/img/volunteer3.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/actss/img/volunteer4.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>

@@ -192,7 +192,6 @@ $t-fast: 100ms;
 	width: 100%;
 	margin-top: -65px;
 	padding-top: 65px;
-	background: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-600px.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	@extend .d-flex;
@@ -202,16 +201,17 @@ $t-fast: 100ms;
 		margin: 0 auto;
 		text-align: center;
 		color: $white;
+		.yellow {
+			color: $yellowish;
+		}
 	}
 	@include screen('tablet') {
 		& {
-			background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-992px.png);
 			height: 450px;
 		}
 	}
 	@include screen('desktop') {
 		& {
-			background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-image-1600px.png);
 			height: 600px;
 		}
 	}

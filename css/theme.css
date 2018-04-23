@@ -9565,7 +9565,6 @@ a.skip-link {
   width: 100%;
   margin-top: -65px;
   padding-top: 65px;
-  background: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-600px.png);
   background-size: cover;
   background-repeat: no-repeat; }
   .banner .banner-text {
@@ -9573,13 +9572,13 @@ a.skip-link {
     margin: 0 auto;
     text-align: center;
     color: #fff; }
+    .banner .banner-text .yellow {
+      color: #ffad40; }
   @media only screen and (min-width: 600px) {
     .banner {
-      background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-992px.png);
       height: 450px; } }
   @media only screen and (min-width: 992px) {
     .banner {
-      background-image: url(http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/header-image-1600px.png);
       height: 600px; } }
 
 .contain-page {

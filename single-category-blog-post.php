@@ -42,6 +42,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="single-main">
 				<div class="single-content">
 					<p><?php the_field('blog_content'); ?></p>
+					<div class="nav-next nav-pet alignleft btn-transition"><?php previous_post_link('%link', 'Previous Post', TRUE); ?></div>
+					<div class="nav-next nav-pet alignright btn-transition"><?php next_post_link('%link', 'Next Post', TRUE); ?></div>
 				</div>
 				<div class="sidebar">
 					<h3>Latest Blog Posts</h3>
@@ -78,7 +80,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 											<h4><?php the_title(); ?></h4>
 										</a>
-										<p class="date date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
+										<p class="date-main date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
 										
 									</div>
 							</li>
@@ -91,6 +93,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				</div><!-- sidebar close -->
 			</div><!-- single main close -->
+
 		</div><!-- single blog close -->
 	</div><!-- singlecontain close -->
 </main>

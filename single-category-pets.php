@@ -46,12 +46,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="single-main">
 				<div class="single-content pets">
 					<p><?php the_field('pet_bio'); ?></p>
-					<div class="nav-next nav-pet alignleft btn-transition btn-styles"><?php previous_post_link('%link', 'Previous Pet', TRUE); ?></div>
-					<div class="nav-next nav-pet alignright btn-transition btn-styles"><?php next_post_link('%link', 'Next Pet', TRUE); ?></div>
+					<div class="nav-next nav-pet alignleft btn-transition"><?php previous_post_link('%link', 'Previous Pet', TRUE); ?></div>
+					<div class="nav-next nav-pet alignright btn-transition"><?php next_post_link('%link', 'Next Pet', TRUE); ?></div>
 				</div>
-
-
-
+		
 				<div class="sidebar">
 					<h3>More Pets</h3>
 				<?php  
@@ -64,19 +62,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'orderby'			=> 'rand',
 							'posts_type'		=> 'post',
 							'post_status'		=> 'publish'
-							
-							
-						
 					);
 
 						$myposts = get_posts($args);
 
-						echo '<ul class="blog-archive-posts pet-posts">';
+						echo '<ul class="blog-archive-posts pet-posts clearfix">';
 						foreach ($myposts as $post) : setup_postdata($post);
 
 						?>
 
-							<li class="clearfix">
+							<li class="clearfix col-md-4 col-lg-12">
 									<?php 
 
 										if (has_post_thumbnail()) {

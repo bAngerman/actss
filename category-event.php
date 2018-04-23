@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
 										<h3><?php the_title(); ?></h3>
 									</a>
-									<p class="date date-blog-home">
+									<p class="date-main date-blog-home">
 									<?php 
 									// get raw date
 									$date = get_field('event_date', false, false);

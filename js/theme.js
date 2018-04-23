@@ -3978,7 +3978,14 @@ Object.defineProperty(exports, '__esModule', { value: true });
     }
     getCancer(id);
   }
-
+  if ( $('.archive').length ) {
+    $("#archive_monthly").on('change', function(e) {
+      var dd = $('#archive_monthly').val();
+      if ( dd != null ) {
+        location.href = dd;
+      }
+    });
+  }
   
 
 })(jQuery); 

@@ -28,6 +28,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <main>
 <div class="contain-pets">
+		<div class="success-stories">
+			
+		</div>
 		<div class="pets clearfix">
 			<h2>Our Pets</h2>
 			<?php

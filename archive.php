@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- /Banner -->
 
 <main>
-<div class="contain-blog clearfix">
+<div class="contain-blog">
 		<div class="blog clearfix">
 			<h2>Latest Posts</h2>
 			<div class="blog-content clearfix">
@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     <a href="<?php the_permalink(); ?>" class="blog-title-home btn-transition">
                                          <h3><?php the_title(); ?></h3>
                                     </a>
-                                    <p class="date-main date-blog-home"><?php echo get_the_date('F j, Y');?></p>
+                                    <p class="date date-blog-home"><?php echo get_the_date('F j, Y');?></p>
                                     <?php echo custom_field_excerpt_blog(); ?> 
                                     <a href="<?php the_permalink(); ?>" class="btn-transition btn-styles more">Read more</a>
                                 </div>
@@ -70,8 +70,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="nav-previous alignleft btn-transition btn-styles"><?php previous_posts_link( 'Previous Blog Posts' ); ?></div>
 		</div> <!-- close blog -->
 		<div class="sidebar-blog">
-			<img src="<?php echo get_site_url(); ?>/wp-content/themes/actss/img/ACTSS-LOGO.png" alt="Actss Logo in Orange">
+			<img src="">
 			<p>ACTSS is a not-for-profit society dedicated to bringing affordable modern veterinary cancer treatment to pets. Through our programs we provide subsidies to dedicated pet owners. We aim to educate animal owners and veterinarians on the availability, uses and benefits of advanced cancer therapies in the treatment of veterinary cancers.</p>
+			
 		</div>
     </div> <!-- contain blog -->
 </main>

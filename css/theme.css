@@ -9653,7 +9653,7 @@ a:hover {
   border: none;
   background-color: transparent; }
 
-.date {
+.date-main {
   font-weight: 700; }
 
 .blue-box {
@@ -9703,6 +9703,11 @@ select {
   border: none;
   background: #ffad40;
   color: white; }
+
+.nav-next, .nav-previous {
+  padding-bottom: 48px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .contain-about-home {
   background-color: #ffad40; }
@@ -10235,6 +10240,13 @@ select {
     .contain-blog .blog h2 {
       color: #01076d;
       padding: 24px; }
+  .contain-blog .sidebar-blog {
+    background-color: #ffad40;
+    padding: 24px;
+    text-align: center; }
+    .contain-blog .sidebar-blog img {
+      width: 100px;
+      margin-bottom: 24px; }
 
 .blog-archive-posts {
   padding: 24px;
@@ -10268,7 +10280,7 @@ select {
   .contain-pets .pets {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 24px; }
+    padding: 24px 24px 0 24px; }
     .contain-pets .pets select {
       margin-bottom: 24px; }
     .contain-pets .pets h2 {
@@ -10327,7 +10339,8 @@ select {
     text-align: left;
     background-color: #dc6836 !important;
     padding: 24px;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 24px; }
     .contain-single-blog .sidebar .blog-content h4 {
       color: #fff; }
     .contain-single-blog .sidebar .blog-content h4:hover {
@@ -10518,6 +10531,14 @@ select {
     padding: 48px 24px 48px 24px; }
     .contain-privacy .privacy .col, .contain-privacy .apply-info .col, .contain-privacy .eligibility-info .col, .contain-apply-info .privacy .col, .contain-apply-info .apply-info .col, .contain-apply-info .eligibility-info .col, .contain-eligibility .privacy .col, .contain-eligibility .apply-info .col, .contain-eligibility .eligibility-info .col {
       column-count: 2; }
+  .contain-single-blog .sidebar {
+    width: 100%; }
+    .contain-single-blog .sidebar h3 {
+      margin-top: 48px; }
+    .contain-single-blog .sidebar ul {
+      display: flex; }
+    .contain-single-blog .sidebar .pet-posts {
+      width: auto; }
   .blog-archive-posts {
     padding: 24px;
     margin: 0; }
@@ -10542,19 +10563,17 @@ select {
           background-color: #fff; }
   .contain-pets {
     background-color: #e8e8e8; }
-    .contain-pets .pets {
-      padding: 24px; }
-      .contain-pets .pets .blog-pets-posts li {
-        margin-left: 6.54%;
-        width: 46.7%;
-        margin-bottom: 6.54%;
-        float: left; }
-        .contain-pets .pets .blog-pets-posts li img {
-          width: 100%; }
-        .contain-pets .pets .blog-pets-posts li .pets-content-text {
-          min-height: 196px; }
-      .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
-        margin-left: 0; }
+    .contain-pets .pets .blog-pets-posts li {
+      margin-left: 6.54%;
+      width: 46.7%;
+      margin-bottom: 6.54%;
+      float: left; }
+      .contain-pets .pets .blog-pets-posts li img {
+        width: 100%; }
+      .contain-pets .pets .blog-pets-posts li .pets-content-text {
+        min-height: 196px; }
+    .contain-pets .pets .blog-pets-posts li:nth-child(odd) {
+      margin-left: 0; }
   .contain-memberships .memberships {
     padding-bottom: 0;
     text-align: center; }
@@ -10642,6 +10661,8 @@ select {
   .contain-single-blog .sidebar {
     width: 35%;
     padding-left: 8.5%; }
+    .contain-single-blog .sidebar ul {
+      display: block; }
   .blog-content .blog-archive-posts li:nth-child(odd) {
     background-color: #dc6836; }
   .blog-content .blog-archive-posts li:nth-child(even) {

@@ -87,7 +87,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					$date = new DateTime($date);
 
 					?>
-					<p class="date"><?php echo $date->format('F d, Y'); ?></p>
+					<p class="date-main"><?php echo $date->format('F d, Y'); ?></p>
 					
 
 					<?php echo custom_field_excerpt_events(); ?> 
@@ -186,7 +186,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								
 
 								<h3><?php the_title(); ?></h3>
-								<p class="date date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
+								<p class="date-main date-blog-home"><?php echo get_the_date('F j, Y'); ?></p>
 
 								
 								

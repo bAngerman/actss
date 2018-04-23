@@ -306,7 +306,7 @@ a:hover{
 	background-color: transparent;
 
 }
-.date{
+.date-main{
 	font-weight: $bold;
 }
 .blue-box{
@@ -360,6 +360,12 @@ select{
    border: none;
    background: #ffad40;
    color: white;
+}
+
+.nav-next, .nav-previous{
+	padding-bottom:48px;
+	font-weight: $bold;
+	text-transform: uppercase;
 }
 
 // HOME PAGE STYLES
@@ -1084,9 +1090,19 @@ select{
 	.blog{
 		max-width:1100px;
 		margin: 0 auto;
+	
 		h2{
 			color: $blu;
 			padding:24px;
+		}
+	}
+	.sidebar-blog{
+		background-color: $yellowish;
+		padding:24px;
+		text-align:center;
+		img{
+			width:100px;
+			margin-bottom:24px;
 		}
 	}
 }
@@ -1104,10 +1120,8 @@ select{
 		}
 	}
 
-
 	li{
 		
-	
 		.blog-squarre{
 			width:100%;
 		}
@@ -1149,7 +1163,7 @@ select{
 	.pets{
 		max-width:1100px;
 		margin:0 auto;
-		padding:24px;
+		padding:24px 24px 0 24px;
 		select{
 			margin-bottom:24px;
 		}
@@ -1238,6 +1252,7 @@ select{
 			background-color: $orangerish!important;
 			padding:24px;
 			color: $white;
+			margin-bottom:24px;
 			h4{
 				color:$white;
 			}
@@ -1558,7 +1573,6 @@ select{
 		}
 	}
 	
-
 	//PRIVACY + SUBSIDY TABLET STYLES
 
 	.subsidy-points-content{
@@ -1578,6 +1592,22 @@ select{
 			}
 		}
 	}
+	.contain-single-blog{
+		.sidebar{
+			width:100%;
+
+		 h3{
+			margin-top:48px;
+		 }
+		 ul{
+			 display:flex;
+		 }
+		 .pet-posts{
+			width:auto;
+		 }
+	
+		}
+	}
 	.blog-archive-posts{
 	padding:24px;
 	margin:0;
@@ -1591,20 +1621,14 @@ select{
 			background-color: $blu;
 		}
 	}
-
-
 	li{
 		
 		margin-bottom:48px;
-
-
 		.blog-content-text{
 			padding:24px;
 			color: $white;
 			margin-bottom:24px;
 			
-
-
 				a{
 					color: $white;
 				}
@@ -1629,8 +1653,6 @@ select{
 .contain-pets{
 	background-color: $almost-white;
 	.pets{
-		padding:24px;
-
 		.blog-pets-posts{
 			li{
 				margin-left:6.54%;
@@ -1845,6 +1867,9 @@ select{
 		.sidebar{
 			width: 35%;
 			padding-left:8.5%;
+			ul{
+				display:block;
+			}
 		}
 	}
 	.blog-content{

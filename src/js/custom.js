@@ -59,6 +59,13 @@
       }
     });
   }
+
+  $('.dropdown-parent>a').on('click', function(e) {
+    e.preventDefault();
+    $tar = e.target;
+    $tar.parentElement.classList.toggle('dropdown-expanded');
+    $tar.nextElementSibling.classList.toggle('is-expanded');
+  });
   
 
 })(jQuery); 

@@ -9477,7 +9477,7 @@ a.skip-link {
   font-family: 'Montserrat', sans-serif; }
 
 .rocksalt {
-  font-family: 'Rock Salt', cursive; }
+  font-family: 'Rock Salt', sans-serif; }
 
 .d-flex, .d-flex-c, .nav, .banner {
   display: -webkit-box;
@@ -9533,27 +9533,50 @@ a.skip-link {
     background-color: #dc6836; }
     .nav .menu-main-menu-container a {
       color: #fff;
-      -webkit-transition: 100ms all linear;
-      -moz-transition: 100ms all linear;
-      -o-transition: 100ms all linear;
-      transition: 100ms all linear;
+      -webkit-transition: 100ms all ease-in-out;
+      -moz-transition: 100ms all ease-in-out;
+      -o-transition: 100ms all ease-in-out;
+      transition: 100ms all ease-in-out;
       display: block;
       padding: 12px 0px 12px 0px; }
       .nav .menu-main-menu-container a:hover {
         color: #e6e6e6;
-        -webkit-transition: 100ms all linear;
-        -moz-transition: 100ms all linear;
-        -o-transition: 100ms all linear;
-        transition: 100ms all linear; }
+        -webkit-transition: 100ms all ease-in-out;
+        -moz-transition: 100ms all ease-in-out;
+        -o-transition: 100ms all ease-in-out;
+        transition: 100ms all ease-in-out; }
     .nav .menu-main-menu-container #main-menu {
       margin: 0;
       padding: 0;
       padding-top: 65px;
       padding-bottom: 12px;
-      text-align: center; }
+      text-align: left;
+      margin-left: 24px; }
     .nav .menu-main-menu-container.show {
       left: 0%;
       transition: left 0.5s; }
+  .nav .dropdown-parent > a:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "\f107";
+    margin-left: 1rem;
+    -webkit-transition: 300ms all ease-in-out;
+    -moz-transition: 300ms all ease-in-out;
+    -o-transition: 300ms all ease-in-out;
+    transition: 300ms all ease-in-out; }
+  .nav .dropdown-expanded > a:after {
+    -webkit-transition: 300ms all ease-in-out;
+    -moz-transition: 300ms all ease-in-out;
+    -o-transition: 300ms all ease-in-out;
+    transition: 300ms all ease-in-out;
+    transform: rotate(180deg) !important; }
+  .nav .dropdown-parent .sub-menu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out; }
+    .nav .dropdown-parent .sub-menu.is-expanded {
+      max-height: 1000px;
+      transition: max-height 300ms ease-in-out; }
   @media only screen and (min-width: 600px) {
     .nav .menu-main-menu-container {
       max-width: 400px; }

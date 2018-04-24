@@ -188,12 +188,12 @@ $t-fast: 100ms;
 }
 
 .banner {
-	height: 400px;
 	width: 100%;
 	margin-top: -65px;
 	padding-top: 65px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	@extend .d-flex;
 	@extend .d-center;
 	.banner-text {
@@ -203,16 +203,6 @@ $t-fast: 100ms;
 		color: $white;
 		.yellow {
 			color: $yellowish;
-		}
-	}
-	@include screen('tablet') {
-		& {
-			height: 450px;
-		}
-	}
-	@include screen('desktop') {
-		& {
-			height: 600px;
 		}
 	}
 }

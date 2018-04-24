@@ -22,11 +22,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<style>
 	.banner {
+		
 		<?php 
 			if ( is_front_page() ) {
-				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-992px.png)';
+				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-992px.png);';
+				echo 'height: 400px';
 			} else {
-				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-mobile.jpg)';
+				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-mobile.jpg);';
+				echo 'height: 150px;';
 			}
 		?>
 	}
@@ -34,9 +37,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		.banner {
 			<?php 
 				if ( is_front_page() ) {
-					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-992px.png)';
+					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-992px.png);';
+					echo 'height: 450px;';
 				} else {
-					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-tablet.jpg)';
+					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-tablet.jpg);';
+					echo 'height: 248px;';
 				}
 			?>
 		}
@@ -45,9 +50,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		.banner {
 			<?php 
 				if ( is_front_page() ) {
-					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-image-1600px.png)';
+					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-image-1600px.png);';
+					echo 'height: 600px;';
 				} else {
-					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-desktop.jpg)';
+					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-desktop-1.jpg);';
+					echo 'height: 300px;';
 				}
 			?>
 		}

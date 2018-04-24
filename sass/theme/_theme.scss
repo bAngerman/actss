@@ -821,6 +821,10 @@ select{
 					margin: 24px 0 6px 0;
 					float: right;
 				}
+				a:hover{
+					background-color: $white;
+					color:$d-grey;
+				}
 			}
 		}
 	}
@@ -933,6 +937,7 @@ select{
 		select{
 			margin-bottom: 24px;
 			margin-left:16px;
+			width: 290px;
 		}
 		h2{
 			color: $blu;

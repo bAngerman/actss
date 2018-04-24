@@ -115,10 +115,10 @@ $t-fast: 100ms;
 // mixins ( add a mixin by writing "@include transition($t-fast);" )
 @mixin transition($timing) {
 	// transition compatibility
-  -webkit-transition: $timing all linear;
-  -moz-transition: $timing all linear;
-  -o-transition: $timing all linear;
-  transition: $timing all linear;
+  -webkit-transition: $timing all ease-in-out;
+  -moz-transition: $timing all ease-in-out;
+  -o-transition: $timing all ease-in-out;
+  transition: $timing all ease-in-out;
 }
 
 // global nav
@@ -170,11 +170,40 @@ $t-fast: 100ms;
 			padding: 0;
 			padding-top: 65px;
 			padding-bottom: 12px;
-			text-align: center;
+			text-align: left;
+			margin-left: 24px;
 		}
 		&.show {
 			left: 0%;
 			transition: left 0.5s;
+		}
+	}
+	.dropdown-parent>a {
+		&:after {
+			display: inline-block;
+			font-family: FontAwesome;
+			content: "\f107";
+			margin-left: 1rem;
+			@include transition($t-medium);
+		}
+	}
+	.dropdown-expanded>a {
+		&:after {
+			@include transition($t-medium);
+			transform: rotate(180deg) !important;
+		}
+	}
+
+	.dropdown-parent {
+		.sub-menu {
+			max-height: 0px;
+			overflow: hidden;
+			transition: max-height $t-medium ease-in-out;
+
+			&.is-expanded {
+				max-height: 1000px;
+				transition: max-height $t-medium ease-in-out;
+			}
 		}
 	}
 	@include screen('tablet') {

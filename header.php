@@ -28,8 +28,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/03/header-992px.png);';
 				echo 'height: 400px';
 			} else {
-				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-mobile.jpg);';
-				echo 'height: 150px;';
+				echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-tablet.jpg);';
+				echo 'height: 300px;';
 			}
 		?>
 	}
@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					echo 'height: 450px;';
 				} else {
 					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-tablet.jpg);';
-					echo 'height: 248px;';
+					echo 'height: 300px;';
 				}
 			?>
 		}
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					echo 'height: 600px;';
 				} else {
 					echo 'background-image: url(' . get_site_url() . '/wp-content/uploads/2018/04/secondary-pages-header-desktop-1.jpg);';
-					echo 'height: 300px;';
+					echo 'height: 350px;';
 				}
 			?>
 		}

@@ -19,11 +19,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <main>
 <div class="contain-pets">
 		<div class="contain-success-stories">
-			<div class="success-stories">
+			<div class="success-stories clearfix">
 				<h2>Success Stories</h2>
-				<p>Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.Some text about success stories.</p>
-				<a href="" class="btn-transition btn-styles">Chet Dobson Story</a>
-				<a href="" class="btn-transition btn-styles">Lucky Moffat</a>
+				<p>Here at ACTSS, we are dedicated to helping pet families live with cancer and have been honoured to help subsidize the cost of pet cancer therapy for many families in Alberta. We have had the privilege of hearing many pet stories, but below are two stories we would like to share with you.</p>
+				<a href="<?php echo get_site_url()?>/chet-dobson-story" class="btn-transition btn-styles">Chet Dobson Story</a>
+				<a href="<?php echo get_site_url()?>/lucky-moffat-memorial-fund" class="btn-transition btn-styles">Lucky Moffat</a>
 			</div>
 		</div>
 		<div class="pets clearfix">
@@ -81,8 +81,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						echo '</ul>';
 					
 					?>
+					<div class="contain-pagination">
 						<div class="nav-next alignright btn-transition btn-styles"><?php next_posts_link( 'More Pets' ); ?></div>
 						<div class="nav-previous alignleft btn-transition btn-styles"><?php previous_posts_link( 'Previous Pets' ); ?></div>
+					</div>
 
 		</div> <!-- close pets -->
     </div> <!-- contain pets -->

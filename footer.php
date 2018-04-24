@@ -18,13 +18,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<img class="logo" src="http://actssa.web.dmitcapstone.ca/wp-content/uploads/2018/03/ACTSS-LOGO.svg" alt="ACTSS LOGO"/>
 		<ul class="social">
 			<li>
-				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.instagram.com/actssalberta/" class="btn-transition"><i class="fab fa-instagram"></i></a>
 			</li>
 			<li>
-				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.facebook.com/ACTSSalberta/" class="btn-transition"><i class="fab fa-facebook-square"></i></a>
 			</li>
 			<li>
-				<a href="#"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://twitter.com/ACTSSalberta" class="btn-transition"><i class="fab fa-twitter-square"></i></a>
 			</li>
 		</ul>
 		<div class="address footer-text">

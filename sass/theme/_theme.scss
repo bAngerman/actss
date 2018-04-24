@@ -154,7 +154,7 @@ $t-fast: 100ms;
 		z-index: 100;
 		width: 100%;
 		transition: left 0.5s;
-		background-color: $orangerish;
+		background-color: rgba(220,104,54, 0.95);
 		a {
 			color: $white;
 			@include transition($t-fast);
@@ -376,14 +376,20 @@ select{
 	width: 236px;
    height: 40px;
    border: none;
-   background: #ffad40;
+   background: $blu;
    color: white;
 }
 
 .nav-next, .nav-previous{
-	padding-bottom:48px;
+	padding-bottom:24px;
 	font-weight: $bold;
 	text-transform: uppercase;
+		a{
+			color:$orangerish;
+		}
+}
+.nav-next a:hover{
+	color:$d-grey;
 }
 
 // HOME PAGE STYLES
@@ -536,7 +542,7 @@ select{
 .pets-home{
 	max-width:1100px;
 	margin:0 auto;
-	padding:56px 0 48px 0px;
+	padding:36px 0 48px 0px;
 	h2{
 		color: $blu;
 		padding: 24px 0 0 24px;
@@ -861,7 +867,7 @@ select{
 //RESOURCES STYLES	
 .resources{
 	.contain-cancer-questions{
-		background-image:linear-gradient($transparentdgrey,$transparentdgrey),url(../img/concrete-1200w.jpg);
+		background-color: $d-grey;
 		@extend .bg-cover;
 		background-position: center center;
 		width: 100%;
@@ -1194,12 +1200,15 @@ select{
 			h2{
 				color:$white;
 			}
-			a:first-child{
-				margin-right:24px;
-			}
+			// a:first-child{
+			// 	margin-right:24px;
+			// 	margin-bottom: 12px;
+			// }
 			a{
 				border:2px solid $d-grey;
 				color: $d-grey;
+				float:right;
+				margin-bottom:12px;
 			}
 			a:hover{
 				background-color: $d-grey;
@@ -1229,12 +1238,16 @@ select{
 					background-color: $blu;
 					color:$white;
 					padding:24px;
+
 					a{
-						color: $orangerish;
+						color: $yellowish;
 					}
 					a:hover{
 						color:$white;
 					}
+				}
+				.contain-pagination{
+					width: 100%;
 				}
 			}
 		}
@@ -1423,6 +1436,46 @@ select{
 //contact us
 .contain-main{
 	background-color: $almost-white;
+	background-image:url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+	background-repeat: no-repeat;
+	background-position: left top, right bottom;
+	background-size: 200px, 200px;
+		a{
+			color: $orangerish;
+		}
+		.contain-contact{
+			max-width: 1100px;
+			margin:0 auto;
+			padding:24px;
+			h2{
+				color: $blu;
+				padding-bottom:24px;
+			}
+			.flex-contact{
+				display:flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				h3{
+					color: $blu;
+				}
+				.contain-social{
+					margin-bottom:24px;
+					.social{
+						margin-bottom:24px;
+						
+						svg{
+							font-size:3em;
+							margin-right:12px;
+						}
+					}
+				}
+				.emails{
+					ul{
+						padding:0;
+					}
+				}
+			}
+		}
 	
 }
 
@@ -1497,7 +1550,7 @@ select{
 		}
 	}
 	.pets-home{
-		
+		padding:56px 24px 24px 24px;
 		h2{
 			padding:0px 0px 0px 24px;
 		}
@@ -1714,7 +1767,19 @@ select{
 
 }
 //Pets category page - tablet
+
+	
 .contain-pets{
+	.contain-success-stories{
+		background-color: $yellowish;
+		text-align: center;
+		
+		.success-stories{
+			a{
+				float:none;
+			}
+		}
+	}
 	background-color: $almost-white;
 	.pets{
 		.blog-pets-posts{
@@ -2009,7 +2074,16 @@ select{
 			}
 		}
 	}
-	
+	//contact us
+	.contain-main{
+		.contain-contact{
+			.flex-contact{
+				display:flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+			}
+		}
+	}
 
 }
 

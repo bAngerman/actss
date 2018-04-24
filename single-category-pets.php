@@ -34,10 +34,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 			<div class="single-main">
-				<div class="single-content pets">
+				<div class="single-content pets clearfix">
 					<p><?php the_field('pet_bio'); ?></p>
-					<div class="nav-next nav-pet alignleft btn-transition"><?php previous_post_link('%link', 'Previous Pet', TRUE); ?></div>
-					<div class="nav-next nav-pet alignright btn-transition"><?php next_post_link('%link', 'Next Pet', TRUE); ?></div>
+					<div class="contain-pagination">
+						<div class="nav-next nav-pet alignleft btn-transition"><?php previous_post_link('%link', 'Previous Pet', TRUE); ?></div>
+						<div class="nav-next nav-pet alignright btn-transition"><?php next_post_link('%link', 'Next Pet', TRUE); ?></div>
+					</div>
 				</div>
 		
 				<div class="sidebar">

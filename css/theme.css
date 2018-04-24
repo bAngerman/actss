@@ -9530,7 +9530,7 @@ a.skip-link {
     z-index: 100;
     width: 100%;
     transition: left 0.5s;
-    background-color: #dc6836; }
+    background-color: rgba(220, 104, 54, 0.95); }
     .nav .menu-main-menu-container a {
       color: #fff;
       -webkit-transition: 100ms all ease-in-out;
@@ -9717,13 +9717,18 @@ select {
   width: 236px;
   height: 40px;
   border: none;
-  background: #ffad40;
+  background: #01076d;
   color: white; }
 
 .nav-next, .nav-previous {
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   font-weight: 700;
   text-transform: uppercase; }
+  .nav-next a, .nav-previous a {
+    color: #dc6836; }
+
+.nav-next a:hover {
+  color: #4d4d4d; }
 
 .contain-about-home {
   background-color: #ffad40; }
@@ -9837,7 +9842,7 @@ select {
 .pets-home {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 56px 0 48px 0px; }
+  padding: 36px 0 48px 0px; }
   .pets-home h2 {
     color: #01076d;
     padding: 24px 0 0 24px;
@@ -10072,7 +10077,7 @@ select {
       color: #4d4d4d; }
 
 .resources .contain-cancer-questions {
-  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.8)), url(../img/concrete-1200w.jpg);
+  background-color: #4d4d4d;
   background-position: center center;
   width: 100%; }
   .resources .contain-cancer-questions .cancer-questions {
@@ -10306,11 +10311,11 @@ select {
       padding: 56px 24px 48px 24px; }
       .contain-pets .contain-success-stories .success-stories h2 {
         color: #fff; }
-      .contain-pets .contain-success-stories .success-stories a:first-child {
-        margin-right: 24px; }
       .contain-pets .contain-success-stories .success-stories a {
         border: 2px solid #4d4d4d;
-        color: #4d4d4d; }
+        color: #4d4d4d;
+        float: right;
+        margin-bottom: 12px; }
       .contain-pets .contain-success-stories .success-stories a:hover {
         background-color: #4d4d4d;
         color: #fff; }
@@ -10334,9 +10339,11 @@ select {
           color: #fff;
           padding: 24px; }
           .contain-pets .pets .blog-pets-posts li .pets-content-text a {
-            color: #dc6836; }
+            color: #ffad40; }
           .contain-pets .pets .blog-pets-posts li .pets-content-text a:hover {
             color: #fff; }
+        .contain-pets .pets .blog-pets-posts li .contain-pagination {
+          width: 100%; }
 
 .contain-single-blog {
   background-color: #e8e8e8;
@@ -10459,6 +10466,37 @@ select {
           max-height: 200px;
           width: auto; }
 
+.contain-main {
+  background-color: #e8e8e8;
+  background-image: url(../img/triangle-yellow-2.svg), url(../img/shape-yellow-2.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 200px, 200px; }
+  .contain-main a {
+    color: #dc6836; }
+  .contain-main .contain-contact {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px; }
+    .contain-main .contain-contact h2 {
+      color: #01076d;
+      padding-bottom: 24px; }
+    .contain-main .contain-contact .flex-contact {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .contain-main .contain-contact .flex-contact h3 {
+        color: #01076d; }
+      .contain-main .contain-contact .flex-contact .contain-social {
+        margin-bottom: 24px; }
+        .contain-main .contain-contact .flex-contact .contain-social .social {
+          margin-bottom: 24px; }
+          .contain-main .contain-contact .flex-contact .contain-social .social svg {
+            font-size: 3em;
+            margin-right: 12px; }
+      .contain-main .contain-contact .flex-contact .emails ul {
+        padding: 0; }
+
 @media only screen and (min-width: 600px) {
   .contain-page .col {
     column-count: 1; }
@@ -10500,19 +10538,21 @@ select {
       padding-right: 12px; }
     .events-home .more-events-btn {
       margin: 24px 0px 24px 0px; }
-  .pets-home h2 {
-    padding: 0px 0px 0px 24px; }
-  .pets-home .pets-home-overlay .more-pet-btn {
-    margin: 24px 24px 0 0; }
-  .pets-home .pets-home-overlay ul li {
-    width: 47.5%;
-    float: left;
-    min-height: 742px; }
-  .pets-home .pets-home-overlay ul li:nth-child(2) {
-    display: block;
-    margin-left: 5%; }
-  .pets-home .pets-home-overlay .more-pet-btn {
-    margin-top: 48px; }
+  .pets-home {
+    padding: 56px 24px 24px 24px; }
+    .pets-home h2 {
+      padding: 0px 0px 0px 24px; }
+    .pets-home .pets-home-overlay .more-pet-btn {
+      margin: 24px 24px 0 0; }
+    .pets-home .pets-home-overlay ul li {
+      width: 47.5%;
+      float: left;
+      min-height: 742px; }
+    .pets-home .pets-home-overlay ul li:nth-child(2) {
+      display: block;
+      margin-left: 5%; }
+    .pets-home .pets-home-overlay .more-pet-btn {
+      margin-top: 48px; }
   .blog-home {
     padding: 36px 0 56px 0; }
     .blog-home .blog-excerpt-home li {
@@ -10610,6 +10650,11 @@ select {
           background-color: #fff; }
   .contain-pets {
     background-color: #e8e8e8; }
+    .contain-pets .contain-success-stories {
+      background-color: #ffad40;
+      text-align: center; }
+      .contain-pets .contain-success-stories .success-stories a {
+        float: none; }
     .contain-pets .pets .blog-pets-posts li {
       margin-left: 6.54%;
       width: 46.7%;
@@ -10748,7 +10793,11 @@ select {
   .contain-pets .pets .blog-pets-posts li:nth-child(1), .contain-pets .pets .blog-pets-posts li:nth-child(5) {
     margin-left: 0; }
   .contain-pets .pets .blog-pets-posts li:nth-child(4), .contain-pets .pets .blog-pets-posts li:nth-child(8) {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .contain-main .contain-contact .flex-contact {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; } }
 
 /*! X STYLES */
 /*

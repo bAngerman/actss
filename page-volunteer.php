@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <p>ACTSS has such a wide variety of volunteer opportunities with events throughout the years. Trade show display at dog/cat shows, Pets in the Park, working a casino and major fundraising events such as our annual dog wash and Halloween extravaganza, are just a few of the types of activities we do. We are always looking for committee members as well.</p>
             <a href="" class="btn-transition btn-styles">Get More Info</a>
-            <a href="" class="btn-transtion btn-styles">Sign Up Now!</a>
+            <a href="" class="btn-transition btn-styles">Sign Up Now!</a>
         </div>
         <div class="contain-membership-photos">
             <div class="membership-photos row">

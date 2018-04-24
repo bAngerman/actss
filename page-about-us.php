@@ -67,17 +67,5 @@ $container = get_theme_mod( 'understrap_container_type' );
       </div><!-- close col -->
     </div> <!-- about-us history -->
   </div><!-- close contain history -->
-  <div class="contain-chet">
-    <div class="chet clearfix">
-      <h2>The Chet Dobson Story</h2>
-      <div class="col">
-        <p>In July 2007 Joe and Stephanie Dobson were devastated to learn that their beloved 12 year old Lab-Husky cross Chet had a malignant tumour in his lungs. Chet had begun to cough up blood and the situation was critical. Two Calgary, Alberta specialist centres worked together to save Chet’s life. The Western Veterinary Specialist Centre performed the difficult surgery that removed the dangerous tumour from Chet’s lungs and the Calgary Animal Referral and Emergency Centre later gave Chet chemotherapy. The financial cost was high but the Dobson’s knew that Chet was worth it. The time spent working with the specialists made Joe wonder about the people who could not afford the costs of having expensive medical treatments done to save their pets lives, and the devastation they must feel losing the pet they love. Could something be done to help these people and their pets? Joe decided to do something to highlight this important issue.</p>  
-        <p>He registered for his first marathon. Less than two months before the Detroit Marathon Joe began to train. Joe ran the event, collecting prizes and raised over $5000 in pledges for ACTSS. Global Television produced a moving documentary about Joe, Chet and their cause. The story went national and donations rolled in from three different countries. Shortly after his marathon (once he could walk again) Joe held a prize draw for everyone who donated pledges to the Chet Dobson Marathon.</p>
-        <p>Chet recovered nicely from his surgery and underwent weeks of chemotherapy. The chemotherapy caused Chet and Joe to have good and bad days, but Chet met every challenge with enthusiasm and grace and was a favorite patient of the veterinary staff. Soon, Chet was done his chemotherapy, and got on with the business of being a dog who loved life. His next two years were filled with good food and walks, and of course belly rubs and the pets from favorite family members and friends.On October 16, 2009 at the incredible age of 14 ½ years, Chet passed away surrounded by those he loved and who loved him.</p>
-      </div><!-- close col -->
-    </div> <!-- about-us chet-->
-  </div><!-- contain chet close -->
-</div><!--  close container -->
-
 
 <?php get_footer(); ?>

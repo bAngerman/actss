@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <p>Sponsorship is a noble way to get involved with ACTSS. Sponsors help us put on great fundraisers and help our organization with our day to day running. We couldn’t do the things we do without our sponsors, and we’re so grateful for them. Check out our past sponsors, or join the ranks. We’d love to have you on board.</p>
 
             <a href="" class="btn-transition btn-styles">Get More Info</a>
-            <a href="" class="btn-transtion btn-styles">Become a Sponsor!</a> <!-- This button would link to a form - most likely a google form to apply to become a sponsor -->
+            <a href="" class="btn-transition btn-styles">Become a Sponsor!</a> <!-- This button would link to a form - most likely a google form to apply to become a sponsor -->
         </div>
     </div>
     <div class="contain-sponsors">

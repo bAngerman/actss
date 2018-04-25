@@ -315,9 +315,12 @@ li{
 }
 a{
 	text-decoration: none;
+	color: $orangerish;
+	transition:all 0.3s ease-in-out;
 }
 a:hover{
 	text-decoration: none;
+	color:$d-grey ;
 }
 .btn-secondary{
 	border:none;
@@ -550,6 +553,9 @@ select{
 	}
 	.pets-home-overlay{
 		width: 100%;
+		h3, h5{
+			color: $blu;
+		}
 		ul{
 			padding: 24px;
 			width: 100%;
@@ -559,6 +565,7 @@ select{
 				.more-container{
 				
 					height:100px;
+					
 					a{
 						color:$blu;
 						border: 2px solid $blu;

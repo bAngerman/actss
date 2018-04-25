@@ -122,10 +122,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 									the_post_thumbnail('full', array('class' => "pet-pic"));
 								}
 							?>
+							</a>
 							<h3><?php the_title(); ?></h3>
 							<h5><?php the_field('breed'); ?> </h5>
 							<h5><?php the_field('cancer_type'); ?> </h5>
-							</a>
+							
 							<p><?php echo custom_field_excerpt_pets(); ?> 
 							</p>
 							<div class="more-container">

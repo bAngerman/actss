@@ -9660,10 +9660,13 @@ li {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #dc6836;
+  transition: all 0.3s ease-in-out; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #4d4d4d; }
 
 .btn-secondary {
   border: none;
@@ -9849,6 +9852,8 @@ select {
     margin-bottom: 0; }
   .pets-home .pets-home-overlay {
     width: 100%; }
+    .pets-home .pets-home-overlay h3, .pets-home .pets-home-overlay h5 {
+      color: #01076d; }
     .pets-home .pets-home-overlay ul {
       padding: 24px;
       width: 100%; }

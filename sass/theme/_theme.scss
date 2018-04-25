@@ -365,15 +365,43 @@ a:hover{
 		}
 }
 
-.btn-transition{
+.btn-transition, .swpm-buy-now-button-submit{
 	transition:all 0.3s ease-in-out;
+	&:hover {
+		transition:all 0.3s ease-in-out;
+	}
 }
 
-.btn-styles{
+.btn-styles, .swpm-buy-now-button-submit{
 	padding: 8px 36px 8px 36px;
 	border-radius:24px;
 	text-transform:uppercase;
 	font-weight:$bold;
+}
+.swpm-buy-now-button-submit {
+	background-color: transparent;
+	border: 2px solid #4d4d4d;
+	margin: 24px 0 6px 0;
+	font-weight: 700;
+	color: #4d4d4d;
+	border-color: #4d4d4d;
+	cursor: pointer;
+	&:hover {
+		background-color: #4d4d4d;
+		color: $white;
+	}
+}
+.banner {
+	.swpm-buy-now-button-submit {
+		border-color: $yellowish;
+		color: $white;
+		font-family: 'Montserrat', sans-serif;
+
+		&:hover {
+			background-color: $yellowish;
+			color: $white;
+		}
+	}
 }
 select{
 	width: 236px;

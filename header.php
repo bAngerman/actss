@@ -116,6 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				}
 				?>
 				</h1>
+				<?php echo do_shortcode('[swpm_payment_button id=567]'); ?>
 			</div>
 		</div>
 	</div>

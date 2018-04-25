@@ -66,6 +66,11 @@
     $tar.parentElement.classList.toggle('dropdown-expanded');
     $tar.nextElementSibling.classList.toggle('is-expanded');
   });
+
+  if ( $('.swpm-buy-now-button-submit').length ) {
+   // console.log( $('.swpm-buy-now-button-submit') );
+    $('.swpm-buy-now-button-submit').val('Donate');
+  }
   
 
 })(jQuery); 

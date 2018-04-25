@@ -13,7 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <h2>Donate</h2>
             <p>Our organization runs on donations from people like you. Donations to ACTSS go straight to the heart of our organization. It helps us in our day to day running and helps fund the subsidization families rely on to treat their beloved pets.</p>
 
-            <a href=""class="btn-transition btn-styles">Donate Now!</a>
+            <?php echo do_shortcode('[swpm_payment_button id=567]') ?>
         </div>
         <div class="contain-membership-photos">
             <div class="membership-photos">
